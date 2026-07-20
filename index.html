@@ -384,6 +384,7 @@ function save(){ try { localStorage.setItem("marathonDone", JSON.stringify(done)
 function toggle(d){
   if (done[d]) delete done[d]; else done[d] = 1;
   save(); renderPlan();
+  syncRemote(); // bei jedem Haken zusätzlich aktuellen Stand aus dem Repo ziehen
 }
 function renderPlan(){
   const todayIso = iso(new Date());
@@ -434,6 +435,8 @@ function show(t){
 renderHeute();
 renderPlan();
 syncRemote();
+// Beim Zurückkehren in die App (Home-Bildschirm-App bleibt im Speicher) neu laden
+document.addEventListener("visibilitychange", () => { if (!document.hidden) { renderHeute(); syncRemote(); } });
 </script>
 </body>
 </html>
