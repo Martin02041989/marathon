@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Berlin 3:39">
+<meta name="theme-color" content="#0e1116">
+<link rel="apple-touch-icon" href="icon.png">
+<title>Berlin 3:39</title>
+<style>
+  :root {
+    --bg: #0e1116; --card: #1a1f27; --card2: #222834; --text: #e8ecf1;
+    --muted: #8b95a5; --accent: #4fc3f7; --green: #66bb6a; --orange: #ffa726;
+    --red: #ef5350; --border: #2c3442;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    padding-bottom: 84px; min-height: 100vh;
+  }
+  header {
+    padding: max(env(safe-area-inset-top), 16px) 20px 14px; text-align: center;
+    background: linear-gradient(180deg, #131826, var(--bg));
+    border-bottom: 1px solid var(--border);
+  }
+  header h1 { font-size: 17px; font-weight: 700; letter-spacing: .3px; }
+  header .sub { font-size: 13px; color: var(--muted); margin-top: 3px; }
+  header .sub b { color: var(--accent); font-weight: 600; }
+  .tab { display: none; padding: 16px; max-width: 560px; margin: 0 auto; }
+  .tab.active { display: block; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 16px; margin-bottom: 12px;
+  }
+  .card .label { font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; }
+  .card .date { font-size: 13px; color: var(--muted); margin-top: 2px; }
+  .card h2 { font-size: 19px; margin: 8px 0 4px; line-height: 1.3; }
+  .card .detail { font-size: 14.5px; line-height: 1.5; color: var(--text); }
+  .badge {
+    display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 9px;
+    border-radius: 999px; margin: 6px 6px 0 0;
+  }
+  .b-hf { background: rgba(102,187,106,.15); color: var(--green); }
+  .b-pace { background: rgba(255,167,38,.15); color: var(--orange); }
+  .b-shoe { background: rgba(79,195,247,.13); color: var(--accent); }
+  .hint {
+    margin-top: 10px; padding: 10px 12px; background: var(--card2);
+    border-radius: 10px; font-size: 13px; color: var(--muted); line-height: 1.45;
+  }
+  .rest h2 { color: var(--muted); }
+  /* Plan */
+  .week { margin-bottom: 10px; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; background: var(--card); }
+  .week-head {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 13px 16px; cursor: pointer; user-select: none; -webkit-user-select: none;
+  }
+  .week-head .wt { font-size: 15px; font-weight: 700; }
+  .week-head .wsub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .week-head .prog { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .week-body { display: none; border-top: 1px solid var(--border); }
+  .week.open .week-body { display: block; }
+  .sess {
+    display: flex; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+  .sess:last-child { border-bottom: none; }
+  .sess .chk {
+    width: 24px; height: 24px; min-width: 24px; border-radius: 8px; border: 2px solid var(--muted);
+    display: flex; align-items: center; justify-content: center; font-size: 15px; color: transparent;
+    margin-top: 2px; cursor: pointer;
+  }
+  .sess.done .chk { background: var(--green); border-color: var(--green); color: #0e1116; }
+  .sess.done .txt { opacity: .5; text-decoration: line-through; }
+  .sess .d1 { font-size: 14.5px; font-weight: 600; }
+  .sess .d2 { font-size: 13px; color: var(--muted); margin-top: 2px; line-height: 1.4; }
+  .sess.today-row { background: rgba(79,195,247,.07); }
+  .sess .today-tag { font-size: 10px; font-weight: 700; color: var(--accent); letter-spacing: 1px; }
+  .race { background: linear-gradient(135deg, #1a2438, #232a1a); }
+  /* Referenz */
+  .ref-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .ref { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 13px; }
+  .ref .t { font-size: 11px; font-weight: 700; letter-spacing: .8px; color: var(--muted); text-transform: uppercase; }
+  .ref .v { font-size: 17px; font-weight: 700; margin-top: 4px; }
+  .ref .s { font-size: 12px; color: var(--muted); margin-top: 2px; line-height: 1.35; }
+  .wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin-top: 8px; }
+  td { padding: 7px 4px; border-top: 1px solid var(--border); vertical-align: top; line-height: 1.35; }
+  td:first-child { color: var(--muted); white-space: nowrap; padding-right: 10px; }
+  /* Buttons & Health */
+  .btn {
+    background: var(--accent); color: #0e1116; border: none; border-radius: 10px;
+    padding: 10px 14px; font-size: 14px; font-weight: 700; font-family: inherit; cursor: pointer;
+  }
+  .btn.sec { background: var(--card2); color: var(--text); border: 1px solid var(--border); }
+  textarea {
+    width: 100%; background: var(--card2); color: var(--text); border: 1px solid var(--border);
+    border-radius: 10px; padding: 10px; font-family: inherit; font-size: 14px; margin-bottom: 8px;
+  }
+  #runresult .res { margin-top: 12px; padding: 12px; background: var(--card2); border-radius: 10px; font-size: 14px; line-height: 1.5; }
+  /* Nav */
+  nav {
+    position: fixed; bottom: 0; left: 0; right: 0; display: flex;
+    background: rgba(19,24,33,.96); backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  nav button {
+    flex: 1; background: none; border: none; color: var(--muted);
+    font-size: 12px; font-weight: 600; padding: 12px 0 10px; cursor: pointer;
+    font-family: inherit;
+  }
+  nav button .ic { display: block; font-size: 20px; margin-bottom: 2px; }
+  nav button.active { color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Berlin-Marathon 2026</h1>
+  <div class="sub" id="countdown"></div>
+</header>
+
+<div class="tab active" id="tab-heute"></div>
+<div class="tab" id="tab-plan"></div>
+<div class="tab" id="tab-ref">
+  <div class="ref-grid">
+    <div class="ref"><div class="t">Ziel</div><div class="v">3:39 h</div><div class="s">27.09.2026 · Stretch: 3:35</div></div>
+    <div class="ref"><div class="t">Marathon-Pace</div><div class="v">5:11 /km</div><div class="s">erste 5 km konservativ</div></div>
+    <div class="ref"><div class="t">Zone 2 (GA/LL)</div><div class="v">HF 134–151</div><div class="s">lockere &amp; lange Läufe nach Puls, nicht Pace</div></div>
+    <div class="ref"><div class="t">5. Tag (Mi)</div><div class="v">HF 135–145</div><div class="s">sehr locker, rein regenerativ</div></div>
+    <div class="ref"><div class="t">Schwelle (LT)</div><div class="v">4:50–5:05</div><div class="s">/km · nur auf flacher Strecke nach Pace</div></div>
+    <div class="ref"><div class="t">LL ruhig</div><div class="v">6:10–6:20</div><div class="s">/km auf flach · wellig: Puls zählt, Pace egal</div></div>
+    <div class="ref wide">
+      <div class="t">Höhenmeter-Regel</div>
+      <div class="s" style="font-size:13.5px; margin-top:6px; color:var(--text);">
+        Hausrunden Eglfing ≈ 10 hm/km. Bei MP-/LT-Einheiten flachere Strecke wählen —
+        sonst 5:11 über Grade-Adjusted Pace bzw. Puls kontrollieren. Bei welligen
+        lockeren/langen Läufen darf die Pace ruhig langsamer sein.
+      </div>
+    </div>
+    <div class="ref wide">
+      <div class="t">Schuhwahl</div>
+      <table>
+        <tr><td>GA / LL / REKOM</td><td>Saucony Formfit 8 <span style="color:var(--muted)">(~900 km — im Aug. Nachfolger einlaufen)</span></td></tr>
+        <tr><td>MP / LT / HM-Test</td><td>Saucony Endorphin Speed 5</td></tr>
+        <tr><td>Marathon 27.09.</td><td>Endorphin Speed 5 — beim HM-Test generalproben</td></tr>
+        <tr><td>Laufband</td><td>Saucony Ride</td></tr>
+      </table>
+    </div>
+    <div class="ref wide">
+      <div class="t">Verpflegung (Rennen)</div>
+      <div class="s" style="font-size:13.5px; margin-top:6px; color:var(--text);">
+        Mnstry Gel 40 (40 g KH) · Ziel 60–80 g KH/h → 1 Gel ca. alle 30–35 min,
+        erstes Gel bei km 7–8. Bei langen Läufen ab 24 km und beim HM-Test üben.
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav>
+  <button id="nb-heute" class="active" onclick="show('heute')"><span class="ic">☀️</span>Heute</button>
+  <button id="nb-plan" onclick="show('plan')"><span class="ic">📅</span>Plan</button>
+  <button id="nb-ref" onclick="show('ref')"><span class="ic">🎯</span>Referenz</button>
+</nav>
+
+<script>
+// ===== Trainingsplan (Datum ISO → Einheit) =====
+// typ: GA, MP, LT, LL, REKOM, TEST, RACE
+const PLAN = [
+  {w:1, d:"2026-07-07", typ:"GA",  km:8,  t:"GA 8 km locker + 2× 8 min MP", det:"Z2, Einlagen: MP 5:11, 3 min Trab dazwischen"},
+  {w:1, d:"2026-07-09", typ:"MP",  km:9,  t:"MP 9 km — 3× 8 min MP", det:"3 min Trab, Rest locker"},
+  {w:1, d:"2026-07-10", typ:"LL",  km:18, t:"Langer Lauf 18 km ruhig", det:"Z2, 6:10–6:20, früh starten (von Sa vorgezogen)"},
+  {w:2, d:"2026-07-14", typ:"GA",  km:9,  t:"GA 9 km locker", det:"Neapel: früh, nach Puls"},
+  {w:2, d:"2026-07-16", typ:"MP",  km:10, t:"MP 10 km — 3× 8 min MP", det:"flache Strecke, früh; bei Hitze Puls deckeln"},
+  {w:2, d:"2026-07-18", typ:"GA",  km:8,  t:"GA 8 km locker", det:"Z2 nach Puls"},
+  {w:2, d:"2026-07-19", typ:"LL",  km:21, t:"Langer Lauf 21 km ruhig", det:"erster LL nach Urlaub, bewusst ruhig"},
+  {w:3, d:"2026-07-21", typ:"GA",  km:10, t:"GA 10 km locker", det:"Z2 nach Puls"},
+  {w:3, d:"2026-07-23", typ:"LT",  km:11, t:"LT 11 km — 3× 10 min MP", det:"3 min Trab"},
+  {w:3, d:"2026-07-25", typ:"GA",  km:8,  t:"GA 8 km locker", det:"Z2 nach Puls"},
+  {w:3, d:"2026-07-26", typ:"LL",  km:24, t:"Langer Lauf 24 km", det:"letzte 6 km ~5:40"},
+  {w:4, d:"2026-07-28", typ:"GA",  km:7,  t:"GA 7 km locker", det:"Entlastungswoche"},
+  {w:4, d:"2026-07-30", typ:"MP",  km:8,  t:"MP 8 km — 4 km MP am Stück", det:"Rest locker"},
+  {w:4, d:"2026-08-01", typ:"GA",  km:6,  t:"GA 6 km locker", det:"Z2 nach Puls"},
+  {w:4, d:"2026-08-02", typ:"LL",  km:16, t:"Langer Lauf 16 km locker", det:"Entlastung — wirklich locker"},
+  {w:5, d:"2026-08-04", typ:"GA",  km:9,  t:"GA 9 km locker", det:"Z2 nach Puls"},
+  {w:5, d:"2026-08-05", typ:"GA5", km:6,  t:"GA 6 km — 5. Tag", det:"sehr locker, HF 135–145"},
+  {w:5, d:"2026-08-06", typ:"LT",  km:12, t:"LT 12 km — Schwelle 4× 8 min", det:"4:50–5:05, 3 min Trab"},
+  {w:5, d:"2026-08-08", typ:"GA",  km:8,  t:"GA 8 km locker", det:"Z2 nach Puls"},
+  {w:5, d:"2026-08-09", typ:"LL",  km:24, t:"Langer Lauf 24 km", det:"8 km MP im zweiten Teil"},
+  {w:6, d:"2026-08-11", typ:"GA",  km:10, t:"GA 10 km locker", det:"Z2 nach Puls"},
+  {w:6, d:"2026-08-12", typ:"GA5", km:7,  t:"GA 7 km — 5. Tag", det:"sehr locker, HF 135–145"},
+  {w:6, d:"2026-08-13", typ:"MP",  km:11, t:"MP 11 km — 3× 12 min MP", det:"3 min Trab"},
+  {w:6, d:"2026-08-15", typ:"GA",  km:8,  t:"GA 8 km locker", det:"Z2 nach Puls"},
+  {w:6, d:"2026-08-16", typ:"LL",  km:28, t:"Langer Lauf 28 km ruhig", det:"HF unter 150 halten"},
+  {w:7, d:"2026-08-18", typ:"GA",  km:9,  t:"GA 9 km locker", det:"Z2 nach Puls"},
+  {w:7, d:"2026-08-19", typ:"GA5", km:7,  t:"GA 7 km — 5. Tag", det:"sehr locker, HF 135–145"},
+  {w:7, d:"2026-08-20", typ:"LT",  km:12, t:"LT 12 km — Schwelle 5× 6 min", det:"2 min Trab"},
+  {w:7, d:"2026-08-22", typ:"GA",  km:8,  t:"GA 8 km locker", det:"Z2 nach Puls"},
+  {w:7, d:"2026-08-23", typ:"LL",  km:22, t:"Langer Lauf 22 km", det:"letzte 6 km MP"},
+  {w:8, d:"2026-08-25", typ:"GA",  km:10, t:"GA 10 km locker", det:"Z2 nach Puls"},
+  {w:8, d:"2026-08-27", typ:"GA",  km:8,  t:"GA 8 km locker + 4× 100 m Steigerungen", det:""},
+  {w:8, d:"2026-08-29", typ:"REKOM", km:4, t:"REKOM 4 km sehr locker + 3 Steigerungen", det:"Vortag HM-Test"},
+  {w:8, d:"2026-08-30", typ:"TEST", km:23, t:"HALBMARATHON-TEST", det:"Ziel 1:44 oder schneller · 2 km einlaufen · flache Strecke · Generalprobe Schuhe/Gels"},
+  {w:9, d:"2026-09-01", typ:"GA",  km:10, t:"GA 10 km locker", det:"Z2 nach Puls"},
+  {w:9, d:"2026-09-02", typ:"GA5", km:7,  t:"GA 7 km — 5. Tag", det:"sehr locker, HF 135–145"},
+  {w:9, d:"2026-09-03", typ:"MP",  km:12, t:"MP 12 km — 2× 15 min MP", det:"4 min Trab"},
+  {w:9, d:"2026-09-05", typ:"GA",  km:8,  t:"GA 8 km locker", det:"Z2 nach Puls"},
+  {w:9, d:"2026-09-06", typ:"LL",  km:32, t:"Langer Lauf 32 km — längster Lauf", det:"10 km MP im letzten Drittel · Gels wie im Rennen"},
+  {w:10, d:"2026-09-08", typ:"GA",  km:9,  t:"GA 9 km locker", det:"Taper-Start"},
+  {w:10, d:"2026-09-09", typ:"GA5", km:6,  t:"GA 6 km — 5. Tag", det:"sehr locker, HF 135–145"},
+  {w:10, d:"2026-09-10", typ:"MP",  km:11, t:"MP 11 km — 3× 10 min MP", det:"3 min Trab"},
+  {w:10, d:"2026-09-12", typ:"GA",  km:7,  t:"GA 7 km locker", det:"Z2 nach Puls"},
+  {w:10, d:"2026-09-13", typ:"LL",  km:24, t:"Langer Lauf 24 km", det:"8 km MP"},
+  {w:11, d:"2026-09-15", typ:"GA",  km:8,  t:"GA 8 km locker + 4× 100 m Steigerungen", det:"Taper"},
+  {w:11, d:"2026-09-17", typ:"MP",  km:9,  t:"MP 9 km — 4 km MP", det:"Rest locker"},
+  {w:11, d:"2026-09-19", typ:"GA",  km:6,  t:"GA 6 km locker", det:"Z2 nach Puls"},
+  {w:11, d:"2026-09-20", typ:"LL",  km:16, t:"Langer Lauf 16 km locker", det:"letzter LL"},
+  {w:12, d:"2026-09-22", typ:"GA",  km:8,  t:"GA 8 km locker + 3× 90 s MP", det:"Race Week"},
+  {w:12, d:"2026-09-24", typ:"REKOM", km:6, t:"REKOM 6 km sehr locker + 3 Steigerungen", det:""},
+  {w:12, d:"2026-09-26", typ:"REKOM", km:4, t:"REKOM 4 km ausschütteln + 2 Steigerungen", det:""},
+  {w:12, d:"2026-09-27", typ:"RACE", km:42.2, t:"🏁 MARATHON BERLIN", det:"Ziel 3:39 · MP 5:11/km · erste 5 km konservativ · Gel alle 30–35 min"}
+];
+const WEEKNAMES = {1:"Aufbau",2:"Urlaub Neapel",3:"Aufbau",4:"Entlastung",5:"5. Tag startet",6:"Peak-Basis",7:"Aufbau",8:"Formtest",9:"Längster Lauf",10:"Taper-Start",11:"Taper",12:"Race Week"};
+const RACE = new Date(2026,8,27);
+const QUALITY = ["MP","LT","TEST","RACE"];
+
+function iso(d){ return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
+function fmt(d){ return d.toLocaleDateString("de-DE",{weekday:"short",day:"2-digit",month:"2-digit"}); }
+function findSession(d){ return PLAN.find(s => s.d === iso(d)); }
+function shoe(typ){
+  if (QUALITY.includes(typ)) return "Endorphin Speed 5";
+  return "Formfit 8";
+}
+function badges(s){
+  let b = "";
+  if (QUALITY.includes(s.typ)) b += '<span class="badge b-pace">nach Pace · MP 5:11</span>';
+  else if (s.typ === "GA5") b += '<span class="badge b-hf">HF 135–145</span>';
+  else b += '<span class="badge b-hf">Zone 2 · HF 134–151</span>';
+  b += '<span class="badge b-shoe">' + shoe(s.typ) + '</span>';
+  return b;
+}
+function hints(s){
+  let h = [];
+  if (QUALITY.includes(s.typ) && s.typ !== "RACE")
+    h.push("Höhenmeter: möglichst flache Strecke wählen (Hausrunde ≈ 10 hm/km) — sonst Grade-Adjusted Pace bzw. Puls kontrollieren.");
+  if ((s.typ === "LL" || s.typ === "GA" || s.typ === "GA5"))
+    h.push("Wellig? Dann darf die Pace langsamer sein — der Puls zählt.");
+  if (s.typ === "LL" && s.km >= 24) h.push("Verpflegung mitnehmen und Gel-Timing wie im Rennen üben.");
+  return h.length ? '<div class="hint">' + h.join("<br>") + '</div>' : "";
+}
+function weekOf(d){
+  // Woche = Mo–So; Woche 12 endet am Renntag
+  const monday1 = new Date(2026,6,6); // Mo 06.07.
+  const diff = Math.floor((d - monday1) / 86400000);
+  const w = Math.floor(diff / 7) + 1;
+  return (w >= 1 && w <= 12) ? w : null;
+}
+function card(label, d, s){
+  const w = weekOf(d);
+  const wl = w ? " · Woche " + w : "";
+  if (!s) {
+    return '<div class="card rest"><div class="label">' + label + '</div>' +
+      '<div class="date">' + fmt(d) + wl + '</div>' +
+      '<h2>Ruhetag</h2><div class="detail" style="color:var(--muted)">Gönn deinen Beinen Erholung.</div></div>';
+  }
+  return '<div class="card"><div class="label">' + label + '</div>' +
+    '<div class="date">' + fmt(d) + wl + '</div>' +
+    '<h2>' + s.t + '</h2>' +
+    (s.det ? '<div class="detail">' + s.det + '</div>' : '') +
+    '<div>' + badges(s) + '</div>' + hints(s) + '</div>';
+}
+
+// ===== Heute-Tab =====
+function renderHeute(){
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const tomorrow = new Date(today); tomorrow.setDate(today.getDate()+1);
+  let html = "";
+  if (today > RACE) {
+    html = '<div class="card race"><h2>Marathon gelaufen! 🎉</h2><div class="detail">Der Plan ist durch — Zeit für Erholung (und die nächste Anmeldung?).</div></div>';
+  } else {
+    html = card("Heute", today, findSession(today)) + card("Morgen", tomorrow, findSession(tomorrow));
+  }
+  html += '<div class="card"><div class="label">Letzter Lauf · Apple Health</div>' +
+    '<div style="display:flex; gap:8px; margin-top:10px; flex-wrap:wrap;">' +
+    '<button class="btn" onclick="runShortcut()">📲 Kurzbefehl starten</button>' +
+    '<button class="btn sec" onclick="togglePaste()">Ergebnis einfügen</button></div>' +
+    '<div id="pastebox" style="display:none; margin-top:10px;">' +
+    '<textarea id="pasteta" rows="5" placeholder="Kurzbefehl-Ergebnis hier einfügen …"></textarea>' +
+    '<button class="btn" onclick="parsePaste()">Auswerten</button></div>' +
+    '<div id="runresult">' + (lastRun ? lastRunHtml(lastRun) : '') + '</div></div>';
+  document.getElementById("tab-heute").innerHTML = html;
+  // Countdown
+  const days = Math.round((RACE - today) / 86400000);
+  document.getElementById("countdown").innerHTML = days > 0
+    ? 'Noch <b>' + days + ' Tage</b> · Ziel <b>3:39</b> · MP <b>5:11/km</b>'
+    : (days === 0 ? '<b>Heute ist Renntag! 🏁</b>' : 'Ziel <b>3:39</b> · MP <b>5:11/km</b>');
+}
+
+// ===== Apple-Health-Import (via Kurzbefehl) =====
+let lastRun = null;
+try { lastRun = JSON.parse(localStorage.getItem("lastRun") || "null"); } catch(e) {}
+function runShortcut(){
+  location.href = "shortcuts://run-shortcut?name=" + encodeURIComponent("Letzter Lauf");
+}
+function togglePaste(){
+  const box = document.getElementById("pastebox");
+  const show = box.style.display === "none";
+  box.style.display = show ? "block" : "none";
+  if (show && navigator.clipboard && navigator.clipboard.readText) {
+    navigator.clipboard.readText().then(t => {
+      if (t && /km|pace|hf/i.test(t)) document.getElementById("pasteta").value = t;
+    }).catch(()=>{});
+  }
+}
+function parsePace(str){
+  if (!str) return null;
+  if (str.includes(":")) { const p = str.split(":"); return parseInt(p[0]) + parseInt(p[1])/60; }
+  return parseFloat(str.replace(",", "."));
+}
+function parsePaste(){
+  const t = document.getElementById("pasteta").value;
+  const dist = parseFloat(((t.match(/([\d.,]+)\s*km/i)||[])[1]||"").replace(",", "."));
+  const pace = parsePace((t.match(/pace:?\s*([\d:.,]+)/i)||[])[1]);
+  const hf = parseInt((t.match(/HF:?\s*(\d+)/i)||[])[1]);
+  if (!dist && !hf) {
+    document.getElementById("runresult").innerHTML = '<div class="res">⚠️ Konnte keine Daten erkennen. Erwartet werden Zeilen wie „Distanz: 10,2 km", „Pace: 5:45 min/km", „Ø-HF: 142 bpm".</div>';
+    return;
+  }
+  lastRun = { d: iso(new Date()), dist: dist||null, pace: pace||null, hf: hf||null };
+  try { localStorage.setItem("lastRun", JSON.stringify(lastRun)); } catch(e) {}
+  const s = findSession(new Date());
+  if (s && dist && dist >= s.km * 0.85) { done[s.d] = 1; save(); renderPlan(); }
+  document.getElementById("pastebox").style.display = "none";
+  document.getElementById("runresult").innerHTML = lastRunHtml(lastRun);
+}
+function fmtPace(p){
+  if (!p) return "–";
+  const m = Math.floor(p), sec = Math.round((p-m)*60);
+  return m + ":" + String(sec).padStart(2,"0");
+}
+function lastRunHtml(r){
+  const s = PLAN.find(x => x.d === r.d);
+  let eva = [];
+  if (r.hf) {
+    const lo = s && s.typ === "GA5" ? 135 : 134, hi = s && s.typ === "GA5" ? 145 : 151;
+    if (s && QUALITY.includes(s.typ)) eva.push(r.pace ? (r.pace <= 5.19 ? "✅ MP-Pace getroffen (Ziel 5:11)" : "ℹ️ Pace über MP — auf welliger Strecke ok (GAP zählt)") : "");
+    else eva.push(r.hf >= lo && r.hf <= hi ? "✅ Puls in Zone (HF " + lo + "–" + hi + ")" : (r.hf < lo ? "✅ Schön locker (HF unter Zone — völlig ok)" : "⚠️ Puls über Zone (" + lo + "–" + hi + ") — nächstes Mal ruhiger"));
+  }
+  if (s && r.dist) {
+    if (r.dist >= s.km * 0.85) eva.push("✅ Distanz passt zum Plan (" + s.km + " km geplant) — Einheit abgehakt");
+    else eva.push("ℹ️ Geplant waren " + s.km + " km");
+  }
+  if (!s) eva.push("ℹ️ Heute war laut Plan Ruhetag");
+  return '<div class="res"><b>Lauf vom ' + fmt(new Date(r.d+"T12:00")) + '</b><br>' +
+    (r.dist ? r.dist + " km" : "") + (r.pace ? " · " + fmtPace(r.pace) + " /km" : "") + (r.hf ? " · Ø " + r.hf + " bpm" : "") +
+    '<br>' + eva.filter(Boolean).join("<br>") + '</div>';
+}
+
+// ===== Plan-Tab =====
+let done = {};
+try { done = JSON.parse(localStorage.getItem("marathonDone") || "{}"); } catch(e) {}
+function save(){ try { localStorage.setItem("marathonDone", JSON.stringify(done)); } catch(e) {} }
+function toggle(d){
+  if (done[d]) delete done[d]; else done[d] = 1;
+  save(); renderPlan();
+}
+function renderPlan(){
+  const todayIso = iso(new Date());
+  const openWeek = weekOf(new Date()) || 1;
+  let html = "";
+  for (let w = 1; w <= 12; w++) {
+    const sessions = PLAN.filter(s => s.w === w);
+    const km = sessions.reduce((a,s)=>a+s.km,0);
+    const doneN = sessions.filter(s=>done[s.d]).length;
+    const open = openWeeks[w] !== undefined ? openWeeks[w] : (w === openWeek);
+    html += '<div class="week' + (open ? ' open' : '') + '" id="wk'+w+'">' +
+      '<div class="week-head" onclick="toggleWeek('+w+')"><div>' +
+      '<div class="wt">Woche ' + w + ' · ' + WEEKNAMES[w] + '</div>' +
+      '<div class="wsub">' + fmt(new Date(sessions[0].d+"T12:00")) + ' – ' + fmt(new Date(sessions[sessions.length-1].d+"T12:00")) + ' · ~' + Math.round(km) + ' km</div>' +
+      '</div><div class="prog">' + doneN + '/' + sessions.length + '</div></div>' +
+      '<div class="week-body">';
+    for (const s of sessions) {
+      const isToday = s.d === todayIso;
+      html += '<div class="sess' + (done[s.d] ? ' done' : '') + (isToday ? ' today-row' : '') + (s.typ==="RACE" ? ' race' : '') + '">' +
+        '<div class="chk" onclick="toggle(\'' + s.d + '\')">✓</div>' +
+        '<div class="txt">' + (isToday ? '<div class="today-tag">HEUTE</div>' : '') +
+        '<div class="d1">' + fmt(new Date(s.d+"T12:00")) + ' — ' + s.t + '</div>' +
+        (s.det ? '<div class="d2">' + s.det + '</div>' : '') +
+        '<div class="d2">' + shoe(s.typ) + (QUALITY.includes(s.typ) ? ' · nach Pace' : ' · nach Puls') + '</div>' +
+        '</div></div>';
+    }
+    html += '</div></div>';
+  }
+  document.getElementById("tab-plan").innerHTML = html;
+}
+let openWeeks = {};
+function toggleWeek(w){
+  const el = document.getElementById("wk"+w);
+  const nowOpen = !el.classList.contains("open");
+  openWeeks[w] = nowOpen;
+  el.classList.toggle("open");
+}
+
+// ===== Navigation =====
+function show(t){
+  for (const x of ["heute","plan","ref"]) {
+    document.getElementById("tab-"+x).classList.toggle("active", x===t);
+    document.getElementById("nb-"+x).classList.toggle("active", x===t);
+  }
+  window.scrollTo(0,0);
+}
+
+renderHeute();
+renderPlan();
+</script>
+</body>
+</html>
