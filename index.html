@@ -341,9 +341,27 @@ function fmtPace(p){
   const m = Math.floor(p), sec = Math.round((p-m)*60);
   return m + ":" + String(sec).padStart(2,"0");
 }
+// Sync mit data.json (wird abends vom Mac-Review aktualisiert)
+function syncRemote(){
+  fetch("data.json?ts=" + Date.now(), { cache: "no-store" })
+    .then(r => r.ok ? r.json() : null)
+    .then(data => {
+      if (!data) return;
+      let changed = false;
+      for (const d of (data.done || [])) { if (!done[d]) { done[d] = 1; changed = true; } }
+      if (changed) save();
+      if (data.lastRun && (!lastRun || data.lastRun.d >= lastRun.d)) {
+        lastRun = data.lastRun;
+        try { localStorage.setItem("lastRun", JSON.stringify(lastRun)); } catch(e) {}
+      }
+      renderHeute(); renderPlan();
+    })
+    .catch(()=>{}); // offline oder lokale Datei: einfach lokaler Stand
+}
 function lastRunHtml(r){
   const s = PLAN.find(x => x.d === r.d);
   let eva = [];
+  if (r.note) eva.push("📝 " + r.note);
   if (r.hf) {
     const lo = s && s.typ === "GA5" ? 135 : 134, hi = s && s.typ === "GA5" ? 145 : 151;
     if (s && QUALITY.includes(s.typ)) eva.push(r.pace ? (r.pace <= 5.19 ? "✅ MP-Pace getroffen (Ziel 5:11)" : "ℹ️ Pace über MP — auf welliger Strecke ok (GAP zählt)") : "");
@@ -415,6 +433,7 @@ function show(t){
 
 renderHeute();
 renderPlan();
+syncRemote();
 </script>
 </body>
 </html>

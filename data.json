@@ -1,0 +1,11 @@
+{
+  "updated": "2026-07-20T12:00:00Z",
+  "done": ["2026-07-07", "2026-07-09", "2026-07-10", "2026-07-14", "2026-07-18", "2026-07-19"],
+  "lastRun": {
+    "d": "2026-07-19",
+    "dist": 20.5,
+    "pace": 6.02,
+    "hf": 140,
+    "note": "LL 21 km: sauber in Zone 2 (Ø 140), 262 hm — GAP deutlich schneller als 6:01. Woche 2 komplett."
+  }
+}
