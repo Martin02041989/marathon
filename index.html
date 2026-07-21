@@ -121,6 +121,30 @@
   }
   nav button .ic { display: block; font-size: 20px; margin-bottom: 2px; }
   nav button.active { color: var(--accent); }
+
+  /* Wochen-Bilanz */
+  .wb-row { display: flex; align-items: baseline; gap: 8px; margin-top: 8px; }
+  .wb-num { font-size: 22px; font-weight: 700; }
+  .wb-soll { font-size: 13px; color: var(--muted); }
+  .wbar { height: 8px; background: var(--card2); border-radius: 999px; margin-top: 8px; overflow: hidden; }
+  .wbar-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--green)); border-radius: 999px; }
+  /* Effizienz-Trend */
+  .trend-svg { width: 100%; height: auto; margin-top: 8px; }
+  .trend-big { font-size: 22px; font-weight: 700; color: var(--accent); margin-top: 6px; }
+  .trend-leg { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  /* Renntag */
+  .race-table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 14px; }
+  .race-table td { padding: 6px 4px; border-bottom: 1px solid var(--border); }
+  .race-table td:last-child { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+  .race-table tr.hm td { color: var(--accent); }
+  .race-table tr:last-child td { color: var(--green); font-weight: 700; border-bottom: none; }
+  .chkline { display: flex; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px; cursor: pointer; user-select: none; -webkit-user-select: none; }
+  .chkline:last-child { border-bottom: none; }
+  .chkline .box { width: 20px; height: 20px; border-radius: 6px; border: 1.5px solid var(--muted); flex: none; text-align: center; line-height: 19px; font-size: 13px; color: transparent; }
+  .chkline.on .box { background: var(--green); border-color: var(--green); color: #fff; }
+  .chkline.on { color: var(--muted); text-decoration: line-through; }
+  /* Prognose-Verlauf-Panel */
+  #progpanel { display: none; position: fixed; z-index: 50; right: 12px; top: calc(max(env(safe-area-inset-top), 16px) + 48px); background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px; width: 262px; box-shadow: 0 8px 30px rgba(0,0,0,.5); }
 </style>
 </head>
 <body>
@@ -129,9 +153,11 @@
   <h1>Berlin-Marathon 2026</h1>
   <div class="sub" id="countdown"></div>
 </header>
+<div id="progpanel" onclick="this.style.display='none'"></div>
 
 <div class="tab active" id="tab-heute"></div>
 <div class="tab" id="tab-plan"></div>
+<div class="tab" id="tab-rennen"></div>
 <div class="tab" id="tab-ref">
   <div class="ref-grid">
     <div class="ref"><div class="t">Ziel</div><div class="v">3:39 h</div><div class="s">27.09.2026 · Stretch: 3:35</div></div>
@@ -170,6 +196,7 @@
 <nav>
   <button id="nb-heute" class="active" onclick="show('heute')"><span class="ic">☀️</span>Heute</button>
   <button id="nb-plan" onclick="show('plan')"><span class="ic">📅</span>Plan</button>
+  <button id="nb-rennen" onclick="show('rennen')"><span class="ic">🏁</span>Rennen</button>
   <button id="nb-ref" onclick="show('ref')"><span class="ic">🎯</span>Referenz</button>
 </nav>
 
@@ -289,7 +316,8 @@ function renderHeute(){
   if (today > RACE) {
     html = '<div class="card race"><h2>Marathon gelaufen! 🎉</h2><div class="detail">Der Plan ist durch — Zeit für Erholung (und die nächste Anmeldung?).</div></div>';
   } else {
-    html = card("Heute", today, findSession(today)) + card("Morgen", tomorrow, findSession(tomorrow));
+    html = weekBar() + card("Heute", today, findSession(today)) + card("Morgen", tomorrow, findSession(tomorrow)) +
+      '<div class="card" id="wxcard" style="display:none"></div>' + trendCard();
   }
   html += '<div class="card"><div class="label">Letzter Lauf · Apple Health</div>' +
     '<div style="display:flex; gap:8px; margin-top:10px; flex-wrap:wrap;">' +
@@ -300,6 +328,7 @@ function renderHeute(){
     '<button class="btn" onclick="parsePaste()">Auswerten</button></div>' +
     '<div id="runresult">' + (lastRun ? lastRunHtml(lastRun) : '') + '</div></div>';
   document.getElementById("tab-heute").innerHTML = html;
+  loadWeather();
   // Countdown
   const days = Math.round((RACE - today) / 86400000);
   document.getElementById("countdown").innerHTML = days > 0
@@ -354,6 +383,8 @@ function renderPrognose(p){
   const el = document.getElementById("prognose");
   if (!el || p == null || p === "") return;
   el.innerHTML = '<span class="pv">' + p + '\u2009%</span><span class="pl">Ziel 3:39</span>';
+  el.style.cursor = "pointer";
+  el.onclick = toggleProgPanel;
 }
 try { renderPrognose(localStorage.getItem("prognose")); } catch(e) {}
 
@@ -373,6 +404,14 @@ function syncRemote(){
       if (data.prognose != null) {
         try { localStorage.setItem("prognose", String(data.prognose)); } catch(e) {}
         renderPrognose(data.prognose);
+      }
+      if (Array.isArray(data.runs) && data.runs.length) {
+        runs = data.runs;
+        try { localStorage.setItem("runs", JSON.stringify(runs)); } catch(e) {}
+      }
+      if (Array.isArray(data.progHist) && data.progHist.length) {
+        progHist = data.progHist;
+        try { localStorage.setItem("progHist", JSON.stringify(progHist)); } catch(e) {}
       }
       renderHeute(); renderPlan();
     })
@@ -443,9 +482,170 @@ function toggleWeek(w){
   el.classList.toggle("open");
 }
 
+// ===== Lauf-Historie & Prognose-Verlauf (aus data.json) =====
+let runs = [];
+try { runs = JSON.parse(localStorage.getItem("runs") || "[]"); } catch(e) {}
+let progHist = [];
+try { progHist = JSON.parse(localStorage.getItem("progHist") || "[]"); } catch(e) {}
+
+// ===== Wochen-Bilanz =====
+function weekBar(){
+  const now = new Date();
+  const w = weekOf(now);
+  if (!w || !runs.length) return "";
+  const monday1 = new Date(2026,6,6);
+  const start = new Date(monday1); start.setDate(monday1.getDate() + (w-1)*7);
+  const end = new Date(start); end.setDate(start.getDate()+6);
+  const soll = PLAN.filter(function(s){ return s.w === w; }).reduce(function(a,s){ return a+s.km; },0);
+  const sIso = iso(start), eIso = iso(end);
+  const wk = runs.filter(function(r){ return r.d >= sIso && r.d <= eIso; });
+  const ist = wk.reduce(function(a,r){ return a+(r.dist||0); },0);
+  const pct = soll ? Math.min(100, Math.round(ist/soll*100)) : 0;
+  return '<div class="card"><div class="label">Wochen-Bilanz · Woche '+w+'</div>'+
+    '<div class="wb-row"><span class="wb-num">'+ist.toFixed(1).replace(".",",")+' km</span>'+
+    '<span class="wb-soll">von ~'+Math.round(soll)+' km geplant · '+wk.length+' Lauf'+(wk.length===1?'':'e')+'</span></div>'+
+    '<div class="wbar"><div class="wbar-fill" style="width:'+pct+'%"></div></div></div>';
+}
+
+// ===== Effizienz-Trend (Z2-Pace, grob normiert auf HF 140 & flach) =====
+function adjPace(r){
+  let p = r.pace;
+  if (!p) return null;
+  if (r.hf) p -= (140 - r.hf) * 0.04;            // ~2,4 s/km je Schlag
+  if (r.hm && r.dist) p -= (r.hm / r.dist) * 0.015; // ~0,9 s/km je hm/km
+  return p;
+}
+function trendCard(){
+  const pts = runs.filter(function(r){
+    const s = PLAN.find(function(x){ return x.d === r.d; });
+    return r.pace && r.hf && r.hf <= 151 && !(s && QUALITY.includes(s.typ));
+  }).map(function(r){ return { d: r.d, v: adjPace(r), ll: (r.dist||0) >= 14 }; })
+    .filter(function(p){ return p.v; })
+    .sort(function(a,b){ return a.d < b.d ? -1 : 1; });
+  if (pts.length < 3) return "";
+  const W=320, H=132, L=36, R=12, T=12, B=24;
+  let vmin=Infinity, vmax=-Infinity;
+  for (const p of pts){ if (p.v<vmin) vmin=p.v; if (p.v>vmax) vmax=p.v; }
+  const rawmin=vmin, rawmax=vmax;
+  const pad=(vmax-vmin)*0.18+0.02; vmin-=pad; vmax+=pad;
+  function X(i){ return L + i*(W-L-R)/(pts.length-1); }
+  function Y(v){ return T + (v-vmin)/(vmax-vmin)*(H-T-B); }
+  let line="", dots="";
+  pts.forEach(function(p,i){
+    line += (i ? " L" : "M") + X(i).toFixed(1) + " " + Y(p.v).toFixed(1);
+    dots += '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(p.v).toFixed(1)+'" r="3.5" fill="'+(p.ll ? "#ffa726" : "#4fc3f7")+'"/>';
+  });
+  const last = pts[pts.length-1];
+  const svg = '<svg class="trend-svg" viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg">'+
+    '<line x1="'+L+'" y1="'+Y(rawmin).toFixed(1)+'" x2="'+(W-R)+'" y2="'+Y(rawmin).toFixed(1)+'" stroke="#2c3442" stroke-dasharray="3 4"/>'+
+    '<line x1="'+L+'" y1="'+Y(rawmax).toFixed(1)+'" x2="'+(W-R)+'" y2="'+Y(rawmax).toFixed(1)+'" stroke="#2c3442" stroke-dasharray="3 4"/>'+
+    '<text x="2" y="'+(Y(rawmin)+4).toFixed(1)+'" font-size="10" fill="#8b95a5">'+fmtPace(rawmin)+'</text>'+
+    '<text x="2" y="'+(Y(rawmax)+4).toFixed(1)+'" font-size="10" fill="#8b95a5">'+fmtPace(rawmax)+'</text>'+
+    '<text x="'+L+'" y="'+(H-6)+'" font-size="10" fill="#8b95a5">'+fmtD(pts[0].d)+'</text>'+
+    '<text x="'+(W-R)+'" y="'+(H-6)+'" font-size="10" fill="#8b95a5" text-anchor="end">'+fmtD(last.d)+'</text>'+
+    '<path d="'+line+'" fill="none" stroke="#4fc3f7" stroke-width="1.5" opacity="0.55"/>'+dots+'</svg>';
+  return '<div class="card"><div class="label">Effizienz-Trend · Z2</div>'+
+    '<div class="trend-big">'+fmtPace(last.v)+' /km</div>'+
+    '<div class="trend-leg">Pace normiert auf HF 140 &amp; flach (grob) · schneller = weiter oben<br>'+
+    '<span style="color:#4fc3f7">●</span> GA &nbsp;<span style="color:#ffa726">●</span> Langer Lauf</div>'+svg+'</div>';
+}
+function fmtD(d){ return d.slice(8,10)+"."+d.slice(5,7)+"."; }
+
+// ===== Wetter morgen (Open-Meteo, Eglfing) =====
+function loadWeather(){
+  const key = "wx_" + iso(new Date());
+  let cached = null;
+  try { cached = JSON.parse(localStorage.getItem(key) || "null"); } catch(e) {}
+  if (cached) { showWx(cached); return; }
+  fetch("https://api.open-meteo.com/v1/forecast?latitude=47.73&longitude=11.19&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,wind_speed_10m_max&timezone=Europe%2FBerlin&forecast_days=2")
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if (!j || !j.daily || !j.daily.temperature_2m_max) return;
+      const d = { max: j.daily.temperature_2m_max[1], min: j.daily.temperature_2m_min[1],
+        pop: j.daily.precipitation_probability_max[1], rain: j.daily.precipitation_sum[1],
+        wind: j.daily.wind_speed_10m_max[1] };
+      try { localStorage.setItem(key, JSON.stringify(d)); } catch(e) {}
+      showWx(d);
+    }).catch(function(){});
+}
+function showWx(d){
+  const el = document.getElementById("wxcard");
+  if (!el || d == null || d.max == null) return;
+  el.innerHTML = '<div class="label">Wetter morgen · Eglfing</div>'+
+    '<div class="detail" style="margin-top:8px;">'+Math.round(d.min)+'&ndash;'+Math.round(d.max)+' &deg;C'+
+    (d.pop != null ? ' · Regen ' + d.pop + ' %' : '') +
+    (d.rain ? ' (' + d.rain.toFixed(1).replace(".",",") + ' mm)' : '') +
+    (d.wind ? ' · Wind bis ' + Math.round(d.wind) + ' km/h' : '') + '</div>' +
+    (d.max > 24 ? '<div class="hint">Über 24 °C — früh laufen, nach Puls steuern, langsamer ist ok, Wasser mitnehmen.</div>' : '');
+  el.style.display = "block";
+}
+
+// ===== Renntag-Tab =====
+let raceChk = {};
+try { raceChk = JSON.parse(localStorage.getItem("raceChk") || "{}"); } catch(e) {}
+function chkR(k){
+  if (raceChk[k]) delete raceChk[k]; else raceChk[k] = 1;
+  try { localStorage.setItem("raceChk", JSON.stringify(raceChk)); } catch(e) {}
+  renderRennen();
+}
+function chkLine(k, txt){
+  return '<div class="chkline' + (raceChk[k] ? ' on' : '') + '" onclick="chkR(' + "'" + k + "'" + ')">' +
+    '<div class="box">✓</div><div>' + txt + '</div></div>';
+}
+function fmtT(min){
+  const t = Math.round(min*60);
+  const hh = Math.floor(t/3600), mm = Math.floor((t%3600)/60), ss = t%60;
+  return hh + ":" + String(mm).padStart(2,"0") + ":" + String(ss).padStart(2,"0");
+}
+function renderRennen(){
+  const pace = 5 + 11/60; // 5:11 min/km
+  const marks = [[5,"5 km"],[10,"10 km"],[15,"15 km"],[20,"20 km"],[21.0975,"Halbmarathon"],[25,"25 km"],[30,"30 km"],[35,"35 km"],[40,"40 km"],[42.195,"ZIEL"]];
+  let rows = "";
+  for (const m of marks){
+    rows += '<tr' + (m[0] === 21.0975 ? ' class="hm"' : '') + '><td>' + m[1] + '</td><td>' + fmtT(m[0]*pace) + '</td></tr>';
+  }
+  const gels = ["Gel 1 — direkt vor dem Start","Gel 2 — km ~6 (0:30)","Gel 3 — km ~12 (1:00)","Gel 4 — km ~17 (1:30)","Gel 5 — km ~23 (2:00)","Gel 6 — km ~29 (2:30)","Gel 7 — km ~35 (3:00)"];
+  const check = ["Startnummer + Chip","Endorphin Speed 5 an","7× Mnstry Gel 40 eingepackt","Frühstück ~3 h vor Start","Anti-Chafing (Vaseline/Tape)","Erste 5 km konservativ (5:20–5:25)"];
+  let html = '<div class="card"><div class="label">Zwischenzeiten · Ziel 3:39</div>'+
+    '<div class="date">Ø 5:11/km → Zielzeit 3:38:43 (17 s Puffer)</div>'+
+    '<table class="race-table">'+rows+'</table></div>';
+  html += '<div class="card"><div class="label">Gel-Plan · Mnstry Gel 40</div>'+
+    '<div class="date">7 Gels ≈ 75 g KH/h (Ziel 60–80) · an den Ständen Wasser dazu · beim 32er-LL und HM-Test üben</div>'+
+    gels.map(function(g,i){ return chkLine("g"+i, g); }).join("")+'</div>';
+  html += '<div class="card"><div class="label">Race-Day-Checkliste</div>'+
+    check.map(function(c,i){ return chkLine("c"+i, c); }).join("")+'</div>';
+  document.getElementById("tab-rennen").innerHTML = html;
+}
+
+// ===== Prognose-Verlauf =====
+function toggleProgPanel(){
+  const el = document.getElementById("progpanel");
+  if (!el) return;
+  if (el.style.display === "block") { el.style.display = "none"; return; }
+  if (!progHist || progHist.length < 2) return;
+  const W=230, H=72, L=8, R=8, T=10, B=10;
+  let vmin=Infinity, vmax=-Infinity;
+  for (const p of progHist){ if (p.p<vmin) vmin=p.p; if (p.p>vmax) vmax=p.p; }
+  if (vmax === vmin){ vmax += 1; vmin -= 1; }
+  function X(i){ return L + i*(W-L-R)/(progHist.length-1); }
+  function Y(v){ return T + (vmax-v)/(vmax-vmin)*(H-T-B); }
+  let line="", dots="";
+  progHist.forEach(function(p,i){
+    line += (i ? " L" : "M") + X(i).toFixed(1) + " " + Y(p.p).toFixed(1);
+    dots += '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(p.p).toFixed(1)+'" r="2.5" fill="#66bb6a"/>';
+  });
+  const f = progHist[0], l = progHist[progHist.length-1];
+  el.innerHTML = '<div style="font-size:11px;font-weight:700;letter-spacing:1px;color:var(--muted);text-transform:uppercase;">Prognose-Verlauf · Ziel 3:39</div>'+
+    '<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;margin-top:8px;" xmlns="http://www.w3.org/2000/svg">'+
+    '<path d="'+line+'" fill="none" stroke="#66bb6a" stroke-width="2"/>'+dots+'</svg>'+
+    '<div style="display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:4px;">'+
+    '<span>'+fmtD(f.d)+' · '+f.p+' %</span><span style="color:var(--green);font-weight:700;">'+fmtD(l.d)+' · '+l.p+' %</span></div>';
+  el.style.display = "block";
+}
+
 // ===== Navigation =====
 function show(t){
-  for (const x of ["heute","plan","ref"]) {
+  for (const x of ["heute","plan","rennen","ref"]) {
     document.getElementById("tab-"+x).classList.toggle("active", x===t);
     document.getElementById("nb-"+x).classList.toggle("active", x===t);
   }
@@ -454,6 +654,7 @@ function show(t){
 
 renderHeute();
 renderPlan();
+renderRennen();
 syncRemote();
 // Beim Zurückkehren in die App (Home-Bildschirm-App bleibt im Speicher) neu laden
 document.addEventListener("visibilitychange", () => { if (!document.hidden) { renderHeute(); syncRemote(); } });
