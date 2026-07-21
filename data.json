@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21T16:11:42Z",
+  "updated": "2026-07-21T16:18:24Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -15,5 +15,6 @@
     "pace": 5.4,
     "hf": 140,
     "note": "GA 10 km: HF 140 mittig in Z2, flotte 5:24 auf flacher Münchner Runde — Soll erfüllt."
-  }
+  },
+  "prognose": 72
 }

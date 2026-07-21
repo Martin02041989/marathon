@@ -26,6 +26,13 @@
     background: linear-gradient(180deg, #131826, var(--bg));
     border-bottom: 1px solid var(--border);
   }
+  header { position: relative; }
+  .prognose {
+    position: absolute; right: 16px; top: max(env(safe-area-inset-top), 16px);
+    text-align: right; line-height: 1.15;
+  }
+  .prognose .pv { display: block; font-size: 16px; font-weight: 700; color: var(--green); }
+  .prognose .pl { display: block; font-size: 10px; color: var(--muted); letter-spacing: .3px; }
   header h1 { font-size: 17px; font-weight: 700; letter-spacing: .3px; }
   header .sub { font-size: 13px; color: var(--muted); margin-top: 3px; }
   header .sub b { color: var(--accent); font-weight: 600; }
@@ -118,6 +125,7 @@
 </head>
 <body>
 <header>
+  <div class="prognose" id="prognose"></div>
   <h1>Berlin-Marathon 2026</h1>
   <div class="sub" id="countdown"></div>
 </header>
@@ -341,6 +349,14 @@ function fmtPace(p){
   const m = Math.floor(p), sec = Math.round((p-m)*60);
   return m + ":" + String(sec).padStart(2,"0");
 }
+// Prognose-Badge oben rechts (Wahrscheinlichkeit Ziel 3:39)
+function renderPrognose(p){
+  const el = document.getElementById("prognose");
+  if (!el || p == null || p === "") return;
+  el.innerHTML = '<span class="pv">' + p + '\u2009%</span><span class="pl">Ziel 3:39</span>';
+}
+try { renderPrognose(localStorage.getItem("prognose")); } catch(e) {}
+
 // Sync mit data.json (wird abends vom Mac-Review aktualisiert)
 function syncRemote(){
   fetch("data.json?ts=" + Date.now(), { cache: "no-store" })
@@ -353,6 +369,10 @@ function syncRemote(){
       if (data.lastRun && (!lastRun || data.lastRun.d >= lastRun.d)) {
         lastRun = data.lastRun;
         try { localStorage.setItem("lastRun", JSON.stringify(lastRun)); } catch(e) {}
+      }
+      if (data.prognose != null) {
+        try { localStorage.setItem("prognose", String(data.prognose)); } catch(e) {}
+        renderPrognose(data.prognose);
       }
       renderHeute(); renderPlan();
     })
