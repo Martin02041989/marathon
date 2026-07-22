@@ -268,11 +268,24 @@ function shoe(typ){
   if (QUALITY.includes(typ)) return "Endorphin Speed 5";
   return "Formfit 8";
 }
+// Zonen aus dem Labortest 03.07.2026
+const ZONES = {
+  REKOM: { z: "I1 · REKOM",            hf: "HF < 134" },
+  GA:    { z: "I2 · Zone 2",           hf: "HF 134–151" },
+  GA5:   { z: "I2 · Zone 2 (5. Tag)",  hf: "HF 135–145" },
+  LL:    { z: "I2 · Zone 2",           hf: "HF 134–150" },
+  MP:    { z: "I3 · Marathon-Pace",    hf: "HF 151–163", pace: "5:11/km" },
+  LT:    { z: "I4 · Schwelle",         hf: "HF 163–171", pace: "4:50–5:05" },
+  TEST:  { z: "HM-Test",               hf: "frei nach Renngefühl", pace: "~4:56/km (Ziel 1:44)" },
+  RACE:  { z: "I3 · Marathon-Pace",    hf: "HF 151–163", pace: "5:11/km" }
+};
+function zoneOf(typ){ return ZONES[typ] || ZONES.GA; }
 function badges(s){
+  const zi = zoneOf(s.typ);
   let b = "";
-  if (QUALITY.includes(s.typ)) b += '<span class="badge b-pace">nach Pace · MP 5:11</span>';
-  else if (s.typ === "GA5") b += '<span class="badge b-hf">HF 135–145</span>';
-  else b += '<span class="badge b-hf">Zone 2 · HF 134–151</span>';
+  if (zi.pace) b += '<span class="badge b-pace">' + zi.z + ' · ' + zi.pace + '</span>';
+  else b += '<span class="badge b-pace">' + zi.z + '</span>';
+  b += '<span class="badge b-hf">' + zi.hf + '</span>';
   b += '<span class="badge b-shoe">' + shoe(s.typ) + '</span>';
   return b;
 }
@@ -467,7 +480,7 @@ function renderPlan(){
         '<div class="txt">' + (isToday ? '<div class="today-tag">HEUTE</div>' : '') +
         '<div class="d1">' + fmt(new Date(s.d+"T12:00")) + ' — ' + s.t + '</div>' +
         (s.det ? '<div class="d2">' + s.det + '</div>' : '') +
-        '<div class="d2">' + shoe(s.typ) + (QUALITY.includes(s.typ) ? ' · nach Pace' : ' · nach Puls') + '</div>' +
+        '<div class="d2">' + zoneOf(s.typ).z + ' · ' + zoneOf(s.typ).hf + (zoneOf(s.typ).pace ? ' · ' + zoneOf(s.typ).pace : '') + ' · ' + shoe(s.typ) + '</div>' +
         '</div></div>';
     }
     html += '</div></div>';
