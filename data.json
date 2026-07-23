@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22T19:13:11Z",
+  "updated": "2026-07-23T08:33:31Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -7,16 +7,17 @@
     "2026-07-14",
     "2026-07-18",
     "2026-07-19",
-    "2026-07-21"
+    "2026-07-21",
+    "2026-07-23"
   ],
   "lastRun": {
-    "d": "2026-07-21",
-    "dist": 10.3,
-    "pace": 5.4,
-    "hf": 140,
-    "note": "GA 10 km: HF 140 mittig in Z2, flotte 5:24 auf flacher Münchner Runde — Soll erfüllt."
+    "d": "2026-07-23",
+    "dist": 11.01,
+    "pace": 5.33,
+    "hf": 146,
+    "note": "LT 11 km: 3× 10 min @ ~4:50 statt MP-5:11 — puls-kontrolliert (Ø 146), starkes Fitness-Signal, aber nächstes Mal MP-Rhythmus bei 5:11 üben."
   },
-  "prognose": 72,
+  "prognose": 73,
   "runs": [
     {
       "d": "2026-07-01",
@@ -87,6 +88,13 @@
       "pace": 5.4,
       "hf": 140,
       "hm": 61
+    },
+    {
+      "d": "2026-07-23",
+      "dist": 11.01,
+      "pace": 5.33,
+      "hf": 146,
+      "hm": 32
     }
   ],
   "progHist": [
@@ -121,6 +129,10 @@
     {
       "d": "2026-07-21",
       "p": 72
+    },
+    {
+      "d": "2026-07-23",
+      "p": 73
     }
   ]
 }
