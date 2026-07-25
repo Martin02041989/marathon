@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-25T06:47:54Z",
+  "updated": "2026-07-25T07:02:22Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -8,14 +8,15 @@
     "2026-07-18",
     "2026-07-19",
     "2026-07-21",
-    "2026-07-23"
+    "2026-07-23",
+    "2026-07-25"
   ],
   "lastRun": {
-    "d": "2026-07-23",
-    "dist": 11.01,
-    "pace": 5.33,
-    "hf": 146,
-    "note": "LT 11 km: 3× 10 min @ ~4:50 statt MP-5:11 — puls-kontrolliert (Ø 146), starkes Fitness-Signal, aber nächstes Mal MP-Rhythmus bei 5:11 üben."
+    "d": "2026-07-25",
+    "dist": 8.02,
+    "pace": 6.27,
+    "hf": 126,
+    "note": "GA 8 km sehr entspannt (Ø HF 126, GAP 6:11) — perfekte Erholung vor dem 24er morgen."
   },
   "prognose": 73,
   "runs": [
@@ -95,6 +96,13 @@
       "pace": 5.33,
       "hf": 146,
       "hm": 32
+    },
+    {
+      "d": "2026-07-25",
+      "dist": 8.02,
+      "pace": 6.27,
+      "hf": 126,
+      "hm": 94
     }
   ],
   "progHist": [
@@ -132,6 +140,10 @@
     },
     {
       "d": "2026-07-23",
+      "p": 73
+    },
+    {
+      "d": "2026-07-25",
       "p": 73
     }
   ]
