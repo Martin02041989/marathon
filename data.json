@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26T07:38:46Z",
+  "updated": "2026-07-26T07:42:57Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -17,7 +17,8 @@
     "dist": 25.01,
     "pace": 5.92,
     "hf": 137,
-    "note": "Starker 25er: Ø HF 137 in Z2 trotz 290 hm, letzte 7 km ~5:35 — Prognose 75 %."
+    "note": "Starker 25er: Ø HF 137 in Z2 trotz 290 hm, letzte 7 km ~5:35 — Prognose 75 %.",
+    "feedback": "Dein bisher stärkster langer Lauf im Plan: 25,0 km in 2:28:06 (Ø 5:55/km) bei Ø HF 137 — mitten in Zone 2 (134–151), trotz 290 hm. Grade-adjusted entspricht das etwa 5:40/km auf flacher Strecke.\n\nDie Endbeschleunigung hast du übererfüllt: 7 km à ~5:35 statt der geplanten 6 km à 5:40 — und das nach über 2 Stunden Laufzeit. Das zeigt genau die Ermüdungsresistenz, die im Marathon ab km 30 zählt.\n\nVergleich: Am 19.07. liefst du 20,5 km @ 6:01 bei HF 140, am 28.06. 29,7 km @ 5:55 bei HF 140. Heute: länger als der 19.07., schneller, mit niedrigerem Puls — klarer aerober Fortschritt binnen einer Woche.\n\nAusblick: Woche 4 ist Entlastung (nur 37 km) — die Erholung ist Teil des Trainings. Prognose fürs 3:39-Ziel: 75 %."
   },
   "prognose": 75,
   "runs": [

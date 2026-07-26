@@ -107,6 +107,9 @@
     border-radius: 10px; padding: 10px; font-family: inherit; font-size: 14px; margin-bottom: 8px;
   }
   #runresult .res { margin-top: 12px; padding: 12px; background: var(--card2); border-radius: 10px; font-size: 14px; line-height: 1.5; }
+  #runresult .fbk { margin-top: 10px; border-top: 1px solid rgba(128,128,128,.25); padding-top: 8px; }
+  #runresult .fbk summary { cursor: pointer; font-weight: 600; font-size: 13px; }
+  #runresult .fbkbody { margin-top: 8px; font-size: 13px; line-height: 1.55; white-space: pre-line; }
   /* Nav */
   nav {
     position: fixed; bottom: 0; left: 0; right: 0; display: flex;
@@ -446,7 +449,9 @@ function lastRunHtml(r){
   if (!s) eva.push("ℹ️ Heute war laut Plan Ruhetag");
   return '<div class="res"><b>Lauf vom ' + fmt(new Date(r.d+"T12:00")) + '</b><br>' +
     (r.dist ? r.dist + " km" : "") + (r.pace ? " · " + fmtPace(r.pace) + " /km" : "") + (r.hf ? " · Ø " + r.hf + " bpm" : "") +
-    '<br>' + eva.filter(Boolean).join("<br>") + '</div>';
+    '<br>' + eva.filter(Boolean).join("<br>") +
+    (r.feedback ? '<details class="fbk"><summary>📋 Ausführliches Feedback</summary><div class="fbkbody">' + r.feedback + '</div></details>' : '') +
+    '</div>';
 }
 
 // ===== Plan-Tab =====
