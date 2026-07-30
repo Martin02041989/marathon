@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29T18:19:22Z",
+  "updated": "2026-07-30T06:26:27Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -11,17 +11,18 @@
     "2026-07-23",
     "2026-07-25",
     "2026-07-26",
-    "2026-07-28"
+    "2026-07-28",
+    "2026-07-30"
   ],
   "lastRun": {
-    "d": "2026-07-28",
-    "dist": 7.12,
-    "pace": 5.56,
-    "hf": 137,
-    "note": "GA 7 km locker sauber getroffen: Ø HF 137 (Mitte Z2), GAP ~5:28 auf flacher Münchner Runde.",
-    "feedback": "Kernwerte: 7,12 km in 39:36, Ø-Pace 5:34/km bei nur 50 hm — Grade-Adjusted Pace ~5:28/km. Ø HF 137 liegt mitten in Zone 2 (134–151): Zonen-Vorgabe exakt getroffen.\n\nAusführung vs. Plan: Geplant war GA 7 km locker als Auftakt der Entlastungswoche — Umfang punktgenau, Intensität diszipliniert locker. Genau so soll ein Regenerationsreiz nach dem 25er vom Sonntag aussehen.\n\nVergleich: Der 10er vom 21.07. lief mit 5:24 bei HF 140, der Erholungslauf vom 25.07. mit 6:16 bei HF 126. Heute 5:34 bei HF 137 fügt sich sauber in diese Effizienz-Trendlinie ein — gleiche Herzfrequenz-Lage, stabile Pace trotz Ermüdung aus Woche 3 (55 km).\n\nFürs 3:39-Ziel: Die Prognose bleibt bei 75 %. Die Entlastungswoche ist dazu da, die Anpassung aus dem starken Block zu verarbeiten — Donnerstag folgt MP 8 km mit 4 km MP am Stück (5:11/km): flache Strecke wählen und den Marathon-Rhythmus bewusst üben, nicht schneller."
+    "d": "2026-07-30",
+    "dist": 8.04,
+    "pace": 5.27,
+    "hf": 143,
+    "note": "MP 8 km: 4-km-Block deutlich schneller als geplant (Ø ~5:01 statt 5:11) bei HF 148–151 — starkes Signal, aber Rennrhythmus nicht geübt.",
+    "feedback": "Kernwerte: 8,04 km in 42:17, Ø 5:16/km auf flacher Strecke in Murnau (nur 19 hm — GAP = Pace). Ø HF 143, im MP-Block 148–151, also oberes Zone-2-Ende (Grenze 151). Früh um 7:16 bei ~19 °C gestartet — clever vor der Hitze des Tages.\n\nAusführung vs. Plan: Geplant waren 4 km MP am Stück @ 5:11. Gelaufen: 5:03 / 5:01 / 4:59 / 4:59 — Ø ~5:01, dazu sauberes Einlaufen (5:59) und kontrollierte Steigerung davor. Der Block war damit ~10 s/km zu schnell. Dein Feedback passt zu den Daten: 5:10 fühlt sich hakelig an, 5:00 läuft rund — bei RPE 2/10 und Selbsteinschätzung 'sehr stark'.\n\nVergleich: Am 23.07. liefst du 3× 10 min @ ~4:50 bei HF 146, heute 4 km @ ~5:01 bei HF ~150 — beides im Trainingsschuh (Formfit 8). Im Endorphin Speed 5 wird sich dieselbe Pace am Renntag nochmal leichter anfühlen. Die Effizienz-Trendlinie der letzten vier Wochen zeigt konstant in eine Richtung.\n\nFürs 3:39-Ziel: Prognose steigt auf 77 %. 5:00er-Pace bei oberem Z2 und RPE 2 heißt: 3:39 (5:11/km) ist zunehmend konservativ kalkuliert. Aber Vorsicht — 4 km sind nicht 42 km, und HF 150 über 3:35 h ist eine andere Rechnung. Die Entscheidung über ein schnelleres Ziel (z. B. 3:34 = 5:05/km) fällt datenbasiert beim HM-Test am 30.08.: läufst du dort ≤ 1:42, ist das Upgrade gerechtfertigt. Bis dahin: MP-Blöcke dürfen bei 5:00–5:05 liegen, solange die HF ≤ ~150 bleibt — im Rennen selbst bleiben die ersten 5 km strikt konservativ."
   },
-  "prognose": 75,
+  "prognose": 77,
   "runs": [
     {
       "d": "2026-07-01",
@@ -120,6 +121,13 @@
       "pace": 5.56,
       "hf": 137,
       "hm": 50
+    },
+    {
+      "d": "2026-07-30",
+      "dist": 8.04,
+      "pace": 5.27,
+      "hf": 143,
+      "hm": 19
     }
   ],
   "progHist": [
@@ -170,6 +178,10 @@
     {
       "d": "2026-07-28",
       "p": 75
+    },
+    {
+      "d": "2026-07-30",
+      "p": 77
     }
   ]
 }
