@@ -258,11 +258,28 @@ const PLAN = [
   {w:12, d:"2026-09-22", typ:"GA",  km:8,  t:"GA 8 km locker + 3× 90 s MP", det:"Race Week"},
   {w:12, d:"2026-09-24", typ:"REKOM", km:6, t:"REKOM 6 km sehr locker + 3 Steigerungen", det:""},
   {w:12, d:"2026-09-26", typ:"REKOM", km:4, t:"REKOM 4 km ausschütteln + 2 Steigerungen", det:""},
-  {w:12, d:"2026-09-27", typ:"RACE", km:42.2, t:"🏁 MARATHON BERLIN", det:"Ziel 3:39 · MP 5:11/km · erste 5 km konservativ · Gel alle 30–35 min"}
+  {w:12, d:"2026-09-27", typ:"RACE", km:42.2, t:"🏁 MARATHON BERLIN", det:"Ziel 3:39 · MP 5:11/km · erste 5 km konservativ · Gel alle 30–35 min"},
+  {w:13, d:"2026-10-01", typ:"REKOM", km:4, t:"REKOM 4 km sehr locker", det:"Regeneration I nach Berlin — nur wenn die Beine wollen"},
+  {w:13, d:"2026-10-03", typ:"REKOM", km:5, t:"REKOM 5 km sehr locker", det:"alles unter HF 134 — Bewegung, kein Training"},
+  {w:14, d:"2026-10-06", typ:"GA",  km:6,  t:"GA 6 km locker", det:"Regeneration II — Z2 nach Puls"},
+  {w:14, d:"2026-10-08", typ:"GA",  km:8,  t:"GA 8 km locker", det:"Z2 nach Puls"},
+  {w:14, d:"2026-10-11", typ:"LL",  km:12, t:"Ruhiger Lauf 12 km", det:"Z2, bewusst kurz"},
+  {w:15, d:"2026-10-13", typ:"GA",  km:8,  t:"GA 8 km locker", det:"Wiederaufbau — Z2 nach Puls"},
+  {w:15, d:"2026-10-15", typ:"MP",  km:9,  t:"MP 9 km — 2× 10 min MP", det:"3 min Trab; Rest locker"},
+  {w:15, d:"2026-10-17", typ:"GA",  km:6,  t:"GA 6 km locker", det:"Z2 nach Puls"},
+  {w:15, d:"2026-10-18", typ:"LL",  km:14, t:"Langer Lauf 14 km", det:"letzte 4 km ~5:30"},
+  {w:16, d:"2026-10-20", typ:"GA",  km:8,  t:"GA 8 km locker + 4× 100 m Steigerungen", det:"Mini-Taper"},
+  {w:16, d:"2026-10-22", typ:"MP",  km:8,  t:"MP 8 km — 3 km MP am Stück", det:"Rest locker"},
+  {w:16, d:"2026-10-25", typ:"LL",  km:12, t:"Langer Lauf 12 km locker", det:"Z2 nach Puls"},
+  {w:17, d:"2026-10-27", typ:"GA",  km:6,  t:"GA 6 km locker + 3× 90 s MP", det:"Race Week NYC"},
+  {w:17, d:"2026-10-29", typ:"REKOM", km:5, t:"REKOM 5 km sehr locker", det:"nach Ankunft NYC — Jetlag: morgens laufen, früh schlafen"},
+  {w:17, d:"2026-10-31", typ:"REKOM", km:4, t:"REKOM 4 km ausschütteln + 2 Steigerungen", det:"Central Park"},
+  {w:17, d:"2026-11-01", typ:"RACE2", km:42.2, t:"🏁 MARATHON NYC", det:"B-Rennen nach Gefühl · Brücken konservativ · HF-gesteuert (≤ ~155) · zweite Hälfte frei"}
 ];
-const WEEKNAMES = {1:"Aufbau",2:"Urlaub Neapel",3:"Aufbau",4:"Entlastung",5:"5. Tag startet",6:"Peak-Basis",7:"Aufbau",8:"Formtest",9:"Längster Lauf",10:"Taper-Start",11:"Taper",12:"Race Week"};
+const WEEKNAMES = {1:"Aufbau",2:"Urlaub Neapel",3:"Aufbau",4:"Entlastung",5:"5. Tag startet",6:"Peak-Basis",7:"Aufbau",8:"Formtest",9:"Längster Lauf",10:"Taper-Start",11:"Taper",12:"Race Week",13:"Regeneration I",14:"Regeneration II",15:"Wiederaufbau",16:"Mini-Taper",17:"Race Week NYC"};
 const RACE = new Date(2026,8,27);
-const QUALITY = ["MP","LT","TEST","RACE"];
+const RACE2 = new Date(2026,10,1); // NYC 01.11.
+const QUALITY = ["MP","LT","TEST","RACE","RACE2"];
 
 function iso(d){ return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
 function fmt(d){ return d.toLocaleDateString("de-DE",{weekday:"short",day:"2-digit",month:"2-digit"}); }
@@ -280,7 +297,8 @@ const ZONES = {
   MP:    { z: "I3 · Marathon-Pace",    hf: "HF 151–163", pace: "5:11/km" },
   LT:    { z: "I4 · Schwelle",         hf: "HF 163–171", pace: "4:50–5:05" },
   TEST:  { z: "HM-Test",               hf: "frei nach Renngefühl", pace: "~4:56/km (Ziel 1:44)" },
-  RACE:  { z: "I3 · Marathon-Pace",    hf: "HF 151–163", pace: "5:11/km" }
+  RACE:  { z: "I3 · Marathon-Pace",    hf: "HF 151–163", pace: "5:11/km" },
+  RACE2: { z: "NYC · B-Rennen",        hf: "HF ≤ ~155", pace: "nach Gefühl" }
 };
 function zoneOf(typ){ return ZONES[typ] || ZONES.GA; }
 function badges(s){
@@ -294,7 +312,7 @@ function badges(s){
 }
 function hints(s){
   let h = [];
-  if (QUALITY.includes(s.typ) && s.typ !== "RACE")
+  if (QUALITY.includes(s.typ) && s.typ !== "RACE" && s.typ !== "RACE2")
     h.push("Höhenmeter: möglichst flache Strecke wählen (Hausrunde ≈ 10 hm/km) — sonst Grade-Adjusted Pace bzw. Puls kontrollieren.");
   if ((s.typ === "LL" || s.typ === "GA" || s.typ === "GA5"))
     h.push("Wellig? Dann darf die Pace langsamer sein — der Puls zählt.");
@@ -306,7 +324,7 @@ function weekOf(d){
   const monday1 = new Date(2026,6,6); // Mo 06.07.
   const diff = Math.floor((d - monday1) / 86400000);
   const w = Math.floor(diff / 7) + 1;
-  return (w >= 1 && w <= 12) ? w : null;
+  return (w >= 1 && w <= 17) ? w : null;
 }
 function card(label, d, s){
   const w = weekOf(d);
@@ -329,7 +347,7 @@ function renderHeute(){
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const tomorrow = new Date(today); tomorrow.setDate(today.getDate()+1);
   let html = "";
-  if (today > RACE) {
+  if (today > RACE2) {
     html = '<div class="card race"><h2>Marathon gelaufen! 🎉</h2><div class="detail">Der Plan ist durch — Zeit für Erholung (und die nächste Anmeldung?).</div></div>';
   } else {
     html = weekBar() + card("Heute", today, findSession(today)) + card("Morgen", tomorrow, findSession(tomorrow)) +
@@ -347,9 +365,14 @@ function renderHeute(){
   loadWeather();
   // Countdown
   const days = Math.round((RACE - today) / 86400000);
-  document.getElementById("countdown").innerHTML = days > 0
-    ? 'Noch <b>' + days + ' Tage</b> · Ziel <b>3:39</b> · MP <b>5:11/km</b>'
-    : (days === 0 ? '<b>Heute ist Renntag! 🏁</b>' : 'Ziel <b>3:39</b> · MP <b>5:11/km</b>');
+  const days2 = Math.round((RACE2 - today) / 86400000);
+  let cd;
+  if (days > 0) cd = 'Noch <b>' + days + ' Tage</b> · Ziel <b>3:39</b> · MP <b>5:11/km</b>';
+  else if (days === 0) cd = '<b>Heute ist Renntag! 🏁</b>';
+  else if (days2 > 0) cd = 'Noch <b>' + days2 + ' Tage bis NYC</b> · B-Rennen nach Gefühl';
+  else if (days2 === 0) cd = '<b>Heute ist Renntag in NYC! 🏁</b>';
+  else cd = 'Saison beendet — stark gemacht!';
+  document.getElementById("countdown").innerHTML = cd;
 }
 
 // ===== Apple-Health-Import (via Kurzbefehl) =====
@@ -480,7 +503,7 @@ function renderPlan(){
       '<div class="week-body">';
     for (const s of sessions) {
       const isToday = s.d === todayIso;
-      html += '<div class="sess' + (done[s.d] ? ' done' : '') + (isToday ? ' today-row' : '') + (s.typ==="RACE" ? ' race' : '') + '">' +
+      html += '<div class="sess' + (done[s.d] ? ' done' : '') + (isToday ? ' today-row' : '') + ((s.typ==="RACE"||s.typ==="RACE2") ? ' race' : '') + '">' +
         '<div class="chk" onclick="toggle(\'' + s.d + '\')">✓</div>' +
         '<div class="txt">' + (isToday ? '<div class="today-tag">HEUTE</div>' : '') +
         '<div class="d1">' + fmt(new Date(s.d+"T12:00")) + ' — ' + s.t + '</div>' +
