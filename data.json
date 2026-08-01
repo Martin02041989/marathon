@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-31T16:09:49Z",
+  "updated": "2026-08-01T16:11:20Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -12,15 +12,16 @@
     "2026-07-25",
     "2026-07-26",
     "2026-07-28",
-    "2026-07-30"
+    "2026-07-30",
+    "2026-08-01"
   ],
   "lastRun": {
-    "d": "2026-07-30",
-    "dist": 8.04,
-    "pace": 5.27,
-    "hf": 143,
-    "note": "MP 8 km: 4-km-Block deutlich schneller als geplant (Ø ~5:01 statt 5:11) bei HF 148–151 — starkes Signal, aber Rennrhythmus nicht geübt.",
-    "feedback": "Kernwerte: 8,04 km in 42:17, Ø 5:16/km auf flacher Strecke in Murnau (nur 19 hm — GAP = Pace). Ø HF 143, im MP-Block 148–151, also oberes Zone-2-Ende (Grenze 151). Früh um 7:16 bei ~19 °C gestartet — clever vor der Hitze des Tages. Untergrund war Schotterweg: der kostet ~2–4 s/km gegenüber Asphalt — straßenäquivalent lief der MP-Block also eher bei ~4:57–4:59.\n\nAusführung vs. Plan: Geplant waren 4 km MP am Stück @ 5:11. Gelaufen: 5:03 / 5:01 / 4:59 / 4:59 — Ø ~5:01, dazu sauberes Einlaufen (5:59) und kontrollierte Steigerung davor. Der Block war damit ~10 s/km zu schnell. Dein Feedback passt zu den Daten: 5:10 fühlt sich hakelig an, 5:00 läuft rund — bei RPE 2/10 und Selbsteinschätzung 'sehr stark'.\n\nVergleich: Am 23.07. liefst du 3× 10 min @ ~4:50 bei HF 146 (im Tempus 2), heute 4 km @ ~5:01 bei HF ~150 im Endorphin Speed 5 — Schuh-Setup also bereits wie am Renntag. Ein Teil des runden Gefühls bei 5:00 geht auf den Rennschuh; der Formfit-Vergleich ist deshalb nicht 1:1 übertragbar. Die Effizienz-Trendlinie der letzten vier Wochen zeigt trotzdem konstant in eine Richtung.\n\nFürs 3:39-Ziel: Prognose steigt auf 77 %. 5:00er-Pace bei oberem Z2 und RPE 2 heißt: 3:39 (5:11/km) ist zunehmend konservativ kalkuliert. Aber Vorsicht — 4 km sind nicht 42 km, und HF 150 über 3:35 h ist eine andere Rechnung. Die Entscheidung über ein schnelleres Ziel (z. B. 3:34 = 5:05/km) fällt datenbasiert beim HM-Test am 30.08.: läufst du dort ≤ 1:42, ist das Upgrade gerechtfertigt. Bis dahin: MP-Blöcke dürfen bei 5:00–5:05 liegen, solange die HF ≤ ~150 bleibt — im Rennen selbst bleiben die ersten 5 km strikt konservativ."
+    "d": "2026-08-01",
+    "dist": 6.02,
+    "pace": 5.57,
+    "hf": 142,
+    "note": "GA-Tag punktgenau: 6 km @ 5:34 bei HF 142 mittig in Zone 2 — Entlastungswoche läuft nach Plan.",
+    "feedback": "Kernwerte: 6,02 km in 33:31, Ø 5:34/km auf der welligen Hausrunde in Eglfing (56 hm, ~9 hm/km) — Grade-Adjusted Pace etwa 5:25/km. Ø HF 142, sauber mittig in Zone 2 (134–151). Genau das, was ein GA-Tag in der Entlastungswoche sein soll.\n\nAusführung vs. Plan: Geplant waren 6 km locker Z2 — exakt geliefert, keine Tempospielereien zwei Tage nach der starken MP-Einheit. Das ist die richtige Disziplin: Entlastungswochen wirken nur, wenn die lockeren Tage wirklich locker bleiben.\n\nVergleich: Am 28.07. liefst du 7,12 km bei identischer Pace (5:34) mit HF 137, am 25.07. 8 km @ 6:16 bei HF 126. Heute also ~5 Schläge höher bei gleicher Pace als am Dienstag — plausibel durch die Restermüdung aus dem MP-Block vom Donnerstag und die warme Tagestemperatur; kein Warnsignal, alles klar innerhalb Zone 2.\n\nFürs 3:39-Ziel: Prognose stabil bei 77 %. Morgen schließt der 16er die Entlastungswoche ab — bewusst ruhig nach Puls (134–151), gern im unteren Bereich. Achtung: ab Mittag bis 29 °C, also früh raus. Ab Montag beginnt Woche 5 mit dem neuen 5. Lauftag und der ersten echten Schwelleneinheit (4× 8 min) — ausgeruht dort anzukommen ist der ganze Sinn dieser Woche."
   },
   "prognose": 77,
   "runs": [
@@ -128,6 +129,13 @@
       "pace": 5.27,
       "hf": 143,
       "hm": 19
+    },
+    {
+      "d": "2026-08-01",
+      "dist": 6.02,
+      "pace": 5.57,
+      "hf": 142,
+      "hm": 56
     }
   ],
   "progHist": [
@@ -181,6 +189,10 @@
     },
     {
       "d": "2026-07-30",
+      "p": 77
+    },
+    {
+      "d": "2026-08-01",
       "p": 77
     }
   ]
