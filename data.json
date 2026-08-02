@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02T07:17:58Z",
+  "updated": "2026-08-02T07:19:25Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -21,8 +21,8 @@
     "dist": 16.52,
     "pace": 5.62,
     "hf": 140,
-    "note": "Entlastungs-LL stark: 16,5 km @ 5:37 bei HF 140 — gleiche HF wie beim 20er am 19.07., aber 24 s/km schneller.",
-    "feedback": "Kernwerte: 16,52 km in 1:32:50, Ø 5:37/km bei Ø HF 140 — sauber mittig in Zone 2 (134–151). Auf der welligen Hausrunde mit 172 hm (~10 hm/km) entspricht das einer Grade-Adjusted Pace von etwa 5:25/km.\n\nAusführung vs. Plan: Geplant war der 16er bewusst locker als Abschluss der Entlastungswoche — exakt so gelaufen, ohne Tempospitzen, plus ein halber Bonus-Kilometer. Woche 4 damit komplett: 4 von 4 Einheiten, ~38 km.\n\nVergleich: Das ist der eigentliche Hingucker. Am 19.07. liefst du 20,5 km bei identischer HF 140 mit 6:01/km, am 26.07. den 25er mit 5:55 bei HF 137. Heute 5:37 bei HF 140 — rund 20–24 s/km schneller bei gleicher Belastung innerhalb von zwei Wochen. Ein Teil davon ist die kürzere Distanz und die frischen Beine der Entlastungswoche, aber der Effizienz-Trend zeigt konsistent nach oben.\n\nFürs 3:39-Ziel: Prognose steigt auf 78 %. Du gehst erholt und mit klarem Aufwärtstrend in Woche 5 — die erste Woche mit 5 Lauftagen. Morgen (Mo) der vorgezogene GA 9er locker nach Puls, Di Ruhetag auf Dienstreise, Mi sehr locker, und Do wartet die erste echte Schwelleneinheit (4× 8 min @ 4:50–5:05) — dort zählt dann wieder Pace statt Puls, möglichst auf flacher Strecke."
+    "note": "Entlastungs-LL stark: 16,5 km @ 5:37 bei HF 140 trotz >96 % Luftfeuchte — 24 s/km schneller als der 20er am 19.07. bei gleicher HF.",
+    "feedback": "Kernwerte: 16,52 km in 1:32:50, Ø 5:37/km bei Ø HF 140 — sauber mittig in Zone 2 (134–151). Auf der welligen Hausrunde mit 172 hm (~10 hm/km) entspricht das einer Grade-Adjusted Pace von etwa 5:25/km. Dazu kam heute über 96 % Luftfeuchtigkeit — bei so schwüler Luft ist die Kühlung über Schweiß stark eingeschränkt und die HF driftet typisch 3–8 Schläge nach oben. HF 140 unter diesen Bedingungen ist also eher wie ~135 bei normalem Wetter zu lesen.\n\nAusführung vs. Plan: Geplant war der 16er bewusst locker als Abschluss der Entlastungswoche — exakt so gelaufen, ohne Tempospitzen, plus ein halber Bonus-Kilometer. Woche 4 damit komplett: 4 von 4 Einheiten, ~38 km.\n\nVergleich: Das ist der eigentliche Hingucker. Am 19.07. liefst du 20,5 km bei identischer HF 140 mit 6:01/km, am 26.07. den 25er mit 5:55 bei HF 137. Heute 5:37 bei HF 140 — rund 20–24 s/km schneller bei gleicher Belastung innerhalb von zwei Wochen. Ein Teil davon ist die kürzere Distanz und die frischen Beine der Entlastungswoche, aber der Effizienz-Trend zeigt konsistent nach oben.\n\nFürs 3:39-Ziel: Prognose steigt auf 78 %. Du gehst erholt und mit klarem Aufwärtstrend in Woche 5 — die erste Woche mit 5 Lauftagen. Morgen (Mo) der vorgezogene GA 9er locker nach Puls, Di Ruhetag auf Dienstreise, Mi sehr locker, und Do wartet die erste echte Schwelleneinheit (4× 8 min @ 4:50–5:05) — dort zählt dann wieder Pace statt Puls, möglichst auf flacher Strecke."
   },
   "prognose": 78,
   "runs": [
