@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T16:11:20Z",
+  "updated": "2026-08-02T07:17:58Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -13,17 +13,18 @@
     "2026-07-26",
     "2026-07-28",
     "2026-07-30",
-    "2026-08-01"
+    "2026-08-01",
+    "2026-08-02"
   ],
   "lastRun": {
-    "d": "2026-08-01",
-    "dist": 6.02,
-    "pace": 5.57,
-    "hf": 142,
-    "note": "GA-Tag punktgenau: 6 km @ 5:34 bei HF 142 mittig in Zone 2 — Entlastungswoche läuft nach Plan.",
-    "feedback": "Kernwerte: 6,02 km in 33:31, Ø 5:34/km auf der welligen Hausrunde in Eglfing (56 hm, ~9 hm/km) — Grade-Adjusted Pace etwa 5:25/km. Ø HF 142, sauber mittig in Zone 2 (134–151). Genau das, was ein GA-Tag in der Entlastungswoche sein soll.\n\nAusführung vs. Plan: Geplant waren 6 km locker Z2 — exakt geliefert, keine Tempospielereien zwei Tage nach der starken MP-Einheit. Das ist die richtige Disziplin: Entlastungswochen wirken nur, wenn die lockeren Tage wirklich locker bleiben.\n\nVergleich: Am 28.07. liefst du 7,12 km bei identischer Pace (5:34) mit HF 137, am 25.07. 8 km @ 6:16 bei HF 126. Heute also ~5 Schläge höher bei gleicher Pace als am Dienstag — plausibel durch die Restermüdung aus dem MP-Block vom Donnerstag und die warme Tagestemperatur; kein Warnsignal, alles klar innerhalb Zone 2.\n\nFürs 3:39-Ziel: Prognose stabil bei 77 %. Morgen schließt der 16er die Entlastungswoche ab — bewusst ruhig nach Puls (134–151), gern im unteren Bereich. Achtung: ab Mittag bis 29 °C, also früh raus. Ab Montag beginnt Woche 5 mit dem neuen 5. Lauftag und der ersten echten Schwelleneinheit (4× 8 min) — ausgeruht dort anzukommen ist der ganze Sinn dieser Woche."
+    "d": "2026-08-02",
+    "dist": 16.52,
+    "pace": 5.62,
+    "hf": 140,
+    "note": "Entlastungs-LL stark: 16,5 km @ 5:37 bei HF 140 — gleiche HF wie beim 20er am 19.07., aber 24 s/km schneller.",
+    "feedback": "Kernwerte: 16,52 km in 1:32:50, Ø 5:37/km bei Ø HF 140 — sauber mittig in Zone 2 (134–151). Auf der welligen Hausrunde mit 172 hm (~10 hm/km) entspricht das einer Grade-Adjusted Pace von etwa 5:25/km.\n\nAusführung vs. Plan: Geplant war der 16er bewusst locker als Abschluss der Entlastungswoche — exakt so gelaufen, ohne Tempospitzen, plus ein halber Bonus-Kilometer. Woche 4 damit komplett: 4 von 4 Einheiten, ~38 km.\n\nVergleich: Das ist der eigentliche Hingucker. Am 19.07. liefst du 20,5 km bei identischer HF 140 mit 6:01/km, am 26.07. den 25er mit 5:55 bei HF 137. Heute 5:37 bei HF 140 — rund 20–24 s/km schneller bei gleicher Belastung innerhalb von zwei Wochen. Ein Teil davon ist die kürzere Distanz und die frischen Beine der Entlastungswoche, aber der Effizienz-Trend zeigt konsistent nach oben.\n\nFürs 3:39-Ziel: Prognose steigt auf 78 %. Du gehst erholt und mit klarem Aufwärtstrend in Woche 5 — die erste Woche mit 5 Lauftagen. Morgen (Mo) der vorgezogene GA 9er locker nach Puls, Di Ruhetag auf Dienstreise, Mi sehr locker, und Do wartet die erste echte Schwelleneinheit (4× 8 min @ 4:50–5:05) — dort zählt dann wieder Pace statt Puls, möglichst auf flacher Strecke."
   },
-  "prognose": 77,
+  "prognose": 78,
   "runs": [
     {
       "d": "2026-07-01",
@@ -136,6 +137,13 @@
       "pace": 5.57,
       "hf": 142,
       "hm": 56
+    },
+    {
+      "d": "2026-08-02",
+      "dist": 16.52,
+      "pace": 5.62,
+      "hf": 140,
+      "hm": 172
     }
   ],
   "progHist": [
@@ -194,6 +202,10 @@
     {
       "d": "2026-08-01",
       "p": 77
+    },
+    {
+      "d": "2026-08-02",
+      "p": 78
     }
   ]
 }
