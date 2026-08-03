@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03T16:10:59Z",
+  "updated": "2026-08-03T18:14:07Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -14,15 +14,16 @@
     "2026-07-28",
     "2026-07-30",
     "2026-08-01",
-    "2026-08-02"
+    "2026-08-02",
+    "2026-08-03"
   ],
   "lastRun": {
-    "d": "2026-08-02",
-    "dist": 16.52,
-    "pace": 5.62,
-    "hf": 140,
-    "note": "Entlastungs-LL stark: 16,5 km @ 5:37 bei HF 140 trotz >96 % Luftfeuchte — 24 s/km schneller als der 20er am 19.07. bei gleicher HF.",
-    "feedback": "Kernwerte: 16,52 km in 1:32:50, Ø 5:37/km bei Ø HF 140 — sauber mittig in Zone 2 (134–151). Auf der welligen Hausrunde mit 172 hm (~10 hm/km) entspricht das einer Grade-Adjusted Pace von etwa 5:25/km. Dazu kam heute über 96 % Luftfeuchtigkeit — bei so schwüler Luft ist die Kühlung über Schweiß stark eingeschränkt und die HF driftet typisch 3–8 Schläge nach oben. HF 140 unter diesen Bedingungen ist also eher wie ~135 bei normalem Wetter zu lesen.\n\nAusführung vs. Plan: Geplant war der 16er bewusst locker als Abschluss der Entlastungswoche — exakt so gelaufen, ohne Tempospitzen, plus ein halber Bonus-Kilometer. Woche 4 damit komplett: 4 von 4 Einheiten, ~38 km.\n\nVergleich: Das ist der eigentliche Hingucker. Am 19.07. liefst du 20,5 km bei identischer HF 140 mit 6:01/km, am 26.07. den 25er mit 5:55 bei HF 137. Heute 5:37 bei HF 140 — rund 20–24 s/km schneller bei gleicher Belastung innerhalb von zwei Wochen. Ein Teil davon ist die kürzere Distanz und die frischen Beine der Entlastungswoche, aber der Effizienz-Trend zeigt konsistent nach oben.\n\nFürs 3:39-Ziel: Prognose steigt auf 78 %. Du gehst erholt und mit klarem Aufwärtstrend in Woche 5 — die erste Woche mit 5 Lauftagen. Morgen (Mo) der vorgezogene GA 9er locker nach Puls, Di Ruhetag auf Dienstreise, Mi sehr locker, und Do wartet die erste echte Schwelleneinheit (4× 8 min @ 4:50–5:05) — dort zählt dann wieder Pace statt Puls, möglichst auf flacher Strecke."
+    "d": "2026-08-03",
+    "dist": 9.02,
+    "pace": 5.5,
+    "hf": 143,
+    "note": "GA 9er bei Hitze sauber in Z2: 5:30/km bei HF 143, GAP ~5:21 — Woche 5 ist eröffnet.",
+    "feedback": "Kernwerte: 9,02 km in 49:35, Ø 5:30/km bei Ø HF 143 — sauber in der Mitte von Zone 2 (134–151). Mit 100 hm (~11 hm/km) auf der Hausrunde entspricht das einer Grade-Adjusted Pace von etwa 5:21/km. Dazu kam die große Hitze heute: Bei warmen Bedingungen driftet die HF typisch 3–8 Schläge nach oben — HF 143 ist also eher wie ~138 bei normalem Wetter zu lesen. Zone getroffen, Steuerung nach Puls hat funktioniert.\n\nAusführung vs. Plan: Der GA 9er war von Di auf Mo vorgezogen (Dienstreise morgen) — genau so umgesetzt, gleichmäßig locker, ohne Tempospitzen. Nebenbei der erste Lauf im neuen Ride 19: unauffällig, keine Auffälligkeiten in Pace oder HF — die Einlaufphase läuft.\n\nVergleich: Am 01.07. liefst du 9,15 km @ 5:32 bei HF 138 (105 hm), am 21.07. 10,3 km @ 5:24 bei HF 140 (61 hm). Heute 5:30 bei HF 143 unter deutlich wärmeren Bedingungen — hitzebereinigt liegt das exakt auf dem Effizienzniveau der letzten Wochen. Der Aufwärtstrend vom starken Entlastungs-LL gestern (5:37 @ HF 140 über 16,5 km) wird bestätigt, nicht verbraucht.\n\nFürs 3:39-Ziel: Prognose stabil bei 78 %. Woche 5 ist gestartet — morgen Ruhetag auf Dienstreise, Mi der neue 5. Tag sehr locker (HF 135–145), und Do wartet die erste echte Schwelleneinheit: 4× 8 min @ 4:50–5:05 mit 3 min Trab. Dort zählt Pace statt Puls — flache Strecke suchen und bei Hitze eher ans untere Ende des Tempofensters."
   },
   "prognose": 78,
   "runs": [
@@ -144,6 +145,13 @@
       "pace": 5.62,
       "hf": 140,
       "hm": 172
+    },
+    {
+      "d": "2026-08-03",
+      "dist": 9.02,
+      "pace": 5.5,
+      "hf": 143,
+      "hm": 100
     }
   ],
   "progHist": [
@@ -205,6 +213,10 @@
     },
     {
       "d": "2026-08-02",
+      "p": 78
+    },
+    {
+      "d": "2026-08-03",
       "p": 78
     }
   ]
