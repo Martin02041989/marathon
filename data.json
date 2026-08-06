@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T16:09:35Z",
+  "updated": "2026-08-06T04:28:14Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -19,12 +19,12 @@
     "2026-08-04"
   ],
   "lastRun": {
-    "d": "2026-08-03",
-    "dist": 9.02,
-    "pace": 5.5,
-    "hf": 143,
-    "note": "GA 9er bei Hitze sauber in Z2: 5:30/km bei HF 143, GAP ~5:21 — Woche 5 ist eröffnet.",
-    "feedback": "Kernwerte: 9,02 km in 49:35, Ø 5:30/km bei Ø HF 143 — sauber in der Mitte von Zone 2 (134–151). Mit 100 hm (~11 hm/km) auf der Hausrunde entspricht das einer Grade-Adjusted Pace von etwa 5:21/km. Dazu kam die große Hitze heute: Bei warmen Bedingungen driftet die HF typisch 3–8 Schläge nach oben — HF 143 ist also eher wie ~138 bei normalem Wetter zu lesen. Zone getroffen, Steuerung nach Puls hat funktioniert.\n\nAusführung vs. Plan: Der GA 9er war von Di auf Mo vorgezogen (Dienstreise morgen) — genau so umgesetzt, gleichmäßig locker, ohne Tempospitzen. Nebenbei der erste Lauf im neuen Ride 19: unauffällig, keine Auffälligkeiten in Pace oder HF — die Einlaufphase läuft.\n\nVergleich: Am 01.07. liefst du 9,15 km @ 5:32 bei HF 138 (105 hm), am 21.07. 10,3 km @ 5:24 bei HF 140 (61 hm). Heute 5:30 bei HF 143 unter deutlich wärmeren Bedingungen — hitzebereinigt liegt das exakt auf dem Effizienzniveau der letzten Wochen. Der Aufwärtstrend vom starken Entlastungs-LL gestern (5:37 @ HF 140 über 16,5 km) wird bestätigt, nicht verbraucht.\n\nFürs 3:39-Ziel: Prognose stabil bei 78 %. Woche 5 ist gestartet — morgen Ruhetag auf Dienstreise, Mi der neue 5. Tag sehr locker (HF 135–145), und Do wartet die erste echte Schwelleneinheit: 4× 8 min @ 4:50–5:05 mit 3 min Trab. Dort zählt Pace statt Puls — flache Strecke suchen und bei Hitze eher ans untere Ende des Tempofensters."
+    "d": "2026-08-05",
+    "dist": 2.03,
+    "pace": 6.82,
+    "hf": 123,
+    "note": "5. Tag verkürzt: 2 km Laufband sehr locker (HF 123) statt GA 6 — kein Schaden, Kernreize der Woche unberührt.",
+    "feedback": "Kernwerte: 2,03 km in 13:51, Ø 6:49/km bei Ø HF 123 — deutlich unter Zone 2, also reine Erholung (REKOM-Niveau). Laufband, keine Höhenmeter, GAP = Pace. Als Trainingsreiz zählt das kaum, als aktive Erholung ist es völlig in Ordnung.\n\nAusführung vs. Plan: Geplant war der neue 5. Tag mit GA 6 km sehr locker (HF 135–145). Mit 2 km sind ~4 km Wochenvolumen weggefallen — der 5. Tag ist aber bewusst der unwichtigste Slot der Woche. Die beiden Kernreize (Schwelle Do, langer Lauf mit MP So) sind davon nicht berührt.\n\nVergleich: Der letzte echte Erholungslauf am 25.07. (8 km @ 6:16, HF 126) zeigt, dass du solche Tage sauber locker gestalten kannst. HF 123 gestern passt ins Bild — kein Stresssignal, eher ein zusätzlicher Ruhetag mit Bewegung.\n\nFürs 3:39-Ziel: Prognose bleibt bei 78 % — eine verkürzte Fülleinheit ändert daran nichts. Entscheidend ist jetzt die erste echte Schwelleneinheit: 4× 8 min @ 4:50–5:05 mit 3 min Trab. Flache Strecke wählen (Hausrunde mit ~10 hm/km vermeiden), 1,5–2 km einlaufen, bei Wärme ans untere Ende des Tempofensters. Ausgeruhte Beine hast du dafür allemal."
   },
   "prognose": 78,
   "runs": [
@@ -153,6 +153,13 @@
       "pace": 5.5,
       "hf": 143,
       "hm": 100
+    },
+    {
+      "d": "2026-08-05",
+      "dist": 2.03,
+      "pace": 6.82,
+      "hf": 123,
+      "hm": 0
     }
   ],
   "progHist": [
@@ -218,6 +225,10 @@
     },
     {
       "d": "2026-08-03",
+      "p": 78
+    },
+    {
+      "d": "2026-08-05",
       "p": 78
     }
   ]
