@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06T04:28:14Z",
+  "updated": "2026-08-06T07:43:33Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -16,17 +16,18 @@
     "2026-08-01",
     "2026-08-02",
     "2026-08-03",
-    "2026-08-04"
+    "2026-08-04",
+    "2026-08-06"
   ],
   "lastRun": {
-    "d": "2026-08-05",
-    "dist": 2.03,
-    "pace": 6.82,
-    "hf": 123,
-    "note": "5. Tag verkürzt: 2 km Laufband sehr locker (HF 123) statt GA 6 — kein Schaden, Kernreize der Woche unberührt.",
-    "feedback": "Kernwerte: 2,03 km in 13:51, Ø 6:49/km bei Ø HF 123 — deutlich unter Zone 2, also reine Erholung (REKOM-Niveau). Laufband, keine Höhenmeter, GAP = Pace. Als Trainingsreiz zählt das kaum, als aktive Erholung ist es völlig in Ordnung.\n\nAusführung vs. Plan: Geplant war der neue 5. Tag mit GA 6 km sehr locker (HF 135–145). Mit 2 km sind ~4 km Wochenvolumen weggefallen — der 5. Tag ist aber bewusst der unwichtigste Slot der Woche. Die beiden Kernreize (Schwelle Do, langer Lauf mit MP So) sind davon nicht berührt.\n\nVergleich: Der letzte echte Erholungslauf am 25.07. (8 km @ 6:16, HF 126) zeigt, dass du solche Tage sauber locker gestalten kannst. HF 123 gestern passt ins Bild — kein Stresssignal, eher ein zusätzlicher Ruhetag mit Bewegung.\n\nFürs 3:39-Ziel: Prognose bleibt bei 78 % — eine verkürzte Fülleinheit ändert daran nichts. Entscheidend ist jetzt die erste echte Schwelleneinheit: 4× 8 min @ 4:50–5:05 mit 3 min Trab. Flache Strecke wählen (Hausrunde mit ~10 hm/km vermeiden), 1,5–2 km einlaufen, bei Wärme ans untere Ende des Tempofensters. Ausgeruhte Beine hast du dafür allemal."
+    "d": "2026-08-06",
+    "dist": 11.71,
+    "pace": 5.22,
+    "hf": 145,
+    "note": "Erste Schwelleneinheit stark: 4× 8 min Ø 4:45/km (flach, Seehausen) bei RPE 3/10 — Prognose rauf auf 79 %.",
+    "feedback": "Kernwerte: 11,71 km in 1:01:08, Ø 5:13/km bei Ø HF 145 (max 159). Seehausen war die richtige Wahl: nur 37 hm, GAP = Pace. Training Effect 4.1 mit Hauptnutzen 'Schwelle' — genau der Reiz, den die Einheit setzen sollte.\n\nAusführung vs. Plan: Die 4× 8 min kamen auf Ø 4:45/km — schneller als das Zielfenster 4:50–5:05. Bei gefühlter Anstrengung von nur 3/10 und Stamina-Ende bei 69 % war das kein Überziehen, zeigt aber: Das Schwellentempo fällt dir aktuell zu leicht. Fürs Training trotzdem im Fenster bleiben — der Reiz ist auch bei 4:50–5:05 voll da, und die Frische gehört dem langen Lauf am Sonntag.\n\nVergleich: Am 23.07. liefst du in Seehausen 11 km @ 5:20 (HF 146) mit 3× 10 min um MP. Heute: härtere Blöcke, mehr Tempo (4:45 statt ~5:05 in den Abschnitten), gleiche HF-Lage. Das ist ein klarer Formsprung binnen zwei Wochen — und der erste harte Beleg oberhalb des MP-Bereichs.\n\nFürs 3:39-Ziel: Prognose rauf auf 79 %. Wer 4× 8 min @ 4:45 bei RPE 3/10 läuft, hat für MP 5:11 komfortable Reserven. Jetzt zählt der Wochenabschluss: morgen Ruhetag, Sa GA 8 km locker (Z2), So der Schlüssel-LL 24 km mit 8 km MP im zweiten Teil — dort die MP-Blöcke bewusst bei 5:00–5:11 halten, nicht schneller."
   },
-  "prognose": 78,
+  "prognose": 79,
   "runs": [
     {
       "d": "2026-07-01",
@@ -160,6 +161,13 @@
       "pace": 6.82,
       "hf": 123,
       "hm": 0
+    },
+    {
+      "d": "2026-08-06",
+      "dist": 11.71,
+      "pace": 5.22,
+      "hf": 145,
+      "hm": 37
     }
   ],
   "progHist": [
@@ -230,6 +238,10 @@
     {
       "d": "2026-08-05",
       "p": 78
+    },
+    {
+      "d": "2026-08-06",
+      "p": 79
     }
   ]
 }
