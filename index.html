@@ -226,6 +226,7 @@
     <button class="btn sec" onclick="resetChatKey()">Key ändern</button>
     <button class="btn sec" onclick="clearChat()">Chat leeren</button>
   </div>
+  <div style="text-align:center;font-size:11px;color:var(--muted);margin-top:6px;">Coach v3</div>
 </div>
 
 <nav>
@@ -732,6 +733,10 @@ function renderChat(scroll){
   log.innerHTML = html;
   if (scroll) window.scrollTo(0, document.body.scrollHeight);
 }
+window.addEventListener("error", function(ev){
+  const log = document.getElementById("chatlog");
+  if (log) log.innerHTML += '<div class="cmsg bot">\u26a0\ufe0f App-Fehler: ' + escH(ev.message || "unbekannt") + "</div>";
+});
 function initChat(){
   if (!localStorage.getItem("anthApiKey")) document.getElementById("chatkeycard").style.display = "block";
   const inp = document.getElementById("chatin");
@@ -771,7 +776,13 @@ async function sendChat(){
   const txt = (inp.value || "").trim();
   if (!txt) return;
   const key = localStorage.getItem("anthApiKey");
-  if (!key){ document.getElementById("chatkeycard").style.display = "block"; return; }
+  if (!key){
+    document.getElementById("chatkeycard").style.display = "block";
+    chatHist.push({ role: "assistant", content: "\u26a0\ufe0f Bitte zuerst oben deinen Claude API-Key speichern (console.anthropic.com \u2192 API Keys) \u2014 deine Nachricht bleibt im Eingabefeld." });
+    saveChatHist(); renderChat(false);
+    window.scrollTo(0, 0);
+    return;
+  }
   inp.value = "";
   chatHist.push({ role: "user", content: txt });
   saveChatHist(); renderChat(true);
