@@ -111,13 +111,21 @@
   #runresult .fbk summary { cursor: pointer; font-weight: 600; font-size: 13px; }
   #runresult .fbkbody { margin-top: 8px; font-size: 13px; line-height: 1.55; white-space: pre-line; }
   /* Chat */
-  #tab-chat { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
+  #tab-chat { padding-bottom: calc(170px + env(safe-area-inset-bottom)); }
   #chatlog { display: flex; flex-direction: column; gap: 8px; padding-bottom: 8px; min-height: 120px; }
   .cmsg { max-width: 86%; padding: 10px 12px; border-radius: 14px; font-size: 14px; line-height: 1.5; white-space: pre-wrap; word-wrap: break-word; }
   .cmsg.user { align-self: flex-end; background: var(--accent); color: #0e1116; border-bottom-right-radius: 4px; }
   .cmsg.bot { align-self: flex-start; background: var(--card); border: 1px solid var(--border); border-bottom-left-radius: 4px; }
   .cmsg.wait { align-self: flex-start; color: var(--muted); background: none; border: none; }
-  #chatbar { display: flex; gap: 8px; align-items: flex-end; margin-top: 8px; }
+  #chatbar {
+    display: flex; gap: 8px; align-items: flex-end;
+    position: fixed; z-index: 40; left: 10px; right: 10px;
+    bottom: calc(62px + env(safe-area-inset-bottom));
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 8px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,.35);
+    transition: transform .15s ease-out;
+  }
   #chatbar textarea { flex: 1; margin-bottom: 0; resize: none; }
   .chattools { display: flex; justify-content: flex-end; gap: 8px; margin-top: 8px; }
   .chattools .btn { font-size: 11px; padding: 5px 9px; }
@@ -226,7 +234,7 @@
     <button class="btn sec" onclick="resetChatKey()">Key ändern</button>
     <button class="btn sec" onclick="clearChat()">Chat leeren</button>
   </div>
-  <div style="text-align:center;font-size:11px;color:var(--muted);margin-top:6px;">Coach v3</div>
+  <div style="text-align:center;font-size:11px;color:var(--muted);margin-top:6px;">Coach v4</div>
 </div>
 
 <nav>
@@ -743,6 +751,17 @@ function initChat(){
   if (inp) inp.addEventListener("keydown", function(e){
     if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); sendChat(); }
   });
+  if (window.visualViewport) {
+    const vv = window.visualViewport;
+    const adj = function(){
+      const bar = document.getElementById("chatbar");
+      if (!bar) return;
+      const off = Math.max(0, window.innerHeight - vv.height - vv.offsetTop);
+      bar.style.transform = off > 0 ? "translateY(-" + off + "px)" : "";
+    };
+    vv.addEventListener("resize", adj);
+    vv.addEventListener("scroll", adj);
+  }
   renderChat(false);
 }
 function saveChatKey(){
