@@ -110,28 +110,6 @@
   #runresult .fbk { margin-top: 10px; border-top: 1px solid rgba(128,128,128,.25); padding-top: 8px; }
   #runresult .fbk summary { cursor: pointer; font-weight: 600; font-size: 13px; }
   #runresult .fbkbody { margin-top: 8px; font-size: 13px; line-height: 1.55; white-space: pre-line; }
-  /* Chat */
-  #tab-chat { padding-bottom: calc(170px + env(safe-area-inset-bottom)); }
-  #chatlog { display: flex; flex-direction: column; gap: 8px; padding-bottom: 8px; min-height: 120px; }
-  .cmsg { max-width: 86%; padding: 10px 12px; border-radius: 14px; font-size: 14px; line-height: 1.5; white-space: pre-wrap; word-wrap: break-word; }
-  .cmsg.user { align-self: flex-end; background: var(--accent); color: #0e1116; border-bottom-right-radius: 4px; }
-  .cmsg.bot { align-self: flex-start; background: var(--card); border: 1px solid var(--border); border-bottom-left-radius: 4px; }
-  .cmsg.wait { align-self: flex-start; color: var(--muted); background: none; border: none; }
-  #chatbar {
-    display: flex; gap: 8px; align-items: flex-end;
-    position: fixed; z-index: 40; left: 10px; right: 10px;
-    bottom: calc(62px + env(safe-area-inset-bottom));
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 14px; padding: 8px;
-    box-shadow: 0 -4px 20px rgba(0,0,0,.35);
-    transition: transform .15s ease-out;
-  }
-  #chatbar textarea { flex: 1; margin-bottom: 0; resize: none; }
-  .chattools { display: flex; justify-content: flex-end; gap: 8px; margin-top: 8px; }
-  .chattools .btn { font-size: 11px; padding: 5px 9px; }
-  #chatkeycard { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px; margin-bottom: 12px; }
-  #chatkeycard .t { font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; }
-  #chatkeycard .s { font-size: 13px; color: var(--muted); margin: 6px 0 10px; }
   /* Nav */
   nav {
     position: fixed; bottom: 0; left: 0; right: 0; display: flex;
@@ -218,31 +196,11 @@
   </div>
 </div>
 
-<div class="tab" id="tab-chat">
-  <div id="chatkeycard" style="display:none;">
-    <div class="t">Claude API-Key</div>
-    <div class="s">Einmalig eingeben — wird nur lokal auf diesem Gerät gespeichert (nie im Repo). Key erstellen: console.anthropic.com → API Keys.</div>
-    <textarea id="chatkeyin" rows="2" placeholder="sk-ant-..."></textarea>
-    <button class="btn" onclick="saveChatKey()">Speichern</button>
-  </div>
-  <div id="chatlog"></div>
-  <div id="chatbar">
-    <textarea id="chatin" rows="1" placeholder="Frag deinen Coach…"></textarea>
-    <button class="btn" id="chatsend" onclick="sendChat()">➤</button>
-  </div>
-  <div class="chattools">
-    <button class="btn sec" onclick="resetChatKey()">Key ändern</button>
-    <button class="btn sec" onclick="clearChat()">Chat leeren</button>
-  </div>
-  <div style="text-align:center;font-size:11px;color:var(--muted);margin-top:6px;">Coach v4</div>
-</div>
-
 <nav>
   <button id="nb-heute" class="active" onclick="show('heute')"><span class="ic">☀️</span>Heute</button>
   <button id="nb-plan" onclick="show('plan')"><span class="ic">📅</span>Plan</button>
   <button id="nb-rennen" onclick="show('rennen')"><span class="ic">🏁</span>Rennen</button>
   <button id="nb-ref" onclick="show('ref')"><span class="ic">🎯</span>Referenz</button>
-  <button id="nb-chat" onclick="show('chat')"><span class="ic">💬</span>Coach</button>
 </nav>
 
 <script>
@@ -726,124 +684,9 @@ function toggleProgPanel(){
   el.style.display = "block";
 }
 
-// ===== Coach-Chat (Claude API) =====
-let chatHist = [];
-try { chatHist = JSON.parse(localStorage.getItem("chatHist") || "[]"); } catch(e) {}
-function saveChatHist(){ try { localStorage.setItem("chatHist", JSON.stringify(chatHist.slice(-40))); } catch(e) {} }
-function escH(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
-function fmtMsg(s){ return escH(s).replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>"); }
-function renderChat(scroll){
-  const log = document.getElementById("chatlog");
-  if (!log) return;
-  let html = "";
-  if (!chatHist.length) html = '<div class="cmsg bot">Hallo Martin! Ich kenne deinen Plan, deine L\u00e4ufe und die aktuelle Prognose. Frag mich alles rund ums Training \u2014 z.\u2009B. \u201eWie war mein Lauf heute?\u201c oder \u201eWorauf achte ich morgen?\u201c</div>';
-  for (const m of chatHist) html += '<div class="cmsg ' + (m.role === "user" ? "user" : "bot") + '">' + fmtMsg(m.content) + "</div>";
-  log.innerHTML = html;
-  if (scroll) window.scrollTo(0, document.body.scrollHeight);
-}
-window.addEventListener("error", function(ev){
-  const log = document.getElementById("chatlog");
-  if (log) log.innerHTML += '<div class="cmsg bot">\u26a0\ufe0f App-Fehler: ' + escH(ev.message || "unbekannt") + "</div>";
-});
-function initChat(){
-  if (!localStorage.getItem("anthApiKey")) document.getElementById("chatkeycard").style.display = "block";
-  const inp = document.getElementById("chatin");
-  if (inp) inp.addEventListener("keydown", function(e){
-    if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); sendChat(); }
-  });
-  if (window.visualViewport) {
-    const vv = window.visualViewport;
-    const adj = function(){
-      const bar = document.getElementById("chatbar");
-      if (!bar) return;
-      const off = Math.max(0, window.innerHeight - vv.height - vv.offsetTop);
-      bar.style.transform = off > 0 ? "translateY(-" + off + "px)" : "";
-    };
-    vv.addEventListener("resize", adj);
-    vv.addEventListener("scroll", adj);
-  }
-  renderChat(false);
-}
-function saveChatKey(){
-  const v = (document.getElementById("chatkeyin").value || "").trim();
-  if (!v) return;
-  try { localStorage.setItem("anthApiKey", v); } catch(e) {}
-  document.getElementById("chatkeyin").value = "";
-  document.getElementById("chatkeycard").style.display = "none";
-}
-function resetChatKey(){
-  try { localStorage.removeItem("anthApiKey"); } catch(e) {}
-  document.getElementById("chatkeycard").style.display = "block";
-}
-function clearChat(){ chatHist = []; saveChatHist(); renderChat(false); }
-function buildSystemPrompt(){
-  const today = new Date().toISOString().slice(0,10);
-  let prog = ""; try { prog = localStorage.getItem("prognose") || ""; } catch(e) {}
-  const planTxt = PLAN.map(function(p){ return p.d + " " + p.typ + " " + p.km + "km " + p.t; }).join("\n");
-  const data = { prognose: prog, lastRun: lastRun, runs: (runs || []).slice(-15), progHist: (progHist || []).slice(-10) };
-  return "Du bist Martins pers\u00f6nlicher Marathon-Coach in seiner iPhone-Trainings-App. " +
-    "Ziele: Berlin-Marathon 27.09.2026 in 3:39 h (MP 5:11/km; MP-Bl\u00f6cke d\u00fcrfen bei 5:00\u20135:05 gelaufen werden, solange HF \u2264 ~150; Entscheidung \u00fcbers Rennziel beim HM-Test am 30.08., Ziel 1:44). Danach NYC-Marathon 01.11.2026 als B-Rennen nach Gef\u00fchl. " +
-    "Zonen: Z2/GA/LL HF 134\u2013151 (nach Puls, nicht Pace), 5. Tag (Mi) HF 135\u2013145, REKOM 110\u2013134, Schwelle/LT 4:50\u20135:05/km. " +
-    "Wichtig: Martins Hausrunden in Eglfing haben ~10 hm/km \u2014 bei MP/LT-Einheiten flache Strecke empfehlen, sonst Grade-Adjusted Pace bzw. Puls als Ma\u00dfstab. Verpflegung: Mnstry Gel 40, Ziel 60\u201380 g KH/h im Rennen, bei LL ab 24 km \u00fcben. " +
-    "Heutiges Datum: " + today + ". " +
-    "Antworte knapp, konkret und freundlich auf Deutsch, keine Emojis. Bei Gesundheitsfragen (Schmerzen, Verletzung) r\u00e4tst du im Zweifel zu Pause und \u00e4rztlicher Abkl\u00e4rung.\n\n" +
-    "TRAININGSPLAN (Datum Typ km Einheit):\n" + planTxt + "\n\n" +
-    "AKTUELLE DATEN (aus data.json, inkl. letzter Lauf und Prognose f\u00fcrs 3:39-Ziel in %):\n" + JSON.stringify(data);
-}
-async function sendChat(){
-  const inp = document.getElementById("chatin");
-  const txt = (inp.value || "").trim();
-  if (!txt) return;
-  const key = localStorage.getItem("anthApiKey");
-  if (!key){
-    document.getElementById("chatkeycard").style.display = "block";
-    chatHist.push({ role: "assistant", content: "\u26a0\ufe0f Bitte zuerst oben deinen Claude API-Key speichern (console.anthropic.com \u2192 API Keys) \u2014 deine Nachricht bleibt im Eingabefeld." });
-    saveChatHist(); renderChat(false);
-    window.scrollTo(0, 0);
-    return;
-  }
-  inp.value = "";
-  chatHist.push({ role: "user", content: txt });
-  saveChatHist(); renderChat(true);
-  const btn = document.getElementById("chatsend");
-  btn.disabled = true;
-  const log = document.getElementById("chatlog");
-  log.innerHTML += '<div class="cmsg wait" id="chatwait">Coach denkt nach\u2026</div>';
-  window.scrollTo(0, document.body.scrollHeight);
-  try {
-    const body = {
-      model: localStorage.getItem("anthModel") || "claude-sonnet-5",
-      max_tokens: 1024,
-      system: buildSystemPrompt(),
-      messages: chatHist.slice(-12).map(function(m){ return { role: m.role, content: m.content }; })
-    };
-    const r = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-        "x-api-key": key,
-        "anthropic-version": "2023-06-01",
-        "anthropic-dangerous-direct-browser-access": "true"
-      },
-      body: JSON.stringify(body)
-    });
-    const d = await r.json();
-    if (!r.ok) throw new Error((d && d.error && d.error.message) || ("HTTP " + r.status));
-    const ans = (d.content || []).map(function(c){ return c.text || ""; }).join("");
-    chatHist.push({ role: "assistant", content: ans || "(leere Antwort)" });
-  } catch(e) {
-    let msg = "Fehler: " + e.message;
-    if (/authentication|invalid x-api-key|401/i.test(String(e.message))) msg += " \u2014 bitte API-Key pr\u00fcfen (\u201eKey \u00e4ndern\u201c).";
-    chatHist.push({ role: "assistant", content: "\u26a0\ufe0f " + msg });
-  }
-  const w = document.getElementById("chatwait"); if (w) w.remove();
-  saveChatHist(); renderChat(true);
-  btn.disabled = false;
-}
-
 // ===== Navigation =====
 function show(t){
-  for (const x of ["heute","plan","rennen","ref","chat"]) {
+  for (const x of ["heute","plan","rennen","ref"]) {
     document.getElementById("tab-"+x).classList.toggle("active", x===t);
     document.getElementById("nb-"+x).classList.toggle("active", x===t);
   }
@@ -853,7 +696,6 @@ function show(t){
 renderHeute();
 renderPlan();
 renderRennen();
-initChat();
 syncRemote();
 // Beim Zurückkehren in die App (Home-Bildschirm-App bleibt im Speicher) neu laden
 document.addEventListener("visibilitychange", () => { if (!document.hidden) { renderHeute(); syncRemote(); } });
