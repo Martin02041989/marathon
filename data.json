@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-08T07:21:14Z",
+ "updated": "2026-08-09T06:31:37Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -18,17 +18,18 @@
   "2026-08-03",
   "2026-08-04",
   "2026-08-06",
-  "2026-08-08"
+  "2026-08-08",
+  "2026-08-09"
  ],
  "lastRun": {
-  "d": "2026-08-08",
-  "dist": 8.02,
-  "pace": 5.55,
-  "hf": 141,
-  "note": "GA 8 km sauber in Z2-Mitte (141 bpm, GAP ~5:16) - Prognose stabil 79 %.",
-  "feedback": "Kernwerte: 8,02 km in 44:31 (5:33/km) bei Ø 141 bpm und 92 hm. Mit ~11,5 hm/km auf der Hausrunde entspricht das einem Grade-Adjusted Pace von ca. 5:16/km. Der Puls lag exakt in der Mitte der Zone 2 (134-151) - genau so soll ein GA-Tag aussehen.\n\nAusfuehrung vs. Plan: GA 8 km locker war gefordert, 8,02 km geliefert - Punktlandung bei Distanz und Intensitaet. Kein Pace-Ehrgeiz, sauber nach Puls gesteuert, zwei Tage nach der harten Schwelleneinheit genau richtig dosiert.\n\nVergleich: Die gleiche 8er-Runde am 18.07. lief bei 5:28/km @ 140 bpm (91 hm), am 25.07. bewusst sehr locker 6:16 @ 126. Heute 5:33 @ 141 - praktisch identische Effizienz wie vor drei Wochen, trotz deutlich hoeherer Wochenbelastung (Woche 5 mit 5 Lauftagen). Die aerobe Basis traegt.\n\nFuers 3:39-Ziel: Prognose bleibt stabil bei 79 %. Morgen kommt der Schluessel-Langlauf: 24 km mit 8 km MP im zweiten Teil (ab km 10-12, Pace 5:00-5:11, HF <=150). Bei bis zu 32 Grad frueh starten, erste Haelfte unteres Z2, flache Kilometer fuer den MP-Block waehlen - das ist die erste echte Marathonspezifik-Probe."
+  "d": "2026-08-09",
+  "dist": 24.59,
+  "pace": 5.47,
+  "hf": 143,
+  "note": "Schluessel-LL bestanden: ~7-8 km MP (5:03-5:09, HF <=149) klug um den Berg gesplittet - Prognose 80 %.",
+  "feedback": "Kernwerte: 24,59 km in 2:14:23 (5:28/km, GAP 5:26) bei Oe 143 bpm (max 154) und 206 hm - Start um 5:42 Uhr, damit der Hitze komplett ausgewichen. Training Effect 4.5 (hoch aerob), Belastung 218, und das bei nur RPE 3/10 und Gefuehl 'Stark'.\n\nAusfuehrung: Die MP-Vorgabe (8 km im zweiten Teil) wegen des Bergs klug gesplittet: km 11-15 in 5:03-5:09 und km 18-19 in 5:05-5:08, HF im Block 143-149 - diszipliniert unter der 150er-Grenze und sogar am unteren Ende des erlaubten Pace-Fensters (5:00-5:11). Der Berg dazwischen sauber nach Puls (GAP 5:23 bei HF 149). Effektiv ~7-8 km Marathon-Belastung. Die ersten 10 km vorbildlich ruhig bei HF 135-141.\n\nVergleich: Der 25er am 26.07. lief bei 5:55/km @ 137 - heute 5:28 @ 143 mit MP-Bloecken, also eine ganz andere Qualitaetsstufe bei aehnlicher Distanz. Gegenueber dem 21er am 19.07. (6:01 @ 140) ist der Fortschritt in vier Wochen deutlich sichtbar.\n\nFuers 3:39-Ziel: Erste echte Marathonspezifik-Probe bestanden - MP-Pace fuehlt sich auf mueden Beinen kontrollierbar an, die HF-Reserve stimmt. Prognose rauf auf 80 %. Jetzt gut erholen: Woche 6 bringt den 10er am Dienstag und den 28er ruhig am Sonntag - der naechste Baustein Richtung 32er mit 10 km MP am 06.09."
  },
- "prognose": 79,
+ "prognose": 80,
  "runs": [
   {
    "d": "2026-07-01",
@@ -176,6 +177,13 @@
    "pace": 5.55,
    "hf": 141,
    "hm": 92
+  },
+  {
+   "d": "2026-08-09",
+   "dist": 24.59,
+   "pace": 5.47,
+   "hf": 143,
+   "hm": 206
   }
  ],
  "progHist": [
@@ -254,6 +262,10 @@
   {
    "d": "2026-08-08",
    "p": 79
+  },
+  {
+   "d": "2026-08-09",
+   "p": 80
   }
  ]
 }
