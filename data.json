@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11T07:44:58Z",
+ "updated": "2026-08-13T04:52:15Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -20,15 +20,16 @@
   "2026-08-06",
   "2026-08-08",
   "2026-08-09",
-  "2026-08-11"
+  "2026-08-11",
+  "2026-08-12"
  ],
  "lastRun": {
-  "d": "2026-08-11",
-  "dist": 10.01,
-  "pace": 4.97,
-  "hf": 143,
-  "note": "Rostock flach: 4:58/km bei Z2-Puls (143) - Effizienzsprung, Prognose 81 %.",
-  "feedback": "Kernwerte: 10,01 km in 49:39 (4:58/km) bei Oe 143 bpm und nur 26 hm - erster Lauf in Rostock. Auf dem flachen Terrain an der Ostsee ist die Pace bei identischem Z2-Puls einen ganzen Gang schneller als auf den Hausrunden; GAP und Pace sind hier praktisch deckungsgleich.\n\nAusfuehrung vs. Plan: GA 10 km locker nach Puls war gefordert - Puls sass mit 143 exakt in der Z2-Mitte (134-151). Dass dabei 4:58 herauskommt, ist kein Regelverstoss, sondern Effizienz: Du hast nach Puls gesteuert, das Tempo kam von selbst. Trotzdem gilt: GA-Tage duerfen sich leicht anfuehlen - nicht vom flachen Terrain zu Tempojagd verleiten lassen.\n\nVergleich: GA 10 am 21.07. in Muenchen: 5:24 @ 140 (61 hm). GA 9 am 03.08.: 5:30 @ 143 (100 hm). Heute 4:58 @ 143 - ein Teil davon ist Terrain und frische Beine nach dem Ruhetag, aber der Trend der letzten vier Wochen zeigt konstant steigende Effizienz.\n\nFuers 3:39-Ziel: Wenn 4:58 bei 143 bpm geht, liegt MP 5:11 klar im Komfortbereich - Prognose rauf auf 81 %. Die Urlaubswoche ist eine Chance: Do MP 11 km (3x 12 min) auf flacher Rostocker Strecke wird die bisher aussagekraeftigste MP-Einheit. Morgen erst mal der 5. Tag: 7 km SEHR locker (HF 135-145) - bewusst bremsen."
+  "d": "2026-08-12",
+  "dist": 7.19,
+  "pace": 5.83,
+  "hf": 128,
+  "note": "5. Tag sauber regenerativ: 5:50 bei nur 128 bpm - Beine frisch fuer den MP-Donnerstag.",
+  "feedback": "Kernwerte: 7,19 km in 41:53 (5:50/km) bei Oe 128 bpm und 12 hm - flacher geht es kaum, langsamer auch nicht, und genau das war der Auftrag. Der Puls lag sogar unter dem 135-145-Fenster des 5. Tages, also faktisch REKOM-Bereich.\n\nAusfuehrung vs. Plan: GA 7 km sehr locker - 7,19 km geliefert, Intensitaet mustergueltig niedrig. Nach dem schnellen 10er vom Dienstag (4:58 @ 143) genau die richtige Antwort: kein Tempo-Ehrgeiz, sondern aktive Erholung. So funktioniert der 5-Tage-Rhythmus.\n\nVergleich: Der bisher einzige echte 5. Tag am 05.08. fiel verkuerzt aus (2 km Laufband). Heute die erste vollstaendige Ausgabe - und direkt sauber umgesetzt. Aehnlich locker war sonst nur der GA-Tag am 25.07. (6:16 @ 126).\n\nFuers 3:39-Ziel: Die Beine sind frisch fuer die heutige MP-Kerneinheit (Do 13.08.: 11 km mit 3x 12 min MP, Pace 5:00-5:11, HF <=150, Trabpausen 3 min). Auf der flachen Rostocker Strecke wird das die bisher aussagekraeftigste MP-Einheit des Trainings - Prognose bleibt 81 %, mit Luft nach oben, wenn die Bloecke sitzen."
  },
  "prognose": 81,
  "runs": [
@@ -192,6 +193,13 @@
    "pace": 4.97,
    "hf": 143,
    "hm": 26
+  },
+  {
+   "d": "2026-08-12",
+   "dist": 7.19,
+   "pace": 5.83,
+   "hf": 128,
+   "hm": 12
   }
  ],
  "progHist": [
@@ -277,6 +285,10 @@
   },
   {
    "d": "2026-08-11",
+   "p": 81
+  },
+  {
+   "d": "2026-08-12",
    "p": 81
   }
  ]
