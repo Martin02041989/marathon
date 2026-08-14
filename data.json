@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-13T04:52:15Z",
+ "updated": "2026-08-14T07:02:21Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -21,17 +21,18 @@
   "2026-08-08",
   "2026-08-09",
   "2026-08-11",
-  "2026-08-12"
+  "2026-08-12",
+  "2026-08-13"
  ],
  "lastRun": {
-  "d": "2026-08-12",
-  "dist": 7.19,
-  "pace": 5.83,
-  "hf": 128,
-  "note": "5. Tag sauber regenerativ: 5:50 bei nur 128 bpm - Beine frisch fuer den MP-Donnerstag.",
-  "feedback": "Kernwerte: 7,19 km in 41:53 (5:50/km) bei Oe 128 bpm und 12 hm - flacher geht es kaum, langsamer auch nicht, und genau das war der Auftrag. Der Puls lag sogar unter dem 135-145-Fenster des 5. Tages, also faktisch REKOM-Bereich.\n\nAusfuehrung vs. Plan: GA 7 km sehr locker - 7,19 km geliefert, Intensitaet mustergueltig niedrig. Nach dem schnellen 10er vom Dienstag (4:58 @ 143) genau die richtige Antwort: kein Tempo-Ehrgeiz, sondern aktive Erholung. So funktioniert der 5-Tage-Rhythmus.\n\nVergleich: Der bisher einzige echte 5. Tag am 05.08. fiel verkuerzt aus (2 km Laufband). Heute die erste vollstaendige Ausgabe - und direkt sauber umgesetzt. Aehnlich locker war sonst nur der GA-Tag am 25.07. (6:16 @ 126).\n\nFuers 3:39-Ziel: Die Beine sind frisch fuer die heutige MP-Kerneinheit (Do 13.08.: 11 km mit 3x 12 min MP, Pace 5:00-5:11, HF <=150, Trabpausen 3 min). Auf der flachen Rostocker Strecke wird das die bisher aussagekraeftigste MP-Einheit des Trainings - Prognose bleibt 81 %, mit Luft nach oben, wenn die Bloecke sitzen."
+  "d": "2026-08-14",
+  "dist": 11.29,
+  "pace": 5.2,
+  "hf": 139,
+  "note": "MP-Kerneinheit getroffen: 3x 12 min mit Oe 5:01/km bei kontrollierter HF - starkes Signal fuers 3:39-Ziel.",
+  "feedback": "Kernwerte: 11,29 km in 58:40 (5:12/km) bei Oe 139 bpm, max 152, auf topfebener Rostocker Strecke (18 hm - GAP = Pace). Die Gesamt-HF von 139 liegt mitten in Zone 2, obwohl 36 Minuten MP enthalten waren.\n\nAusfuehrung vs. Plan: 3x 12 min MP mit Oe 5:01/km - sauber im freigegebenen Fenster 5:00-5:05 und deutlich unter der offiziellen Zielpace 5:11. Trabpausen und lockere Anteile diszipliniert langsam, dadurch die niedrige Gesamt-HF. Empfundene Anstrengung 1/10: die bisher laengste MP-Gesamtbelastung des Plans fuehlte sich leicht an.\n\nVergleich: Am 30.07. lief der 4-km-Block bei ~5:01 mit HF 148-151; am 09.08. lagen die MP-Abschnitte im LL bei 5:03-5:09 (HF 143-149). Heute 36 min bei gleicher Pace und nur 139 bpm Schnitt - die MP-Oekonomie verbessert sich von Woche zu Woche messbar.\n\nFuers 3:39-Ziel: Prognose steigt auf 82 %. 5:11 wirkt zunehmend konservativ; die Entscheidung ueber ein Stretch-Ziel faellt wie geplant beim HM-Test am 30.08. Naechste Schritte: Sa GA 8 km locker (Z2, HF 134-151), So der 28er-LL ruhig (HF <150) - der wichtigste Fettstoffwechsel-Reiz der Peak-Basis-Woche."
  },
- "prognose": 81,
+ "prognose": 82,
  "runs": [
   {
    "d": "2026-07-01",
@@ -200,6 +201,13 @@
    "pace": 5.83,
    "hf": 128,
    "hm": 12
+  },
+  {
+   "d": "2026-08-14",
+   "dist": 11.29,
+   "pace": 5.2,
+   "hf": 139,
+   "hm": 18
   }
  ],
  "progHist": [
@@ -290,6 +298,10 @@
   {
    "d": "2026-08-12",
    "p": 81
+  },
+  {
+   "d": "2026-08-14",
+   "p": 82
   }
  ]
 }
