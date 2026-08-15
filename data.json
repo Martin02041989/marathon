@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-15T04:52:26Z",
+ "updated": "2026-08-15T08:45:10Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -22,17 +22,18 @@
   "2026-08-09",
   "2026-08-11",
   "2026-08-12",
-  "2026-08-13"
+  "2026-08-13",
+  "2026-08-15"
  ],
  "lastRun": {
-  "d": "2026-08-14",
-  "dist": 11.29,
-  "pace": 5.2,
-  "hf": 139,
-  "note": "MP-Kerneinheit getroffen: 3x 12 min mit Oe 5:01/km bei kontrollierter HF - starkes Signal fuers 3:39-Ziel.",
-  "feedback": "Kernwerte: 11,29 km in 58:40 (5:12/km) bei Oe 139 bpm, max 152, auf topfebener Rostocker Strecke (18 hm - GAP = Pace). Die Gesamt-HF von 139 liegt mitten in Zone 2, obwohl 36 Minuten MP enthalten waren.\n\nAusfuehrung vs. Plan: 3x 12 min MP mit Oe 5:01/km - sauber im freigegebenen Fenster 5:00-5:05 und deutlich unter der offiziellen Zielpace 5:11. Trabpausen und lockere Anteile diszipliniert langsam, dadurch die niedrige Gesamt-HF. Empfundene Anstrengung 1/10: die bisher laengste MP-Gesamtbelastung des Plans fuehlte sich leicht an.\n\nVergleich: Am 30.07. lief der 4-km-Block bei ~5:01 mit HF 148-151; am 09.08. lagen die MP-Abschnitte im LL bei 5:03-5:09 (HF 143-149). Heute 36 min bei gleicher Pace und nur 139 bpm Schnitt - die MP-Oekonomie verbessert sich von Woche zu Woche messbar.\n\nFuers 3:39-Ziel: Prognose steigt auf 82 %. 5:11 wirkt zunehmend konservativ; die Entscheidung ueber ein Stretch-Ziel faellt wie geplant beim HM-Test am 30.08. Naechste Schritte: Sa GA 8 km locker (Z2, HF 134-151), So der 28er-LL ruhig (HF <150) - der wichtigste Fettstoffwechsel-Reiz der Peak-Basis-Woche."
+  "d": "2026-08-15",
+  "dist": 30.03,
+  "pace": 5.45,
+  "hf": 141,
+  "note": "Längster Lauf überhaupt: 30 km @ 5:27 bei Ø 141 — HF-Deckel (150) nie gerissen.",
+  "feedback": "Kernwerte: 30,03 km in 2:43:53, Ø 5:27/km (GAP 5:28, flache 82 hm), Ø-HF 141, max 150 — über fast drei Stunden komplett im Zielbereich unter 150 geblieben. RPE 2/10, Training Effect 4.8 aerob, Belastungswert 241.\n\nAusführung: Der vorgezogene LL (28 geplant, 30 gelaufen) war mustergültig puls-gesteuert. Ab km 28 wurde es schwer — das war Energie, nicht Form: 3 Ersatz-Gels (PowerGel Fruit, ~26 g KH) ergaben nur ~29 g/h statt der üblichen 60–80. Der Einbruch kam damit fast auf den Kilometer genau dort, wo die Glykogenspeicher rechnerisch leer sind.\n\nVergleich: 26.07. 25 km in 5:55 @ HF 137; 09.08. 24,6 km in 5:28 @ HF 143. Heute: 5 km länger als der bisherige Rekord, 28 s/km schneller als vor drei Wochen bei fast gleichem Puls. Die aerobe Basis macht große Sprünge.\n\nFürs 3:39-Ziel: stärkstes Signal bisher — Marathon-Distanz-Nähe bei kontrollierter HF und niedriger Anstrengung. Der Späteinbruch bestätigt nur die Verpflegungsstrategie fürs Rennen (Mnstry 40er, 60–80 g/h). Prognose 83 %. Morgen REKOM 5 km sehr locker (HF 110–134) — bei schweren Beinen auch streichen okay; nächste Qualität: Di GA 9, Do LT 5× 6 min."
  },
- "prognose": 82,
+ "prognose": 83,
  "runs": [
   {
    "d": "2026-07-01",
@@ -208,6 +209,13 @@
    "pace": 5.2,
    "hf": 139,
    "hm": 18
+  },
+  {
+   "d": "2026-08-15",
+   "dist": 30.03,
+   "pace": 5.45,
+   "hf": 141,
+   "hm": 82
   }
  ],
  "progHist": [
@@ -302,6 +310,10 @@
   {
    "d": "2026-08-14",
    "p": 82
+  },
+  {
+   "d": "2026-08-15",
+   "p": 83
   }
  ]
 }
