@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-16T18:18:50Z",
+ "updated": "2026-08-17T06:41:54Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -27,12 +27,12 @@
   "2026-08-16"
  ],
  "lastRun": {
-  "d": "2026-08-15",
-  "dist": 30.03,
-  "pace": 5.45,
+  "d": "2026-08-16",
+  "dist": 5.52,
+  "pace": 5.98,
   "hf": 141,
-  "note": "Längster Lauf überhaupt: 30 km @ 5:27 bei Ø 141 — HF-Deckel (150) nie gerissen.",
-  "feedback": "Kernwerte: 30,03 km in 2:43:53, Ø 5:27/km (GAP 5:28, flache 82 hm), Ø-HF 141, max 150 — über fast drei Stunden komplett im Zielbereich unter 150 geblieben. RPE 2/10, Training Effect 4.8 aerob, Belastungswert 241.\n\nAusführung: Der vorgezogene LL (28 geplant, 30 gelaufen) war mustergültig puls-gesteuert. Ab km 28 wurde es schwer — das war Energie, nicht Form: 3 Ersatz-Gels (PowerGel Fruit, ~26 g KH) ergaben nur ~29 g/h statt der üblichen 60–80. Der Einbruch kam damit fast auf den Kilometer genau dort, wo die Glykogenspeicher rechnerisch leer sind.\n\nVergleich: 26.07. 25 km in 5:55 @ HF 137; 09.08. 24,6 km in 5:28 @ HF 143. Heute: 5 km länger als der bisherige Rekord, 28 s/km schneller als vor drei Wochen bei fast gleichem Puls. Die aerobe Basis macht große Sprünge.\n\nFürs 3:39-Ziel: stärkstes Signal bisher — Marathon-Distanz-Nähe bei kontrollierter HF und niedriger Anstrengung. Der Späteinbruch bestätigt nur die Verpflegungsstrategie fürs Rennen (Mnstry 40er, 60–80 g/h). Prognose 83 %. Morgen REKOM 5 km sehr locker (HF 110–134) — bei schweren Beinen auch streichen okay; nächste Qualität: Di GA 9, Do LT 5× 6 min."
+  "note": "REKOM 5,5 km in Gera (Heimreise) — wellig, HF etwas über dem Erholungsfenster.",
+  "feedback": "Kernwerte: 5,52 km in 33:02, Ø 5:59/km bei Ø-HF 141 auf welliger Strecke in Gera (100 hm — GAP eher ~5:35). Damit lag der Puls über dem REKOM-Fenster von 110–134.\n\nAusführung: Das Ausschütteln nach dem 30er hat seinen Zweck grundsätzlich erfüllt, war aber eher ein lockerer GA-Lauf als echte Regeneration. Die HF-Überschreitung erklärt sich durch das Profil und Restermüdung vom Vortag (Belastung 241) — beides normal. Merkposten: An REKOM-Tagen zählt nur der Deckel HF 134, die Pace darf beliebig langsam sein.\n\nVergleich: Der 5.-Tag-Lauf am 12.08. (7,19 km @ 5:50, HF 128) zeigt, wie das aussehen kann — gleiche gefühlte Intensität, 13 Schläge weniger. Einen Tag nach dem längsten Lauf deines Lebens überhaupt schmerzfrei zu laufen, ist dennoch das eigentliche Signal.\n\nBilanz Woche 6 (Peak-Basis): ~64 km Rekordwoche mit MP-Kerneinheit (3× 12 min @ 5:01) und 30-km-LL unter HF 150 — die zwei wichtigsten Bausteine sitzen. Prognose bleibt 83 %. Ausblick Woche 7: Di GA 9 km, Mi 5. Tag sehr locker, Do die Schwelle 5× 6 min (4:50–5:05) — vor der Schwelle gut erholen."
  },
  "prognose": 83,
  "runs": [
@@ -217,6 +217,13 @@
    "pace": 5.45,
    "hf": 141,
    "hm": 82
+  },
+  {
+   "d": "2026-08-16",
+   "dist": 5.52,
+   "pace": 5.98,
+   "hf": 141,
+   "hm": 100
   }
  ],
  "progHist": [
@@ -314,6 +321,10 @@
   },
   {
    "d": "2026-08-15",
+   "p": 83
+  },
+  {
+   "d": "2026-08-16",
    "p": 83
   }
  ]
