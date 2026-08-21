@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-20T18:41:35Z",
+ "updated": "2026-08-21T06:19:20Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -26,17 +26,18 @@
   "2026-08-14",
   "2026-08-15",
   "2026-08-16",
-  "2026-08-19"
+  "2026-08-19",
+  "2026-08-21"
  ],
  "lastRun": {
-  "d": "2026-08-19",
-  "dist": 6.84,
-  "pace": 5.62,
-  "hf": 141,
-  "note": "5. Tag 6,8 km bei Hitze — HF 141 trotz warmer Bedingungen in der Zielzone.",
-  "feedback": "Kernwerte: 6,84 km in 38:25, Ø 5:37/km bei Ø-HF 141 und 55 hm (~8 hm/km — GAP eher ~5:30). Die Zielzone für den 5. Tag (HF 135–145) hast du damit exakt getroffen, obwohl es heute sehr warm war und du dich nicht gut gefühlt hast.\n\nAusführung: Genau so soll ein 5. Tag aussehen — Umfang fast voll (6,84 von 7 km), Intensität kontrolliert, kein Ehrgeiz bei der Pace. Dass du bei Hitze und müden Beinen nicht schneller geworden bist, ist Disziplin, kein Schwächezeichen.\n\nVergleich: Der 5. Tag am 12.08. (7,19 km @ 5:50, HF 128) war pulsseitig deutlich entspannter — die 13 Schläge Differenz gehen größtenteils aufs Konto der Hitze (Herz-Drift bei Wärme) plus Wiedereinstieg nach zwei Pausentagen (Dienstreise Mo/Di). Kein Formsignal.\n\nFürs 3:39-Ziel ändert der Tag nichts — Prognose stabil bei 83 %. Morgen kommt die Schwelleneinheit 5× 6 min (4:50–5:05, 2 min Trab): flache Strecke wählen, gut trinken, und wenn es wieder warm ist, lieber ans untere Ende des Tempofensters bzw. über die HF steuern. Das ist die Kerneinheit der Woche."
+  "d": "2026-08-21",
+  "dist": 11.53,
+  "pace": 4.82,
+  "hf": 155,
+  "note": "Schwelle 5× 6 min am Staffelsee: Blöcke Ø 4:08–4:23 bei HF 164–165 — Zielbereich exakt getroffen, neuer PR.",
+  "feedback": "Kernwerte: 11,53 km in 55:31, Ø 4:49/km bei Ø HF 155 (max 170), nur 32 hm — Grade-Adjusted Pace identisch mit der Pace, die flache Strecke am Staffelsee war die richtige Wahl. Die fünf Blöcke: 4:08 / 4:17 / 4:17 / 4:19 / 4:23 bei konstant HF 164–165 — das HF-Ziel 160–171 wurde exakt getroffen, die Pace hat sich daraus ergeben.\n\nAusführung: nahezu perfekt. Warm-up sauber in Z2 (5:13, HF 135), Trabpausen kontrolliert (HF 151–153), Cool-down locker. Einzige Anmerkung: Block 1 mit 4:08 etwas forsch angelaufen — die leichte Verlangsamung bis Block 5 (4:23) bei gleichem Puls zeigt das. Garmin-Ausführungswert 82 %, Training Effect 4.6 (VO2max), und das bei gefühlter Anstrengung 2/10.\n\nVergleich: Am 06.08. auf derselben Strecke standen bei der 4× 8-min-Schwelle Ø 5:13 gesamt bei HF 145; am 11.08. in Rostock 10 km in 4:58 bei HF 143. Heute liefen die Schwellenblöcke ~30–40 s/km schneller als die im Juli geschätzte Schwellenpace von 4:50 — deine reale Schwelle liegt aktuell eher bei ~4:20/km bei HF ~165.\n\nFürs 3:39-Ziel: Die Marathon-Pace 5:11 liegt damit weit unter deiner Schwelle — das Ziel wirkt zunehmend konservativ, Prognose steigt auf 86 %. Die Entscheidung über ein schnelleres Rennziel fällt wie geplant nach dem HM-Test am 30.08. Jetzt zählt Erholung: Sa GA 8 strikt locker (HF 134–151), So der LL 25 mit MP-Finish — dort bitte nicht vom heutigen Lauf zu Übermut verleiten lassen."
  },
- "prognose": 83,
+ "prognose": 86,
  "runs": [
   {
    "d": "2026-07-01",
@@ -233,6 +234,13 @@
    "pace": 5.62,
    "hf": 141,
    "hm": 55
+  },
+  {
+   "d": "2026-08-21",
+   "dist": 11.53,
+   "pace": 4.82,
+   "hf": 155,
+   "hm": 32
   }
  ],
  "progHist": [
@@ -339,6 +347,10 @@
   {
    "d": "2026-08-19",
    "p": 83
+  },
+  {
+   "d": "2026-08-21",
+   "p": 86
   }
  ]
 }
