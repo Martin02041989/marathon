@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21T06:19:20Z",
+ "updated": "2026-08-22T12:12:56Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -27,15 +27,16 @@
   "2026-08-15",
   "2026-08-16",
   "2026-08-19",
-  "2026-08-21"
+  "2026-08-21",
+  "2026-08-22"
  ],
  "lastRun": {
-  "d": "2026-08-21",
-  "dist": 11.53,
-  "pace": 4.82,
-  "hf": 155,
-  "note": "Schwelle 5× 6 min am Staffelsee: Blöcke Ø 4:08–4:23 bei HF 164–165 — Zielbereich exakt getroffen, neuer PR.",
-  "feedback": "Kernwerte: 11,53 km in 55:31, Ø 4:49/km bei Ø HF 155 (max 170), nur 32 hm — Grade-Adjusted Pace identisch mit der Pace, die flache Strecke am Staffelsee war die richtige Wahl. Die fünf Blöcke: 4:08 / 4:17 / 4:17 / 4:19 / 4:23 bei konstant HF 164–165 — das HF-Ziel 160–171 wurde exakt getroffen, die Pace hat sich daraus ergeben.\n\nAusführung: nahezu perfekt. Warm-up sauber in Z2 (5:13, HF 135), Trabpausen kontrolliert (HF 151–153), Cool-down locker. Einzige Anmerkung: Block 1 mit 4:08 etwas forsch angelaufen — die leichte Verlangsamung bis Block 5 (4:23) bei gleichem Puls zeigt das. Garmin-Ausführungswert 82 %, Training Effect 4.6 (VO2max), und das bei gefühlter Anstrengung 2/10.\n\nVergleich: Am 06.08. auf derselben Strecke standen bei der 4× 8-min-Schwelle Ø 5:13 gesamt bei HF 145; am 11.08. in Rostock 10 km in 4:58 bei HF 143. Heute liefen die Schwellenblöcke ~30–40 s/km schneller als die im Juli geschätzte Schwellenpace von 4:50 — deine reale Schwelle liegt aktuell eher bei ~4:20/km bei HF ~165.\n\nFürs 3:39-Ziel: Die Marathon-Pace 5:11 liegt damit weit unter deiner Schwelle — das Ziel wirkt zunehmend konservativ, Prognose steigt auf 86 %. Die Entscheidung über ein schnelleres Rennziel fällt wie geplant nach dem HM-Test am 30.08. Jetzt zählt Erholung: Sa GA 8 strikt locker (HF 134–151), So der LL 25 mit MP-Finish — dort bitte nicht vom heutigen Lauf zu Übermut verleiten lassen."
+  "d": "2026-08-22",
+  "dist": 9.13,
+  "pace": 5.2,
+  "hf": 145,
+  "note": "GA 9,1 km im neuen Endorphin Speed 5: HF 145 sauber in Z2, Pace mit 5:12 flott (113 hm, GAP ~4:55).",
+  "feedback": "Kernwerte: 9,13 km in 47:32, Ø 5:12/km bei HF 145 und satten 113 hm auf der Hausrunde — Grade-Adjusted Pace etwa 4:55/km. Der Puls lag sauber mitten in Zone 2 (134–151), damit ist die Einheit als GA-Lauf formal im Ziel.\n\nAusführung: schneller als geplant (GA 8 locker), aber die HF gibt dir recht — dein Z2-Tempo verschiebt sich gerade spürbar nach vorn. Das passt zum Bild der LT-Einheit von gestern (5× 6 min bei 4:08–4:23 @ HF 164–165). Trotzdem gilt: der Wert eines GA-Tags liegt in der Erholung, nicht in der Pace. Einen Tag vor dem langen Lauf lieber am unteren Rand laufen.\n\nVergleich: Der GA 8 am 08.08. lief mit 5:33 bei HF 141 auf ähnlicher Strecke (92 hm) — heute bei nur 4 Schlägen mehr rund 20 s/km schneller. Die Effizienz zeigt klar nach oben.\n\nSchuh: neues Paar Endorphin Speed 5 — gute Idee, es vor Berlin einzulaufen. Bis zum Renntag sollte es 50–100 km sammeln, ideal über Tempo-Einheiten und MP-Abschnitte.\n\nAusblick: Morgen LL 25 mit MP-Finish — die wichtigste Einheit der Woche. Erste Stunde strikt ruhig (HF 134–151), die letzten 6 km MP nach Puls ≤ ~155. Prognose bleibt bei 86 %."
  },
  "prognose": 86,
  "runs": [
@@ -241,6 +242,13 @@
    "pace": 4.82,
    "hf": 155,
    "hm": 32
+  },
+  {
+   "d": "2026-08-22",
+   "dist": 9.13,
+   "pace": 5.2,
+   "hf": 145,
+   "hm": 113
   }
  ],
  "progHist": [
@@ -350,6 +358,10 @@
   },
   {
    "d": "2026-08-21",
+   "p": 86
+  },
+  {
+   "d": "2026-08-22",
    "p": 86
   }
  ]
