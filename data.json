@@ -1,368 +1,380 @@
 {
- "updated": "2026-08-22T12:12:56Z",
- "done": [
-  "2026-07-07",
-  "2026-07-09",
-  "2026-07-10",
-  "2026-07-14",
-  "2026-07-18",
-  "2026-07-19",
-  "2026-07-21",
-  "2026-07-23",
-  "2026-07-25",
-  "2026-07-26",
-  "2026-07-28",
-  "2026-07-30",
-  "2026-08-01",
-  "2026-08-02",
-  "2026-08-03",
-  "2026-08-04",
-  "2026-08-06",
-  "2026-08-08",
-  "2026-08-09",
-  "2026-08-11",
-  "2026-08-12",
-  "2026-08-13",
-  "2026-08-14",
-  "2026-08-15",
-  "2026-08-16",
-  "2026-08-19",
-  "2026-08-21",
-  "2026-08-22"
- ],
- "lastRun": {
-  "d": "2026-08-22",
-  "dist": 9.13,
-  "pace": 5.2,
-  "hf": 145,
-  "note": "GA 9,1 km im neuen Endorphin Speed 5: HF 145 sauber in Z2, Pace mit 5:12 flott (113 hm, GAP ~4:55).",
-  "feedback": "Kernwerte: 9,13 km in 47:32, Ø 5:12/km bei HF 145 und satten 113 hm auf der Hausrunde — Grade-Adjusted Pace etwa 4:55/km. Der Puls lag sauber mitten in Zone 2 (134–151), damit ist die Einheit als GA-Lauf formal im Ziel.\n\nAusführung: schneller als geplant (GA 8 locker), aber die HF gibt dir recht — dein Z2-Tempo verschiebt sich gerade spürbar nach vorn. Das passt zum Bild der LT-Einheit von gestern (5× 6 min bei 4:08–4:23 @ HF 164–165). Trotzdem gilt: der Wert eines GA-Tags liegt in der Erholung, nicht in der Pace. Einen Tag vor dem langen Lauf lieber am unteren Rand laufen.\n\nVergleich: Der GA 8 am 08.08. lief mit 5:33 bei HF 141 auf ähnlicher Strecke (92 hm) — heute bei nur 4 Schlägen mehr rund 20 s/km schneller. Die Effizienz zeigt klar nach oben.\n\nSchuh: neues Paar Endorphin Speed 5 — gute Idee, es vor Berlin einzulaufen. Bis zum Renntag sollte es 50–100 km sammeln, ideal über Tempo-Einheiten und MP-Abschnitte.\n\nAusblick: Morgen LL 25 mit MP-Finish — die wichtigste Einheit der Woche. Erste Stunde strikt ruhig (HF 134–151), die letzten 6 km MP nach Puls ≤ ~155. Prognose bleibt bei 86 %."
- },
- "prognose": 86,
- "runs": [
-  {
-   "d": "2026-07-01",
-   "dist": 9.15,
-   "pace": 5.53,
-   "hf": 138,
-   "hm": 105
+  "updated": "2026-08-23T11:03:04Z",
+  "done": [
+    "2026-07-07",
+    "2026-07-09",
+    "2026-07-10",
+    "2026-07-14",
+    "2026-07-18",
+    "2026-07-19",
+    "2026-07-21",
+    "2026-07-23",
+    "2026-07-25",
+    "2026-07-26",
+    "2026-07-28",
+    "2026-07-30",
+    "2026-08-01",
+    "2026-08-02",
+    "2026-08-03",
+    "2026-08-04",
+    "2026-08-06",
+    "2026-08-08",
+    "2026-08-09",
+    "2026-08-11",
+    "2026-08-12",
+    "2026-08-13",
+    "2026-08-14",
+    "2026-08-15",
+    "2026-08-16",
+    "2026-08-19",
+    "2026-08-21",
+    "2026-08-22",
+    "2026-08-23"
+  ],
+  "lastRun": {
+    "d": "2026-08-23",
+    "dist": 24.72,
+    "pace": 5.17,
+    "hf": 146,
+    "note": "LL 25 mit MP-Finish übererfüllt: letzte 6 km in 4:44–4:59 bei HF ≤160 — Prognose 87 %.",
+    "feedback": "Kernwerte: 24,72 km in 2:07:32 (Ø 5:10/km, GAP identisch 5:10 — die Runde am Staffelsee war mit 184 hm moderat wellig) bei Ø HF 146, max 163. Die ersten 18 km liefen sauber in Zone 2 (HF 138–148 bei 5:06–5:39), Training Effect 4.8 (hoch aerob), RPE nur 3/10 und Selbsteinschätzung 'Stark'.\n\nAusführung: Die letzten 6 km MP wurden übererfüllt — 4:53, 4:59, 4:44, 4:49, 4:55, 4:54 statt der geplanten 5:11, bei HF 148–160. Eine Endbeschleunigung dieses Kalibers am Ende von über 2 Stunden ist ein sehr starkes Zeichen für die Ermüdungsresistenz. Kleiner Makel: mehrere kurze Stopps (insgesamt ~9 min Pausenzeit), weil der neue Endorphin Speed 5 (Paar 2) gedrückt hat — die reine Laufleistung ist davon unberührt.\n\nVergleich: Am 09.08. liefen 24,6 km @ 5:28 bei HF 143 (206 hm), am 15.08. 30 km @ 5:27 bei HF 141. Heute ~18 s/km schneller bei nur leicht höherer HF — die aerobe Effizienz macht weiter deutliche Sprünge, zumal erst am Freitag die harte Schwelleneinheit lag.\n\nFürs Ziel: 3:39 (5:11/km) wirkt nach diesem Lauf zunehmend konservativ — MP-Pace am Ende eines 25ers unter 5:00 bei kontrollierter HF. Prognose steigt auf 87 %. Woche 7 ist damit abgeschlossen; jetzt Testwoche mit wenig Umfang (Di GA 10, Do GA 8 + Steigerungen), am So 30.08. der HM-Test (Ziel ≤ 1:44) — dort fällt die Stretch-Entscheidung. Vorher: Schnürung des neuen Paars anpassen oder für den Test auf Paar 1 zurückgehen."
   },
-  {
-   "d": "2026-07-04",
-   "dist": 6.84,
-   "pace": 6.15,
-   "hf": 145,
-   "hm": 72
-  },
-  {
-   "d": "2026-07-05",
-   "dist": 17.44,
-   "pace": 6.15,
-   "hf": 139,
-   "hm": 254
-  },
-  {
-   "d": "2026-07-07",
-   "dist": 8.06,
-   "pace": 5.62,
-   "hf": 140,
-   "hm": 69
-  },
-  {
-   "d": "2026-07-09",
-   "dist": 10.01,
-   "pace": 5.53,
-   "hf": 144,
-   "hm": 29
-  },
-  {
-   "d": "2026-07-11",
-   "dist": 18.73,
-   "pace": 5.88,
-   "hf": 134,
-   "hm": 248
-  },
-  {
-   "d": "2026-07-15",
-   "dist": 7.02,
-   "pace": 6.53,
-   "hf": 126,
-   "hm": 200
-  },
-  {
-   "d": "2026-07-18",
-   "dist": 8.02,
-   "pace": 5.47,
-   "hf": 140,
-   "hm": 91
-  },
-  {
-   "d": "2026-07-19",
-   "dist": 20.5,
-   "pace": 6.02,
-   "hf": 140,
-   "hm": 262
-  },
-  {
-   "d": "2026-07-21",
-   "dist": 10.3,
-   "pace": 5.4,
-   "hf": 140,
-   "hm": 61
-  },
-  {
-   "d": "2026-07-23",
-   "dist": 11.01,
-   "pace": 5.33,
-   "hf": 146,
-   "hm": 32
-  },
-  {
-   "d": "2026-07-25",
-   "dist": 8.02,
-   "pace": 6.27,
-   "hf": 126,
-   "hm": 94
-  },
-  {
-   "d": "2026-07-26",
-   "dist": 25.01,
-   "pace": 5.92,
-   "hf": 137,
-   "hm": 290
-  },
-  {
-   "d": "2026-07-28",
-   "dist": 7.12,
-   "pace": 5.56,
-   "hf": 137,
-   "hm": 50
-  },
-  {
-   "d": "2026-07-30",
-   "dist": 8.04,
-   "pace": 5.27,
-   "hf": 143,
-   "hm": 19
-  },
-  {
-   "d": "2026-08-01",
-   "dist": 6.02,
-   "pace": 5.57,
-   "hf": 142,
-   "hm": 56
-  },
-  {
-   "d": "2026-08-02",
-   "dist": 16.52,
-   "pace": 5.62,
-   "hf": 140,
-   "hm": 172
-  },
-  {
-   "d": "2026-08-03",
-   "dist": 9.02,
-   "pace": 5.5,
-   "hf": 143,
-   "hm": 100
-  },
-  {
-   "d": "2026-08-05",
-   "dist": 2.03,
-   "pace": 6.82,
-   "hf": 123,
-   "hm": 0
-  },
-  {
-   "d": "2026-08-06",
-   "dist": 11.71,
-   "pace": 5.22,
-   "hf": 145,
-   "hm": 37
-  },
-  {
-   "d": "2026-08-08",
-   "dist": 8.02,
-   "pace": 5.55,
-   "hf": 141,
-   "hm": 92
-  },
-  {
-   "d": "2026-08-09",
-   "dist": 24.59,
-   "pace": 5.47,
-   "hf": 143,
-   "hm": 206
-  },
-  {
-   "d": "2026-08-11",
-   "dist": 10.01,
-   "pace": 4.97,
-   "hf": 143,
-   "hm": 26
-  },
-  {
-   "d": "2026-08-12",
-   "dist": 7.19,
-   "pace": 5.83,
-   "hf": 128,
-   "hm": 12
-  },
-  {
-   "d": "2026-08-14",
-   "dist": 11.29,
-   "pace": 5.2,
-   "hf": 139,
-   "hm": 18
-  },
-  {
-   "d": "2026-08-15",
-   "dist": 30.03,
-   "pace": 5.45,
-   "hf": 141,
-   "hm": 82
-  },
-  {
-   "d": "2026-08-16",
-   "dist": 5.52,
-   "pace": 5.98,
-   "hf": 141,
-   "hm": 100
-  },
-  {
-   "d": "2026-08-19",
-   "dist": 6.84,
-   "pace": 5.62,
-   "hf": 141,
-   "hm": 55
-  },
-  {
-   "d": "2026-08-21",
-   "dist": 11.53,
-   "pace": 4.82,
-   "hf": 155,
-   "hm": 32
-  },
-  {
-   "d": "2026-08-22",
-   "dist": 9.13,
-   "pace": 5.2,
-   "hf": 145,
-   "hm": 113
-  }
- ],
- "progHist": [
-  {
-   "d": "2026-07-05",
-   "p": 60
-  },
-  {
-   "d": "2026-07-07",
-   "p": 62
-  },
-  {
-   "d": "2026-07-09",
-   "p": 66
-  },
-  {
-   "d": "2026-07-11",
-   "p": 70
-  },
-  {
-   "d": "2026-07-15",
-   "p": 68
-  },
-  {
-   "d": "2026-07-18",
-   "p": 70
-  },
-  {
-   "d": "2026-07-19",
-   "p": 71
-  },
-  {
-   "d": "2026-07-21",
-   "p": 72
-  },
-  {
-   "d": "2026-07-23",
-   "p": 73
-  },
-  {
-   "d": "2026-07-25",
-   "p": 73
-  },
-  {
-   "d": "2026-07-26",
-   "p": 75
-  },
-  {
-   "d": "2026-07-28",
-   "p": 75
-  },
-  {
-   "d": "2026-07-30",
-   "p": 77
-  },
-  {
-   "d": "2026-08-01",
-   "p": 77
-  },
-  {
-   "d": "2026-08-02",
-   "p": 78
-  },
-  {
-   "d": "2026-08-03",
-   "p": 78
-  },
-  {
-   "d": "2026-08-05",
-   "p": 78
-  },
-  {
-   "d": "2026-08-06",
-   "p": 79
-  },
-  {
-   "d": "2026-08-08",
-   "p": 79
-  },
-  {
-   "d": "2026-08-09",
-   "p": 80
-  },
-  {
-   "d": "2026-08-11",
-   "p": 81
-  },
-  {
-   "d": "2026-08-12",
-   "p": 81
-  },
-  {
-   "d": "2026-08-14",
-   "p": 82
-  },
-  {
-   "d": "2026-08-15",
-   "p": 83
-  },
-  {
-   "d": "2026-08-16",
-   "p": 83
-  },
-  {
-   "d": "2026-08-19",
-   "p": 83
-  },
-  {
-   "d": "2026-08-21",
-   "p": 86
-  },
-  {
-   "d": "2026-08-22",
-   "p": 86
-  }
- ]
+  "prognose": 87,
+  "runs": [
+    {
+      "d": "2026-07-01",
+      "dist": 9.15,
+      "pace": 5.53,
+      "hf": 138,
+      "hm": 105
+    },
+    {
+      "d": "2026-07-04",
+      "dist": 6.84,
+      "pace": 6.15,
+      "hf": 145,
+      "hm": 72
+    },
+    {
+      "d": "2026-07-05",
+      "dist": 17.44,
+      "pace": 6.15,
+      "hf": 139,
+      "hm": 254
+    },
+    {
+      "d": "2026-07-07",
+      "dist": 8.06,
+      "pace": 5.62,
+      "hf": 140,
+      "hm": 69
+    },
+    {
+      "d": "2026-07-09",
+      "dist": 10.01,
+      "pace": 5.53,
+      "hf": 144,
+      "hm": 29
+    },
+    {
+      "d": "2026-07-11",
+      "dist": 18.73,
+      "pace": 5.88,
+      "hf": 134,
+      "hm": 248
+    },
+    {
+      "d": "2026-07-15",
+      "dist": 7.02,
+      "pace": 6.53,
+      "hf": 126,
+      "hm": 200
+    },
+    {
+      "d": "2026-07-18",
+      "dist": 8.02,
+      "pace": 5.47,
+      "hf": 140,
+      "hm": 91
+    },
+    {
+      "d": "2026-07-19",
+      "dist": 20.5,
+      "pace": 6.02,
+      "hf": 140,
+      "hm": 262
+    },
+    {
+      "d": "2026-07-21",
+      "dist": 10.3,
+      "pace": 5.4,
+      "hf": 140,
+      "hm": 61
+    },
+    {
+      "d": "2026-07-23",
+      "dist": 11.01,
+      "pace": 5.33,
+      "hf": 146,
+      "hm": 32
+    },
+    {
+      "d": "2026-07-25",
+      "dist": 8.02,
+      "pace": 6.27,
+      "hf": 126,
+      "hm": 94
+    },
+    {
+      "d": "2026-07-26",
+      "dist": 25.01,
+      "pace": 5.92,
+      "hf": 137,
+      "hm": 290
+    },
+    {
+      "d": "2026-07-28",
+      "dist": 7.12,
+      "pace": 5.56,
+      "hf": 137,
+      "hm": 50
+    },
+    {
+      "d": "2026-07-30",
+      "dist": 8.04,
+      "pace": 5.27,
+      "hf": 143,
+      "hm": 19
+    },
+    {
+      "d": "2026-08-01",
+      "dist": 6.02,
+      "pace": 5.57,
+      "hf": 142,
+      "hm": 56
+    },
+    {
+      "d": "2026-08-02",
+      "dist": 16.52,
+      "pace": 5.62,
+      "hf": 140,
+      "hm": 172
+    },
+    {
+      "d": "2026-08-03",
+      "dist": 9.02,
+      "pace": 5.5,
+      "hf": 143,
+      "hm": 100
+    },
+    {
+      "d": "2026-08-05",
+      "dist": 2.03,
+      "pace": 6.82,
+      "hf": 123,
+      "hm": 0
+    },
+    {
+      "d": "2026-08-06",
+      "dist": 11.71,
+      "pace": 5.22,
+      "hf": 145,
+      "hm": 37
+    },
+    {
+      "d": "2026-08-08",
+      "dist": 8.02,
+      "pace": 5.55,
+      "hf": 141,
+      "hm": 92
+    },
+    {
+      "d": "2026-08-09",
+      "dist": 24.59,
+      "pace": 5.47,
+      "hf": 143,
+      "hm": 206
+    },
+    {
+      "d": "2026-08-11",
+      "dist": 10.01,
+      "pace": 4.97,
+      "hf": 143,
+      "hm": 26
+    },
+    {
+      "d": "2026-08-12",
+      "dist": 7.19,
+      "pace": 5.83,
+      "hf": 128,
+      "hm": 12
+    },
+    {
+      "d": "2026-08-14",
+      "dist": 11.29,
+      "pace": 5.2,
+      "hf": 139,
+      "hm": 18
+    },
+    {
+      "d": "2026-08-15",
+      "dist": 30.03,
+      "pace": 5.45,
+      "hf": 141,
+      "hm": 82
+    },
+    {
+      "d": "2026-08-16",
+      "dist": 5.52,
+      "pace": 5.98,
+      "hf": 141,
+      "hm": 100
+    },
+    {
+      "d": "2026-08-19",
+      "dist": 6.84,
+      "pace": 5.62,
+      "hf": 141,
+      "hm": 55
+    },
+    {
+      "d": "2026-08-21",
+      "dist": 11.53,
+      "pace": 4.82,
+      "hf": 155,
+      "hm": 32
+    },
+    {
+      "d": "2026-08-22",
+      "dist": 9.13,
+      "pace": 5.2,
+      "hf": 145,
+      "hm": 113
+    },
+    {
+      "d": "2026-08-23",
+      "dist": 24.72,
+      "pace": 5.17,
+      "hf": 146,
+      "hm": 184
+    }
+  ],
+  "progHist": [
+    {
+      "d": "2026-07-05",
+      "p": 60
+    },
+    {
+      "d": "2026-07-07",
+      "p": 62
+    },
+    {
+      "d": "2026-07-09",
+      "p": 66
+    },
+    {
+      "d": "2026-07-11",
+      "p": 70
+    },
+    {
+      "d": "2026-07-15",
+      "p": 68
+    },
+    {
+      "d": "2026-07-18",
+      "p": 70
+    },
+    {
+      "d": "2026-07-19",
+      "p": 71
+    },
+    {
+      "d": "2026-07-21",
+      "p": 72
+    },
+    {
+      "d": "2026-07-23",
+      "p": 73
+    },
+    {
+      "d": "2026-07-25",
+      "p": 73
+    },
+    {
+      "d": "2026-07-26",
+      "p": 75
+    },
+    {
+      "d": "2026-07-28",
+      "p": 75
+    },
+    {
+      "d": "2026-07-30",
+      "p": 77
+    },
+    {
+      "d": "2026-08-01",
+      "p": 77
+    },
+    {
+      "d": "2026-08-02",
+      "p": 78
+    },
+    {
+      "d": "2026-08-03",
+      "p": 78
+    },
+    {
+      "d": "2026-08-05",
+      "p": 78
+    },
+    {
+      "d": "2026-08-06",
+      "p": 79
+    },
+    {
+      "d": "2026-08-08",
+      "p": 79
+    },
+    {
+      "d": "2026-08-09",
+      "p": 80
+    },
+    {
+      "d": "2026-08-11",
+      "p": 81
+    },
+    {
+      "d": "2026-08-12",
+      "p": 81
+    },
+    {
+      "d": "2026-08-14",
+      "p": 82
+    },
+    {
+      "d": "2026-08-15",
+      "p": 83
+    },
+    {
+      "d": "2026-08-16",
+      "p": 83
+    },
+    {
+      "d": "2026-08-19",
+      "p": 83
+    },
+    {
+      "d": "2026-08-21",
+      "p": 86
+    },
+    {
+      "d": "2026-08-22",
+      "p": 86
+    },
+    {
+      "d": "2026-08-23",
+      "p": 87
+    }
+  ]
 }
