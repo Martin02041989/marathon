@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-31T12:41:57Z",
+ "updated": "2026-08-31T16:09:43Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -30,15 +30,17 @@
   "2026-08-21",
   "2026-08-22",
   "2026-08-23",
-  "2026-08-29"
+  "2026-08-29",
+  "2026-08-30"
  ],
  "lastRun": {
-  "d": "2026-08-23",
-  "dist": 24.72,
-  "pace": 5.17,
-  "hf": 146,
-  "note": "LL 25 mit MP-Finish übererfüllt: letzte 6 km in 4:44–4:59 bei HF ≤160 — Prognose 87 %.",
-  "feedback": "Kernwerte: 24,72 km in 2:07:32 (Ø 5:10/km, GAP identisch 5:10 — die Runde am Staffelsee war mit 184 hm moderat wellig) bei Ø HF 146, max 163. Die ersten 18 km liefen sauber in Zone 2 (HF 138–148 bei 5:06–5:39), Training Effect 4.8 (hoch aerob), RPE nur 3/10 und Selbsteinschätzung 'Stark'.\n\nAusführung: Die letzten 6 km MP wurden übererfüllt — 4:53, 4:59, 4:44, 4:49, 4:55, 4:54 statt der geplanten 5:11, bei HF 148–160. Eine Endbeschleunigung dieses Kalibers am Ende von über 2 Stunden ist ein sehr starkes Zeichen für die Ermüdungsresistenz. Kleiner Makel: mehrere kurze Stopps (insgesamt ~9 min Pausenzeit), weil der neue Endorphin Speed 5 (Paar 2) gedrückt hat — die reine Laufleistung ist davon unberührt.\n\nVergleich: Am 09.08. liefen 24,6 km @ 5:28 bei HF 143 (206 hm), am 15.08. 30 km @ 5:27 bei HF 141. Heute ~18 s/km schneller bei nur leicht höherer HF — die aerobe Effizienz macht weiter deutliche Sprünge, zumal erst am Freitag die harte Schwelleneinheit lag.\n\nFürs Ziel: 3:39 (5:11/km) wirkt nach diesem Lauf zunehmend konservativ — MP-Pace am Ende eines 25ers unter 5:00 bei kontrollierter HF. Prognose steigt auf 87 %. Woche 7 ist damit abgeschlossen; jetzt Testwoche mit wenig Umfang (Di GA 10, Do GA 8 + Steigerungen), am So 30.08. der HM-Test (Ziel ≤ 1:44) — dort fällt die Stretch-Entscheidung. Vorher: Schnürung des neuen Paars anpassen oder für den Test auf Paar 1 zurückgehen."
+  "d": "2026-08-30",
+  "dist": 7.83,
+  "pace": 5.48,
+  "hf": 143,
+  "hm": 86,
+  "note": "HM-Test ausgefallen — stattdessen lockerer Z2-Lauf: 7,83 km @ 5:29 bei HF 143. Prognose bleibt 87 %.",
+  "feedback": "Kernwerte: 7,83 km in 43:01 (Ø 5:29/km, GAP 5:26 bei 86 hm) bei Ø HF 143, max 162 — sauber in Zone 2. Empfundene Anstrengung 1/10, Selbsteinschätzung 'sehr stark', Training Effect 3.4 (Basis, leicht aerob), Body Battery nur -9. Ein wirklich lockerer Lauf, körperlich völlig unauffällig.\n\nAusführung vs. Plan: Geplant war der Halbmarathon-Test über 23 km mit Zielzeit ≤ 1:44. Der ist nicht stattgefunden. Damit fehlt der Formtest, der über ein eventuell schnelleres Rennziel als 3:39 entscheiden sollte — offizielles Ziel bleibt bis auf Weiteres 5:11/km.\n\nVergleich: Gegenüber dem GA-Lauf am 22.08. (9,13 km @ 5:12, HF 145, 113 hm) ist der 30.08. bewusst langsamer und mit weniger Anstieg gelaufen — Entlastung, keine Belastung. Das eigentliche Formsignal liefert weiter der LL vom 23.08.: 24,72 km @ 5:10 bei HF 146, letzte 6 km in 4:44–4:59. Das entspricht rechnerisch bereits deutlich unter 3:39-Niveau.\n\nWas das fürs Ziel heißt: Die Prognose bleibt bei 87 % — kein neues Signal in beide Richtungen. Die Testwoche war ohnehin als Erholung angelegt, und die Beine sind jetzt frisch für Woche 9, den härtesten Block: Di GA 10, Mi GA 7, Do MP 12 (2× 15 min MP), Sa GA 8, So der längste Lauf über 32–35 km mit 10 km MP im letzten Drittel. Der HM-Test lässt sich bei Bedarf in Woche 10 als kürzerer Tempotest (10 km) nachholen — der lange Lauf am 06.09. hat aber Vorrang."
  },
  "prognose": 87,
  "runs": [
@@ -258,6 +260,20 @@
    "pace": 5.17,
    "hf": 146,
    "hm": 184
+  },
+  {
+   "d": "2026-08-29",
+   "dist": 4.39,
+   "pace": 5.78,
+   "hf": 137,
+   "hm": 43
+  },
+  {
+   "d": "2026-08-30",
+   "dist": 7.83,
+   "pace": 5.48,
+   "hf": 143,
+   "hm": 86
   }
  ],
  "progHist": [
@@ -375,6 +391,10 @@
   },
   {
    "d": "2026-08-23",
+   "p": 87
+  },
+  {
+   "d": "2026-08-30",
    "p": 87
   }
  ]
