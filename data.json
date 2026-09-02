@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-31T16:09:43Z",
+ "updated": "2026-09-02T16:30:00Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -42,7 +42,7 @@
   "note": "HM-Test ausgefallen — stattdessen lockerer Z2-Lauf: 7,83 km @ 5:29 bei HF 143. Prognose bleibt 87 %.",
   "feedback": "Kernwerte: 7,83 km in 43:01 (Ø 5:29/km, GAP 5:26 bei 86 hm) bei Ø HF 143, max 162 — sauber in Zone 2. Empfundene Anstrengung 1/10, Selbsteinschätzung 'sehr stark', Training Effect 3.4 (Basis, leicht aerob), Body Battery nur -9. Ein wirklich lockerer Lauf, körperlich völlig unauffällig.\n\nAusführung vs. Plan: Geplant war der Halbmarathon-Test über 23 km mit Zielzeit ≤ 1:44. Der ist nicht stattgefunden. Damit fehlt der Formtest, der über ein eventuell schnelleres Rennziel als 3:39 entscheiden sollte — offizielles Ziel bleibt bis auf Weiteres 5:11/km.\n\nVergleich: Gegenüber dem GA-Lauf am 22.08. (9,13 km @ 5:12, HF 145, 113 hm) ist der 30.08. bewusst langsamer und mit weniger Anstieg gelaufen — Entlastung, keine Belastung. Das eigentliche Formsignal liefert weiter der LL vom 23.08.: 24,72 km @ 5:10 bei HF 146, letzte 6 km in 4:44–4:59. Das entspricht rechnerisch bereits deutlich unter 3:39-Niveau.\n\nWas das fürs Ziel heißt: Die Prognose bleibt bei 87 % — kein neues Signal in beide Richtungen. Die Testwoche war ohnehin als Erholung angelegt, und die Beine sind jetzt frisch für Woche 9, den härtesten Block: Di GA 10, Mi GA 7, Do MP 12 (2× 15 min MP), Sa GA 8, So der längste Lauf über 32–35 km mit 10 km MP im letzten Drittel. Der HM-Test lässt sich bei Bedarf in Woche 10 als kürzerer Tempotest (10 km) nachholen — der lange Lauf am 06.09. hat aber Vorrang."
  },
- "prognose": 87,
+ "prognose": 80,
  "runs": [
   {
    "d": "2026-07-01",
@@ -396,6 +396,10 @@
   {
    "d": "2026-08-30",
    "p": 87
+  },
+  {
+   "d": "2026-09-02",
+   "p": 80
   }
  ]
 }
