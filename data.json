@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-02T16:30:00Z",
+ "updated": "2026-09-03T07:39:54Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -31,18 +31,19 @@
   "2026-08-22",
   "2026-08-23",
   "2026-08-29",
-  "2026-08-30"
+  "2026-08-30",
+  "2026-09-02"
  ],
  "lastRun": {
-  "d": "2026-08-30",
-  "dist": 7.83,
-  "pace": 5.48,
-  "hf": 143,
-  "hm": 86,
-  "note": "HM-Test ausgefallen — stattdessen lockerer Z2-Lauf: 7,83 km @ 5:29 bei HF 143. Prognose bleibt 87 %.",
-  "feedback": "Kernwerte: 7,83 km in 43:01 (Ø 5:29/km, GAP 5:26 bei 86 hm) bei Ø HF 143, max 162 — sauber in Zone 2. Empfundene Anstrengung 1/10, Selbsteinschätzung 'sehr stark', Training Effect 3.4 (Basis, leicht aerob), Body Battery nur -9. Ein wirklich lockerer Lauf, körperlich völlig unauffällig.\n\nAusführung vs. Plan: Geplant war der Halbmarathon-Test über 23 km mit Zielzeit ≤ 1:44. Der ist nicht stattgefunden. Damit fehlt der Formtest, der über ein eventuell schnelleres Rennziel als 3:39 entscheiden sollte — offizielles Ziel bleibt bis auf Weiteres 5:11/km.\n\nVergleich: Gegenüber dem GA-Lauf am 22.08. (9,13 km @ 5:12, HF 145, 113 hm) ist der 30.08. bewusst langsamer und mit weniger Anstieg gelaufen — Entlastung, keine Belastung. Das eigentliche Formsignal liefert weiter der LL vom 23.08.: 24,72 km @ 5:10 bei HF 146, letzte 6 km in 4:44–4:59. Das entspricht rechnerisch bereits deutlich unter 3:39-Niveau.\n\nWas das fürs Ziel heißt: Die Prognose bleibt bei 87 % — kein neues Signal in beide Richtungen. Die Testwoche war ohnehin als Erholung angelegt, und die Beine sind jetzt frisch für Woche 9, den härtesten Block: Di GA 10, Mi GA 7, Do MP 12 (2× 15 min MP), Sa GA 8, So der längste Lauf über 32–35 km mit 10 km MP im letzten Drittel. Der HM-Test lässt sich bei Bedarf in Woche 10 als kürzerer Tempotest (10 km) nachholen — der lange Lauf am 06.09. hat aber Vorrang."
+  "d": "2026-09-02",
+  "dist": 6.02,
+  "pace": 5.38,
+  "hf": 139,
+  "hm": 46,
+  "note": "Wiedereinstieg geglückt: 6,02 km @ 5:23 bei HF 139 — sauber im Zielband 135–145. Prognose 82 %.",
+  "feedback": "Kernwerte: 6,02 km in 32:22 (Ø 5:23/km, GAP ~5:20 bei 46 hm) bei Ø HF 139. Das liegt genau im Zielband 135–145 für den sehr lockeren Wiedereinstiegstag — Zone 2, kein Ausreißer nach oben.\n\nAusführung vs. Plan: Geplant waren 5–6 km sehr locker nach ärztlicher Freigabe, flach und pulsgesteuert. Genau das ist passiert. München war mit 7,6 hm/km flacher als deine Hausrunden, was den Puls zusätzlich entlastet hat. Die Pace war für einen Wiedereinstieg eher zügig, aber weil der Puls nicht mitgegangen ist, war das kein Fehler.\n\nVergleich: Der letzte vergleichbare 5.-Tag-Lauf am 19.08. ging über 6,84 km @ 5:37 bei HF 141. Heute also schneller bei niedrigerem Puls — nach zehn Tagen Pause ein gutes Zeichen, dass die aerobe Basis aus dem 30er (15.08.) und dem 24,7er @ 5:10 (23.08.) erhalten ist.\n\nFürs 3:39-Ziel: Prognose von 80 auf 82 % angehoben. Der erste Belastungstest nach der Sehnenreizung ist sauber gelaufen; limitierend bleibt die Belastbarkeit des Fußes, nicht die Form. Entscheidend ist jetzt die 24-Stunden-Reaktion. Bleibt sie still, folgen 6–8 km locker; der Sonntag wird ein ruhiger 14–16er in Z2 statt des gestrichenen 32ers. Erste vorsichtige Qualität frühestens Do 10.09."
  },
- "prognose": 80,
+ "prognose": 82,
  "runs": [
   {
    "d": "2026-07-01",
@@ -274,6 +275,13 @@
    "pace": 5.48,
    "hf": 143,
    "hm": 86
+  },
+  {
+   "d": "2026-09-02",
+   "dist": 6.02,
+   "pace": 5.38,
+   "hf": 139,
+   "hm": 46
   }
  ],
  "progHist": [
@@ -399,7 +407,7 @@
   },
   {
    "d": "2026-09-02",
-   "p": 80
+   "p": 82
   }
  ]
 }
