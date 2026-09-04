@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-03T07:39:54Z",
+ "updated": "2026-09-04T07:25:33Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -32,16 +32,17 @@
   "2026-08-23",
   "2026-08-29",
   "2026-08-30",
-  "2026-09-02"
+  "2026-09-02",
+  "2026-09-04"
  ],
  "lastRun": {
-  "d": "2026-09-02",
-  "dist": 6.02,
-  "pace": 5.38,
-  "hf": 139,
-  "hm": 46,
-  "note": "Wiedereinstieg geglückt: 6,02 km @ 5:23 bei HF 139 — sauber im Zielband 135–145. Prognose 82 %.",
-  "feedback": "Kernwerte: 6,02 km in 32:22 (Ø 5:23/km, GAP ~5:20 bei 46 hm) bei Ø HF 139. Das liegt genau im Zielband 135–145 für den sehr lockeren Wiedereinstiegstag — Zone 2, kein Ausreißer nach oben.\n\nAusführung vs. Plan: Geplant waren 5–6 km sehr locker nach ärztlicher Freigabe, flach und pulsgesteuert. Genau das ist passiert. München war mit 7,6 hm/km flacher als deine Hausrunden, was den Puls zusätzlich entlastet hat. Die Pace war für einen Wiedereinstieg eher zügig, aber weil der Puls nicht mitgegangen ist, war das kein Fehler.\n\nVergleich: Der letzte vergleichbare 5.-Tag-Lauf am 19.08. ging über 6,84 km @ 5:37 bei HF 141. Heute also schneller bei niedrigerem Puls — nach zehn Tagen Pause ein gutes Zeichen, dass die aerobe Basis aus dem 30er (15.08.) und dem 24,7er @ 5:10 (23.08.) erhalten ist.\n\nFürs 3:39-Ziel: Prognose von 80 auf 82 % angehoben. Der erste Belastungstest nach der Sehnenreizung ist sauber gelaufen; limitierend bleibt die Belastbarkeit des Fußes, nicht die Form. Entscheidend ist jetzt die 24-Stunden-Reaktion. Bleibt sie still, folgen 6–8 km locker; der Sonntag wird ein ruhiger 14–16er in Z2 statt des gestrichenen 32ers. Erste vorsichtige Qualität frühestens Do 10.09."
+  "d": "2026-09-04",
+  "dist": 6.87,
+  "pace": 5.15,
+  "hf": 146,
+  "hm": 61,
+  "note": "6,87 km @ 5:09 bei HF 146 — schmerzfrei, aber schneller als für einen Aufbaulauf vorgesehen. Prognose 82 %.",
+  "feedback": "Kernwerte: 6,87 km in 35:23 (Ø 5:09/km, GAP ~5:03 bei 61 hm) bei Ø HF 146. Pulsseitig ist das noch Zone 2, aber oberes Z2 — und die Pace liegt unter deiner Marathon-Pace von 5:11. Für einen lockeren Aufbaulauf war das zu flott.\n\nAusführung vs. Plan: Vereinbart waren 8 km bei 5:20–5:40 auf flacher Strecke. Gelaufen sind 6,87 km auf der Hausrunde mit 8,9 hm/km. Die Distanz war also etwas kürzer, die Intensität dafür höher — unterm Strich kein Tausch zum Guten, denn die Sehne reagiert auf Kraft pro Schritt, nicht auf Kilometer.\n\nVergleich: Der Wiedereinstieg am 02.09. lief 6,02 km @ 5:23 bei HF 139 auf 46 hm. Heute 14 % weiter, 14 s/km schneller, 7 Schläge mehr Puls und mehr Höhenmeter — drei Stellschrauben gleichzeitig nach oben. Im Wiederaufbau ändert man normalerweise eine.\n\nFürs 3:39-Ziel: Kein Schmerz und kein Knirschen ist die wichtigste Nachricht — die Kette läuft weiter, Prognose bleibt 82 %. Dass sich der Fuß weiter 'etwas komisch' anfühlt, heißt aber: Restbefund noch aktiv. Samstag deshalb bewusst kurz und langsam (5–6 km, HF unter 145) oder streichen. Priorität ist der ruhige 14–16er am Sonntag; das ist die Einheit, die für Berlin zählt."
  },
  "prognose": 82,
  "runs": [
@@ -282,6 +283,13 @@
    "pace": 5.38,
    "hf": 139,
    "hm": 46
+  },
+  {
+   "d": "2026-09-04",
+   "dist": 6.87,
+   "pace": 5.15,
+   "hf": 146,
+   "hm": 61
   }
  ],
  "progHist": [
@@ -407,6 +415,10 @@
   },
   {
    "d": "2026-09-02",
+   "p": 82
+  },
+  {
+   "d": "2026-09-04",
    "p": 82
   }
  ]
