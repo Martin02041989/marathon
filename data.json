@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-04T07:25:33Z",
+ "updated": "2026-09-04T07:28:11Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -41,10 +41,10 @@
   "pace": 5.15,
   "hf": 146,
   "hm": 61,
-  "note": "6,87 km @ 5:09 bei HF 146 — schmerzfrei, aber schneller als für einen Aufbaulauf vorgesehen. Prognose 82 %.",
-  "feedback": "Kernwerte: 6,87 km in 35:23 (Ø 5:09/km, GAP ~5:03 bei 61 hm) bei Ø HF 146. Pulsseitig ist das noch Zone 2, aber oberes Z2 — und die Pace liegt unter deiner Marathon-Pace von 5:11. Für einen lockeren Aufbaulauf war das zu flott.\n\nAusführung vs. Plan: Vereinbart waren 8 km bei 5:20–5:40 auf flacher Strecke. Gelaufen sind 6,87 km auf der Hausrunde mit 8,9 hm/km. Die Distanz war also etwas kürzer, die Intensität dafür höher — unterm Strich kein Tausch zum Guten, denn die Sehne reagiert auf Kraft pro Schritt, nicht auf Kilometer.\n\nVergleich: Der Wiedereinstieg am 02.09. lief 6,02 km @ 5:23 bei HF 139 auf 46 hm. Heute 14 % weiter, 14 s/km schneller, 7 Schläge mehr Puls und mehr Höhenmeter — drei Stellschrauben gleichzeitig nach oben. Im Wiederaufbau ändert man normalerweise eine.\n\nFürs 3:39-Ziel: Kein Schmerz und kein Knirschen ist die wichtigste Nachricht — die Kette läuft weiter, Prognose bleibt 82 %. Dass sich der Fuß weiter 'etwas komisch' anfühlt, heißt aber: Restbefund noch aktiv. Samstag deshalb bewusst kurz und langsam (5–6 km, HF unter 145) oder streichen. Priorität ist der ruhige 14–16er am Sonntag; das ist die Einheit, die für Berlin zählt."
+  "note": "6,87 km @ 5:09 bei HF 146 — schmerzfrei, alle Sehnenzeichen weg. Prognose 84 %.",
+  "feedback": "Kernwerte: 6,87 km in 35:23 (Ø 5:09/km, GAP ~5:03 bei 61 hm) bei Ø HF 146. Pulsseitig noch Zone 2, aber oberes Z2 — und die Pace liegt unter deiner Marathon-Pace von 5:11. Für einen lockeren Aufbaulauf war das zu flott.\n\nAusführung vs. Plan: Vereinbart waren 8 km bei 5:20–5:40 auf flacher Strecke. Gelaufen sind 6,87 km auf der Hausrunde mit 8,9 hm/km — Distanz kürzer, Intensität höher. Im Wiederaufbau dreht man besser nur an einer Schraube.\n\nVergleich: Der Wiedereinstieg am 02.09. lief 6,02 km @ 5:23 bei HF 139 auf 46 hm. Heute 14 % weiter, 14 s/km schneller, 7 Schläge mehr Puls und mehr Höhenmeter.\n\nDas Wichtigste: schmerzfrei, kein Druck, kein Knirschen. Das 'komische' Gefühl sitzt als Muskelkater im Tibialis anterior links neben dem Schienbein — Muskel, nicht Sehnenscheide. Nach zwei Wochen Pause ist die Fußhebermuskulatur detrainiert, und schnelleres Laufen auf welligem Profil fordert sie exzentrisch. Damit sind erstmals seit dem 23.08. alle Sehnenzeichen weg.\n\nFürs 3:39-Ziel: Prognose von 82 auf 84 % angehoben. Sa 05.09. 6 km wirklich locker (5:30+, HF unter 145) — leichtes Laufen hilft dem Muskelkater sogar. Priorität ist der ruhige 14–16er am Sonntag; das ist die Einheit, die für Berlin zählt."
  },
- "prognose": 82,
+ "prognose": 84,
  "runs": [
   {
    "d": "2026-07-01",
@@ -419,7 +419,7 @@
   },
   {
    "d": "2026-09-04",
-   "p": 82
+   "p": 84
   }
  ]
 }
