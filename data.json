@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-08T19:16:14Z",
+ "updated": "2026-09-09T09:29:30Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -35,16 +35,17 @@
   "2026-09-02",
   "2026-09-04",
   "2026-09-05",
-  "2026-09-06"
+  "2026-09-06",
+  "2026-09-09"
  ],
  "lastRun": {
-  "d": "2026-09-06",
-  "dist": 20.02,
-  "pace": 5.23,
-  "hf": 147,
-  "hm": 99,
-  "note": "20,02 km @ 5:14 bei HF 147 — negativer Split, letzte 4 km um 4:59, schmerzfrei. Prognose 89 %.",
-  "feedback": "Kernwerte: 20,02 km in 1:44:44 (Ø 5:14/km) bei Ø HF 147 und nur 99 hm — die Strecke war so flach, dass die an die Steigung angepasste Pace mit 5:14 exakt der Ist-Pace entspricht. Selbsteinschätzung \"Sehr stark\" bei RPE 3/10, Training Effect 4.6 aerob.\n\nAusführung vs. Plan: Vorgesehen war ein reiner Z2-Wiederaufbau-Lauf über 18 km bei HF 134–148, ohne MP-Anteil. Daraus wurden 20 km mit sauberem negativen Split: erste zehn Kilometer im Schnitt 5:18, zweite zehn 5:10, und die Kilometer 17 bis 20 bei 4:57, 4:57, 5:02 und 4:59. Das ist faktisch ein MP-Finish unter Renntempo. Der Puls lag dabei bei 154–157 und damit in Zone 3, also über dem vereinbarten Band — ungeplante Qualität beim ersten 20er nach zwei Wochen Pause.\n\nDas stärkste Signal steckt in der Effizienz: Kilometer 3 lief 5:14 bei HF 147, Kilometer 15 lief 5:09 bei derselben HF 147. Keine kardiovaskuläre Drift, sondern das Gegenteil — nach zwölf zusätzlichen Kilometern bei gleichem Puls fünf Sekunden schneller.\n\nVergleich: Der 25er am 23.08. (24,72 km @ 5:10, HF 146, 184 hm) hatte ein geplantes MP-Finish um 4:44–4:59. Heute, nach zehn Tagen Komplettpause und vier Wiederaufbau-Läufen, praktisch dasselbe Niveau. Das Detraining ist kaum messbar. Gegenüber dem 05.09. (6,62 km @ 5:20, HF 141) die dreifache Distanz ohne jede Reaktion im Fuß — vierter schmerzfreier Lauf in Folge.\n\nFürs 3:39-Ziel: Prognose von 85 auf 89 % angehoben. Der Plan für Woche 10 ist daraufhin auf die Originalversion zurückgesetzt — Do 10.09. wieder MP 11 km mit 3× 10 min, So 13.09. wieder 24 km mit 8 km MP. Offen bleibt allein die Ermüdungsresistenz ab km 32, wo 2025 die Krämpfe kamen. Der 13.09. ist die Generalprobe, auch für Verpflegung: 3–4 Gele statt der 2 von heute, plus eine Salzkapsel."
+  "d": "2026-09-09",
+  "dist": 9.12,
+  "pace": 5.25,
+  "hf": 148,
+  "hm": 102,
+  "note": "9,12 km @ 5:15 bei HF 148 (GAP ~5:05, 102 hm) — Plan-Einheit nachgeholt, Puls oberes Z2 wegen zu warmer Kleidung. Prognose bleibt 89 %.",
+  "feedback": "Kernwerte: 9,12 km in 47:56, Ø 5:15/km bei Ø HF 148 und 102 hm Anstieg. Auf der Hausrunde mit rund 11 hm/km liegt die an die Steigung angepasste Pace bei etwa 5:05/km. Der Puls bleibt mit 148 innerhalb des Zone-2-Bands (134–151), sitzt aber am oberen Rand — für einen als \"locker\" ausgeschriebenen Grundlagentag eher zu hoch als zu niedrig.\n\nZur Einordnung des Pulses: Du warst nach eigener Aussage zu warm angezogen. Das ist die naheliegende Erklärung für den Aufschlag. Bei überwärmter Kleidung geht ein Teil des Herzminutenvolumens in die Hautdurchblutung zur Wärmeabgabe statt in die Muskulatur — 3 bis 8 Schläge Mehrbelastung bei gleicher Pace sind dabei völlig normal. Die 148 sind also kein Fitness-Signal und kein Grund zur Sorge, sondern ein Bekleidungsthema.\n\nAusführung vs. Plan: Vorgesehen waren 9 km locker Z2, verschoben vom ausgefallenen Dienstag. Distanz exakt getroffen, Steuerung im Rahmen. Kleiner Kritikpunkt: 5:15/km beziehungsweise GAP 5:05 ist für einen lockeren Tag am zügigen Ende, gerade einen Tag vor der MP-Einheit.\n\nVergleich: Der fast deckungsgleiche Lauf am 22.08. (9,13 km @ 5:12, HF 145, 113 hm) — vor der Sprunggelenk-Pause — lief 3 s/km schneller bei 3 bpm weniger. Rechnet man die Kleidung heraus, ist das praktisch dieselbe Effizienz wie vor der Zwangspause. Zusammen mit dem 20er vom 06.09. (5:14, HF 147) ist damit der fünfte schmerzfreie Lauf in Folge dokumentiert.\n\nFürs 3:39-Ziel: Prognose unverändert bei 89 %. Der Lauf bestätigt den Wiederaufbau, liefert aber keine neue Information. Morgen steht die MP-Einheit über 11 km mit 3× 10 min bei 5:00–5:11 an — dünner anziehen und eine flache Strecke wählen, damit die MP-Blöcke pulsseitig unter 150 bleiben. Am Freitag folgen die 6 km sehr locker (HF 135–145), am Sonntag der letzte lange Lauf über 24 km mit 8 km MP."
  },
  "prognose": 89,
  "runs": [
@@ -306,6 +307,13 @@
    "pace": 5.23,
    "hf": 147,
    "hm": 99
+  },
+  {
+   "d": "2026-09-09",
+   "dist": 9.12,
+   "pace": 5.25,
+   "hf": 148,
+   "hm": 102
   }
  ],
  "progHist": [
@@ -443,6 +451,10 @@
   },
   {
    "d": "2026-09-06",
+   "p": 89
+  },
+  {
+   "d": "2026-09-09",
    "p": 89
   }
  ]
