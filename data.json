@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-10T16:09:31Z",
+ "updated": "2026-09-10T17:05:49Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -36,16 +36,17 @@
   "2026-09-04",
   "2026-09-05",
   "2026-09-06",
-  "2026-09-09"
+  "2026-09-09",
+  "2026-09-10"
  ],
  "lastRun": {
-  "d": "2026-09-09",
-  "dist": 9.12,
-  "pace": 5.25,
-  "hf": 148,
-  "hm": 102,
-  "note": "9,12 km @ 5:15 bei HF 148 (GAP ~5:05, 102 hm) — Plan-Einheit nachgeholt, Puls oberes Z2 wegen zu warmer Kleidung. Prognose bleibt 89 %.",
-  "feedback": "Kernwerte: 9,12 km in 47:56, Ø 5:15/km bei Ø HF 148 und 102 hm Anstieg. Auf der Hausrunde mit rund 11 hm/km liegt die an die Steigung angepasste Pace bei etwa 5:05/km. Der Puls bleibt mit 148 innerhalb des Zone-2-Bands (134–151), sitzt aber am oberen Rand — für einen als \"locker\" ausgeschriebenen Grundlagentag eher zu hoch als zu niedrig.\n\nZur Einordnung des Pulses: Du warst nach eigener Aussage zu warm angezogen. Das ist die naheliegende Erklärung für den Aufschlag. Bei überwärmter Kleidung geht ein Teil des Herzminutenvolumens in die Hautdurchblutung zur Wärmeabgabe statt in die Muskulatur — 3 bis 8 Schläge Mehrbelastung bei gleicher Pace sind dabei völlig normal. Die 148 sind also kein Fitness-Signal und kein Grund zur Sorge, sondern ein Bekleidungsthema.\n\nAusführung vs. Plan: Vorgesehen waren 9 km locker Z2, verschoben vom ausgefallenen Dienstag. Distanz exakt getroffen, Steuerung im Rahmen. Kleiner Kritikpunkt: 5:15/km beziehungsweise GAP 5:05 ist für einen lockeren Tag am zügigen Ende, gerade einen Tag vor der MP-Einheit.\n\nVergleich: Der fast deckungsgleiche Lauf am 22.08. (9,13 km @ 5:12, HF 145, 113 hm) — vor der Sprunggelenk-Pause — lief 3 s/km schneller bei 3 bpm weniger. Rechnet man die Kleidung heraus, ist das praktisch dieselbe Effizienz wie vor der Zwangspause. Zusammen mit dem 20er vom 06.09. (5:14, HF 147) ist damit der fünfte schmerzfreie Lauf in Folge dokumentiert.\n\nFürs 3:39-Ziel: Prognose unverändert bei 89 %. Der Lauf bestätigt den Wiederaufbau, liefert aber keine neue Information. Morgen steht die MP-Einheit über 11 km mit 3× 10 min bei 5:00–5:11 an — dünner anziehen und eine flache Strecke wählen, damit die MP-Blöcke pulsseitig unter 150 bleiben. Am Freitag folgen die 6 km sehr locker (HF 135–145), am Sonntag der letzte lange Lauf über 24 km mit 8 km MP."
+  "d": "2026-09-10",
+  "dist": 6.01,
+  "pace": 5.47,
+  "hf": 138,
+  "hm": 22,
+  "note": "6,01 km @ 5:28 bei HF 138 auf sehr flacher Runde (22 hm) — 5. Tag exakt im Zielfenster 135–145. Prognose bleibt 89 %.",
+  "feedback": "Kernwerte: 6,01 km in 32:52, Ø 5:28/km bei Ø HF 138 und nur 22 hm Anstieg. Weil die Runde mit ~3,7 hm/km ungewöhnlich flach war, liegt die steigungsangepasste Pace (GAP ~5:27) praktisch auf der Uhr-Pace. Der Puls sitzt mittig im Zielfenster des 5. Tages (135–145) und damit klar in Zone 2.\n\nAusführung vs. Plan: Vorgabe war GA 6 km sehr locker — 6,01 km bei HF 138 ist eine Punktlandung. Anders als am 06.09., wo die Schlusskilometer in Zone 3 gerutscht sind, blieb der Lauf diesmal durchgehend locker. Genau das war die Aufgabe: Erholung zwischen dem 9,12er vom Mittwoch und der MP-Einheit morgen.\n\nVergleich: Am 02.09. lief der Wiedereinstieg mit 6,02 km @ 5:23 bei HF 139 (46 hm), am 05.09. 6,62 km @ 5:20 bei HF 141 (52 hm). Heute also etwas langsamer bei minimal niedrigerem Puls — auf der flacheren Strecke bedeutet das bewusst zurückgenommenes Tempo statt schlechterer Effizienz. Für einen Regenerationstag ist das die richtige Richtung.\n\nFürs 3:39-Ziel: Prognose bleibt bei 89 % — der Lauf liefert keine neue Formaussage, aber er ist der fünfte beschwerdefreie in Folge und hält die Plantreue in Woche 10 vollständig. Morgen (Fr 11.09.) folgt die Qualität: 3× 10 min MP bei 5:00–5:11 — flache Strecke wählen, Puls ≤ ~150. Am Sonntag der letzte lange Lauf über 24 km mit 8 km MP; der Samstag dazwischen bleibt strikt REKOM-nah unter HF 140."
  },
  "prognose": 89,
  "runs": [
@@ -314,6 +315,13 @@
    "pace": 5.25,
    "hf": 148,
    "hm": 102
+  },
+  {
+   "d": "2026-09-10",
+   "dist": 6.01,
+   "pace": 5.47,
+   "hf": 138,
+   "hm": 22
   }
  ],
  "progHist": [
@@ -455,6 +463,10 @@
   },
   {
    "d": "2026-09-09",
+   "p": 89
+  },
+  {
+   "d": "2026-09-10",
    "p": 89
   }
  ]
