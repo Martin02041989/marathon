@@ -197,7 +197,9 @@
 <script>
 // ===== Trainingsplan (Datum ISO → Einheit) =====
 // typ: GA, MP, LT, LL, REKOM, TEST, RACE
-const PLAN = [
+// Eingebettete Fassung = FALLBACK. Massgeblich ist data.plan aus data.json
+// (wird mit Cache-Buster geladen, daher immer aktuell).
+const PLAN_FALLBACK = [
   {w:1, d:"2026-07-07", typ:"GA",  km:8,  t:"GA 8 km locker + 2× 8 min MP", det:"Z2, Einlagen: MP 5:11, 3 min Trab dazwischen"},
   {w:1, d:"2026-07-09", typ:"MP",  km:9,  t:"MP 9 km — 3× 8 min MP", det:"3 min Trab, Rest locker"},
   {w:1, d:"2026-07-10", typ:"LL",  km:18, t:"Langer Lauf 18 km ruhig", det:"Z2, 6:10–6:20, früh starten (von Sa vorgezogen)"},
@@ -266,7 +268,16 @@ const PLAN = [
   {w:17, d:"2026-10-31", typ:"REKOM", km:4, t:"REKOM 4 km ausschütteln + 2 Steigerungen", det:"Central Park"},
   {w:17, d:"2026-11-01", typ:"RACE2", km:42.2, t:"🏁 MARATHON NYC", det:"B-Rennen nach Gefühl · Brücken konservativ · HF-gesteuert (≤ ~155) · zweite Hälfte frei"}
 ];
-const WEEKNAMES = {1:"Aufbau",2:"Urlaub Neapel",3:"Aufbau",4:"Entlastung",5:"5. Tag startet",6:"Peak-Basis",7:"Aufbau",8:"Formtest",9:"Längster Lauf",10:"Taper-Start",11:"Taper",12:"Race Week",13:"Regeneration I",14:"Regeneration II",15:"Wiederaufbau",16:"Mini-Taper",17:"Race Week NYC"};
+const WEEKNAMES_FALLBACK = {1:"Aufbau",2:"Urlaub Neapel",3:"Aufbau",4:"Entlastung",5:"5. Tag startet",6:"Peak-Basis",7:"Aufbau",8:"Formtest",9:"Längster Lauf",10:"Taper-Start",11:"Taper",12:"Race Week",13:"Regeneration I",14:"Regeneration II",15:"Wiederaufbau",16:"Mini-Taper",17:"Race Week NYC"};
+let PLAN = PLAN_FALLBACK;
+let WEEKNAMES = WEEKNAMES_FALLBACK;
+try {
+  const _p = JSON.parse(localStorage.getItem("plan") || "null");
+  if (Array.isArray(_p) && _p.length) PLAN = _p;
+  const _w = JSON.parse(localStorage.getItem("weeknames") || "null");
+  if (_w && typeof _w === "object") WEEKNAMES = _w;
+} catch(e) {}
+
 const RACE = new Date(2026,8,27);
 const RACE2 = new Date(2026,10,1); // NYC 01.11.
 const QUALITY = ["MP","LT","TEST","RACE","RACE2"];
@@ -441,7 +452,21 @@ function syncRemote(){
         progHist = data.progHist;
         try { localStorage.setItem("progHist", JSON.stringify(progHist)); } catch(e) {}
       }
-      renderHeute(); renderPlan();
+      if (Array.isArray(data.plan) && data.plan.length) {
+        PLAN = data.plan;
+        try { localStorage.setItem("plan", JSON.stringify(data.plan)); } catch(e) {}
+      } else {
+        PLAN = PLAN_FALLBACK;
+        try { localStorage.removeItem("plan"); } catch(e) {}
+      }
+      if (data.weeknames && typeof data.weeknames === "object") {
+        WEEKNAMES = data.weeknames;
+        try { localStorage.setItem("weeknames", JSON.stringify(data.weeknames)); } catch(e) {}
+      } else {
+        WEEKNAMES = WEEKNAMES_FALLBACK;
+        try { localStorage.removeItem("weeknames"); } catch(e) {}
+      }
+      renderHeute(); renderPlan(); renderRennen();
     })
     .catch(()=>{}); // offline oder lokale Datei: einfach lokaler Stand
 }

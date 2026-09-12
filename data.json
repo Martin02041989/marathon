@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T06:29:42Z",
+ "updated": "2026-09-12T06:34:09Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -473,5 +473,562 @@
    "d": "2026-09-12",
    "p": 85
   }
- ]
+ ],
+ "plan": [
+  {
+   "w": 1,
+   "d": "2026-07-07",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker + 2× 8 min MP",
+   "det": "Z2, Einlagen: MP 5:11, 3 min Trab dazwischen"
+  },
+  {
+   "w": 1,
+   "d": "2026-07-09",
+   "typ": "MP",
+   "km": 9,
+   "t": "MP 9 km — 3× 8 min MP",
+   "det": "3 min Trab, Rest locker"
+  },
+  {
+   "w": 1,
+   "d": "2026-07-10",
+   "typ": "LL",
+   "km": 18,
+   "t": "Langer Lauf 18 km ruhig",
+   "det": "Z2, 6:10–6:20, früh starten (von Sa vorgezogen)"
+  },
+  {
+   "w": 2,
+   "d": "2026-07-14",
+   "typ": "GA",
+   "km": 9,
+   "t": "GA 9 km locker",
+   "det": "Neapel: früh, nach Puls"
+  },
+  {
+   "w": 2,
+   "d": "2026-07-16",
+   "typ": "MP",
+   "km": 10,
+   "t": "MP 10 km — 3× 8 min MP",
+   "det": "flache Strecke, früh; bei Hitze Puls deckeln"
+  },
+  {
+   "w": 2,
+   "d": "2026-07-18",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 2,
+   "d": "2026-07-19",
+   "typ": "LL",
+   "km": 21,
+   "t": "Langer Lauf 21 km ruhig",
+   "det": "erster LL nach Urlaub, bewusst ruhig"
+  },
+  {
+   "w": 3,
+   "d": "2026-07-21",
+   "typ": "GA",
+   "km": 10,
+   "t": "GA 10 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 3,
+   "d": "2026-07-23",
+   "typ": "MP",
+   "km": 11,
+   "t": "LT 11 km — 3× 10 min MP",
+   "det": "3 min Trab · MP 5:11, kein Schwellentempo"
+  },
+  {
+   "w": 3,
+   "d": "2026-07-25",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 3,
+   "d": "2026-07-26",
+   "typ": "LL",
+   "km": 24,
+   "t": "Langer Lauf 24 km",
+   "det": "letzte 6 km ~5:40"
+  },
+  {
+   "w": 4,
+   "d": "2026-07-28",
+   "typ": "GA",
+   "km": 7,
+   "t": "GA 7 km locker",
+   "det": "Entlastungswoche"
+  },
+  {
+   "w": 4,
+   "d": "2026-07-30",
+   "typ": "MP",
+   "km": 8,
+   "t": "MP 8 km — 4 km MP am Stück",
+   "det": "Rest locker"
+  },
+  {
+   "w": 4,
+   "d": "2026-08-01",
+   "typ": "GA",
+   "km": 6,
+   "t": "GA 6 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 4,
+   "d": "2026-08-02",
+   "typ": "LL",
+   "km": 16,
+   "t": "Langer Lauf 16 km locker",
+   "det": "Entlastung — wirklich locker"
+  },
+  {
+   "w": 5,
+   "d": "2026-08-03",
+   "typ": "GA",
+   "km": 9,
+   "t": "GA 9 km locker",
+   "det": "Z2 nach Puls — vorgezogen von Di (Dienstreise)"
+  },
+  {
+   "w": 5,
+   "d": "2026-08-05",
+   "typ": "GA5",
+   "km": 6,
+   "t": "GA 6 km — 5. Tag",
+   "det": "sehr locker, HF 135–145"
+  },
+  {
+   "w": 5,
+   "d": "2026-08-06",
+   "typ": "LT",
+   "km": 12,
+   "t": "LT 12 km — Schwelle 4× 8 min",
+   "det": "4:50–5:05, 3 min Trab"
+  },
+  {
+   "w": 5,
+   "d": "2026-08-08",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 5,
+   "d": "2026-08-09",
+   "typ": "LL",
+   "km": 24,
+   "t": "Langer Lauf 24 km",
+   "det": "8 km MP im zweiten Teil"
+  },
+  {
+   "w": 6,
+   "d": "2026-08-11",
+   "typ": "GA",
+   "km": 10,
+   "t": "GA 10 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 6,
+   "d": "2026-08-12",
+   "typ": "GA5",
+   "km": 7,
+   "t": "GA 7 km — 5. Tag",
+   "det": "sehr locker, HF 135–145"
+  },
+  {
+   "w": 6,
+   "d": "2026-08-14",
+   "typ": "MP",
+   "km": 11,
+   "t": "MP 11 km — 3× 12 min MP",
+   "det": "3 min Trab · verschoben von Do"
+  },
+  {
+   "w": 6,
+   "d": "2026-08-15",
+   "typ": "LL",
+   "km": 28,
+   "t": "Langer Lauf 28 km ruhig",
+   "det": "HF unter 150 halten · vorgezogen von So"
+  },
+  {
+   "w": 6,
+   "d": "2026-08-16",
+   "typ": "REKOM",
+   "km": 5,
+   "t": "REKOM 5 km sehr locker",
+   "det": "HF 110–134 · getauscht mit LL"
+  },
+  {
+   "w": 7,
+   "d": "2026-08-19",
+   "typ": "GA5",
+   "km": 7,
+   "t": "GA 7 km — 5. Tag",
+   "det": "sehr locker, HF 135–145"
+  },
+  {
+   "w": 7,
+   "d": "2026-08-21",
+   "typ": "LT",
+   "km": 12,
+   "t": "LT 12 km — Schwelle 5× 6 min",
+   "det": "2 min Trab · von Do verschoben"
+  },
+  {
+   "w": 7,
+   "d": "2026-08-22",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 7,
+   "d": "2026-08-23",
+   "typ": "LL",
+   "km": 25,
+   "t": "Langer Lauf 25 km",
+   "det": "letzte 6 km MP"
+  },
+  {
+   "w": 8,
+   "d": "2026-08-25",
+   "typ": "GA",
+   "km": 10,
+   "t": "GA 10 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 8,
+   "d": "2026-08-27",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker + 4× 100 m Steigerungen",
+   "det": ""
+  },
+  {
+   "w": 8,
+   "d": "2026-08-29",
+   "typ": "REKOM",
+   "km": 4,
+   "t": "REKOM 4 km sehr locker + 3 Steigerungen",
+   "det": "Vortag HM-Test"
+  },
+  {
+   "w": 8,
+   "d": "2026-08-30",
+   "typ": "TEST",
+   "km": 23,
+   "t": "HALBMARATHON-TEST",
+   "det": "Ziel 1:44 oder schneller · 2 km einlaufen · flache Strecke · Generalprobe Schuhe/Gels"
+  },
+  {
+   "w": 9,
+   "d": "2026-09-01",
+   "typ": "GA",
+   "km": 10,
+   "t": "GA 10 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 9,
+   "d": "2026-09-02",
+   "typ": "GA5",
+   "km": 6,
+   "t": "GA 6 km — Wiedereinstieg",
+   "det": "WIEDERAUFBAU nach ärztlicher Freigabe · sehr locker HF 135–145 · flach · Fenster-Schnürung"
+  },
+  {
+   "w": 9,
+   "d": "2026-09-04",
+   "typ": "GA",
+   "km": 7,
+   "t": "GA 7 km locker",
+   "det": "MP am Do 03.09. gestrichen · nur bei sauberer 24-h-Reaktion"
+  },
+  {
+   "w": 9,
+   "d": "2026-09-05",
+   "typ": "GA",
+   "km": 6,
+   "t": "GA 6 km locker",
+   "det": "oder Ruhetag — nach 24-h-Reaktion entscheiden"
+  },
+  {
+   "w": 9,
+   "d": "2026-09-06",
+   "typ": "LL",
+   "km": 16,
+   "t": "Langer Lauf 16 km ruhig",
+   "det": "WIEDERAUFBAU statt 32 km · rein Z2 · flach · kein MP-Anteil"
+  },
+  {
+   "w": 10,
+   "d": "2026-09-09",
+   "typ": "GA",
+   "km": 9,
+   "t": "GA 9 km locker",
+   "det": "verschoben von Di 08.09. · Taper-Start"
+  },
+  {
+   "w": 10,
+   "d": "2026-09-10",
+   "typ": "GA5",
+   "km": 6,
+   "t": "GA 6 km — 5. Tag",
+   "det": "getauscht mit Do · sehr locker, HF 135–145"
+  },
+  {
+   "w": 10,
+   "d": "2026-09-11",
+   "typ": "REST",
+   "km": 0,
+   "t": "Ruhetag — MP 11 km gestrichen",
+   "det": "Halskratzen · Infektschutz geht vor · Form ist gesichert"
+  },
+  {
+   "w": 10,
+   "d": "2026-09-12",
+   "typ": "REST",
+   "km": 0,
+   "t": "Ruhetag — Infekt, zweiter Tag",
+   "det": "Laufen erst nach 24 h Symptomfreiheit"
+  },
+  {
+   "w": 10,
+   "d": "2026-09-13",
+   "typ": "REST",
+   "km": 0,
+   "t": "Langer Lauf GESTRICHEN — Infekt",
+   "det": "LL 14 Tage vor dem Rennen adaptiert kaum noch · Erholung geht vor"
+  },
+  {
+   "w": 11,
+   "d": "2026-09-15",
+   "typ": "GA",
+   "km": 8,
+   "t": "Wiedereinstieg 5–8 km sehr locker",
+   "det": "HF unter 145 · nur nach 24 h Symptomfreiheit · erste Läufe fühlen sich schlecht an, nicht als Formtest werten"
+  },
+  {
+   "w": 11,
+   "d": "2026-09-17",
+   "typ": "MP",
+   "km": 8,
+   "t": "MP-Auffrischung — 3–4 km bei 5:05–5:11",
+   "det": "FLACHE Strecke · nur bei voller Beschwerdefreiheit, sonst GA 8 km locker"
+  },
+  {
+   "w": 11,
+   "d": "2026-09-19",
+   "typ": "GA",
+   "km": 6,
+   "t": "GA 6 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 11,
+   "d": "2026-09-20",
+   "typ": "LL",
+   "km": 17,
+   "t": "Langer Lauf 16–18 km ruhig Z2",
+   "det": "letzter LL · rein nach Puls (134–148), kein MP-Anteil · Generalprobe Verpflegung 3 Gele"
+  },
+  {
+   "w": 12,
+   "d": "2026-09-22",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker + 3× 90 s MP",
+   "det": "Race Week"
+  },
+  {
+   "w": 12,
+   "d": "2026-09-24",
+   "typ": "REKOM",
+   "km": 6,
+   "t": "REKOM 6 km sehr locker + 3 Steigerungen",
+   "det": ""
+  },
+  {
+   "w": 12,
+   "d": "2026-09-26",
+   "typ": "REKOM",
+   "km": 4,
+   "t": "REKOM 4 km ausschütteln + 2 Steigerungen",
+   "det": ""
+  },
+  {
+   "w": 12,
+   "d": "2026-09-27",
+   "typ": "RACE",
+   "km": 42.2,
+   "t": "🏁 MARATHON BERLIN",
+   "det": "Ziel 3:39 · MP 5:11/km · erste 5 km konservativ · Gel alle 30–35 min"
+  },
+  {
+   "w": 13,
+   "d": "2026-10-01",
+   "typ": "REKOM",
+   "km": 4,
+   "t": "REKOM 4 km sehr locker",
+   "det": "Regeneration I nach Berlin — nur wenn die Beine wollen"
+  },
+  {
+   "w": 13,
+   "d": "2026-10-03",
+   "typ": "REKOM",
+   "km": 5,
+   "t": "REKOM 5 km sehr locker",
+   "det": "alles unter HF 134 — Bewegung, kein Training"
+  },
+  {
+   "w": 14,
+   "d": "2026-10-06",
+   "typ": "GA",
+   "km": 6,
+   "t": "GA 6 km locker",
+   "det": "Regeneration II — Z2 nach Puls"
+  },
+  {
+   "w": 14,
+   "d": "2026-10-08",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 14,
+   "d": "2026-10-11",
+   "typ": "LL",
+   "km": 12,
+   "t": "Ruhiger Lauf 12 km",
+   "det": "Z2, bewusst kurz"
+  },
+  {
+   "w": 15,
+   "d": "2026-10-13",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker",
+   "det": "Wiederaufbau — Z2 nach Puls"
+  },
+  {
+   "w": 15,
+   "d": "2026-10-15",
+   "typ": "MP",
+   "km": 9,
+   "t": "MP 9 km — 2× 10 min MP",
+   "det": "3 min Trab; Rest locker"
+  },
+  {
+   "w": 15,
+   "d": "2026-10-17",
+   "typ": "GA",
+   "km": 6,
+   "t": "GA 6 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 15,
+   "d": "2026-10-18",
+   "typ": "LL",
+   "km": 14,
+   "t": "Langer Lauf 14 km",
+   "det": "letzte 4 km ~5:30"
+  },
+  {
+   "w": 16,
+   "d": "2026-10-20",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker + 4× 100 m Steigerungen",
+   "det": "Mini-Taper"
+  },
+  {
+   "w": 16,
+   "d": "2026-10-22",
+   "typ": "MP",
+   "km": 8,
+   "t": "MP 8 km — 3 km MP am Stück",
+   "det": "Rest locker"
+  },
+  {
+   "w": 16,
+   "d": "2026-10-25",
+   "typ": "LL",
+   "km": 12,
+   "t": "Langer Lauf 12 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 17,
+   "d": "2026-10-27",
+   "typ": "GA",
+   "km": 6,
+   "t": "GA 6 km locker + 3× 90 s MP",
+   "det": "Race Week NYC"
+  },
+  {
+   "w": 17,
+   "d": "2026-10-29",
+   "typ": "REKOM",
+   "km": 5,
+   "t": "REKOM 5 km sehr locker",
+   "det": "nach Ankunft NYC — Jetlag: morgens laufen, früh schlafen"
+  },
+  {
+   "w": 17,
+   "d": "2026-10-31",
+   "typ": "REKOM",
+   "km": 4,
+   "t": "REKOM 4 km ausschütteln + 2 Steigerungen",
+   "det": "Central Park"
+  },
+  {
+   "w": 17,
+   "d": "2026-11-01",
+   "typ": "RACE2",
+   "km": 42.2,
+   "t": "🏁 MARATHON NYC",
+   "det": "B-Rennen nach Gefühl · Brücken konservativ · HF-gesteuert (≤ ~155) · zweite Hälfte frei"
+  }
+ ],
+ "weeknames": {
+  "1": "Aufbau",
+  "2": "Urlaub Neapel",
+  "3": "Aufbau",
+  "4": "Entlastung",
+  "5": "5. Tag startet",
+  "6": "Peak-Basis",
+  "7": "Aufbau",
+  "8": "Formtest",
+  "9": "Längster Lauf",
+  "10": "Taper-Start",
+  "11": "Taper",
+  "12": "Race Week",
+  "13": "Regeneration I",
+  "14": "Regeneration II",
+  "15": "Wiederaufbau",
+  "16": "Mini-Taper",
+  "17": "Race Week NYC"
+ }
 }
