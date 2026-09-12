@@ -291,6 +291,7 @@ function shoe(typ){
 }
 // Zonen aus dem Labortest 03.07.2026
 const ZONES = {
+  REST:  { z: "Ruhetag",                hf: "kein Zielpuls" },
   REKOM: { z: "I1 · REKOM",            hf: "HF < 134" },
   GA:    { z: "I2 · Zone 2",           hf: "HF 134–151" },
   GA5:   { z: "I2 · Zone 2 (5. Tag)",  hf: "HF 135–145" },
@@ -305,6 +306,7 @@ function zoneOf(typ){ return ZONES[typ] || ZONES.GA; }
 function badges(s){
   const zi = zoneOf(s.typ);
   let b = "";
+  if (s.typ === "REST") return '<span class="badge b-hf">Ruhetag · kein Zielpuls</span>';
   if (zi.pace) b += '<span class="badge b-pace">' + zi.z + ' · ' + zi.pace + '</span>';
   else b += '<span class="badge b-pace">' + zi.z + '</span>';
   b += '<span class="badge b-hf">' + zi.hf + '</span>';
@@ -522,7 +524,7 @@ function renderPlan(){
         '<div class="txt">' + (isToday ? '<div class="today-tag">HEUTE</div>' : '') +
         '<div class="d1">' + fmt(new Date(s.d+"T12:00")) + ' — ' + s.t + '</div>' +
         (s.det ? '<div class="d2">' + s.det + '</div>' : '') +
-        '<div class="d2">' + zoneOf(s.typ).z + ' · ' + zoneOf(s.typ).hf + (zoneOf(s.typ).pace ? ' · ' + zoneOf(s.typ).pace : '') + '</div>' +
+        (s.typ === "REST" ? '' : '<div class="d2">' + zoneOf(s.typ).z + ' · ' + zoneOf(s.typ).hf + (zoneOf(s.typ).pace ? ' · ' + zoneOf(s.typ).pace : '') + '</div>') +
         '</div></div>';
     }
     html += '</div></div>';
