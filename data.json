@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T06:34:09Z",
+ "updated": "2026-09-12T12:14:12Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -37,16 +37,17 @@
   "2026-09-05",
   "2026-09-06",
   "2026-09-09",
-  "2026-09-10"
+  "2026-09-10",
+  "2026-09-12"
  ],
  "lastRun": {
-  "d": "2026-09-10",
-  "dist": 6.01,
-  "pace": 5.47,
-  "hf": 138,
-  "hm": 22,
-  "note": "6,01 km @ 5:28 bei HF 138 auf sehr flacher Runde (22 hm) — 5. Tag exakt im Zielfenster 135–145. Prognose bleibt 89 %.",
-  "feedback": "Kernwerte: 6,01 km in 32:52, Ø 5:28/km bei Ø HF 138 und nur 22 hm Anstieg. Weil die Runde mit ~3,7 hm/km ungewöhnlich flach war, liegt die steigungsangepasste Pace (GAP ~5:27) praktisch auf der Uhr-Pace. Der Puls sitzt mittig im Zielfenster des 5. Tages (135–145) und damit klar in Zone 2.\n\nAusführung vs. Plan: Vorgabe war GA 6 km sehr locker — 6,01 km bei HF 138 ist eine Punktlandung. Anders als am 06.09., wo die Schlusskilometer in Zone 3 gerutscht sind, blieb der Lauf diesmal durchgehend locker. Genau das war die Aufgabe: Erholung zwischen dem 9,12er vom Mittwoch und der MP-Einheit morgen.\n\nVergleich: Am 02.09. lief der Wiedereinstieg mit 6,02 km @ 5:23 bei HF 139 (46 hm), am 05.09. 6,62 km @ 5:20 bei HF 141 (52 hm). Heute also etwas langsamer bei minimal niedrigerem Puls — auf der flacheren Strecke bedeutet das bewusst zurückgenommenes Tempo statt schlechterer Effizienz. Für einen Regenerationstag ist das die richtige Richtung.\n\nFürs 3:39-Ziel: Prognose bleibt bei 89 % — der Lauf liefert keine neue Formaussage, aber er ist der fünfte beschwerdefreie in Folge und hält die Plantreue in Woche 10 vollständig. Morgen (Fr 11.09.) folgt die Qualität: 3× 10 min MP bei 5:00–5:11 — flache Strecke wählen, Puls ≤ ~150. Am Sonntag der letzte lange Lauf über 24 km mit 8 km MP; der Samstag dazwischen bleibt strikt REKOM-nah unter HF 140."
+  "d": "2026-09-12",
+  "dist": 4.45,
+  "pace": 6.75,
+  "hf": 119,
+  "hm": 0,
+  "note": "4,45 km Laufband @ 6:45 bei HF 119 — sauber in Zone 1, rund 19 Schläge unter dem letzten GA-Lauf. Prognose bleibt 85 %.",
+  "feedback": "Kernwerte: 4,45 km in 30:02, Ø 6:45/km bei Ø HF 119 auf dem Laufband. Höhenmeter und Wind entfallen, eine Grade-Adjusted Pace gibt es hier nicht — der Puls ist die einzige aussagekräftige Grösse. HF 119 liegt klar unter der Zone-1-Grenze von 134, also genau dort, wo eine Einheit mit Infekt hingehört.\n\nAusführung: Geplant war ein zweiter Ruhetag. Gelaufen wurde stattdessen — aber mit der richtigen Intensität, und das ist der Punkt, auf den es ankommt. 30 Minuten bei HF 119 sind keine Trainingsbelastung, sondern Bewegung: Kreislauf und Laufgefühl bleiben wach, das Immunsystem wird nicht angefasst. Das Laufband war dabei die bessere Wahl als die Hausrunde, weil warme Luft den gereizten Rachen weniger belastet als kühle Aussenluft und das Tempo sich nicht heimlich nach oben schleicht.\n\nVergleich: Der letzte GA-Lauf am 10.09. lief 6,01 km @ 5:28 bei HF 138 (22 hm), der 9,12er am 09.09. 5:15 bei HF 148. Heute also rund 77 s/km langsamer bei 19 Schlägen weniger als am 10.09. — ein deutlicher, bewusst gesetzter Abstand nach unten statt des üblichen Z2-Bands.\n\nFürs 3:39-Ziel: unverändert 85 %. Eine halbe Stunde Zone 1 verändert keine Form, weder nach oben noch nach unten. Ein mildes positives Signal steckt trotzdem drin: Bei einem systemischen Infekt liegt die Herzfrequenz bei so geringer Last typischerweise spürbar erhöht, HF 119 bei entspanntem Traben spricht eher für einen milden Verlauf. Belastbarer sind Ruhepuls und HRV am Morgen — die sind der eigentliche Marker in den nächsten Tagen.\n\nAusblick: So 13.09. bleibt ohne langen Lauf. Wenn es weiter in diese Richtung geht, sind weitere kurze Z1-Einheiten wie heute unbedenklich. Der eigentliche Wiedereinstieg steht am Di 15.09. (5–8 km unter HF 145), die einzige verbleibende Qualität am Do 17.09. (3–4 km bei 5:05–5:11, flach) — beides nur nach 24 h Symptomfreiheit."
  },
  "prognose": 85,
  "runs": [
@@ -322,6 +323,13 @@
    "pace": 5.47,
    "hf": 138,
    "hm": 22
+  },
+  {
+   "d": "2026-09-12",
+   "dist": 4.45,
+   "pace": 6.75,
+   "hf": 119,
+   "hm": 0
   }
  ],
  "progHist": [
@@ -806,10 +814,10 @@
   {
    "w": 10,
    "d": "2026-09-12",
-   "typ": "REST",
-   "km": 0,
-   "t": "Ruhetag — Infekt, zweiter Tag",
-   "det": "Laufen erst nach 24 h Symptomfreiheit"
+   "typ": "REKOM",
+   "km": 4,
+   "t": "Laufband 4,45 km Zone 1 — statt Ruhetag",
+   "det": "HF 119 · bewusst unter 134 gehalten · Bewegung ohne Immunbelastung"
   },
   {
    "w": 10,
