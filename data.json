@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-11T16:09:38Z",
+ "updated": "2026-09-12T06:29:42Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -48,7 +48,7 @@
   "note": "6,01 km @ 5:28 bei HF 138 auf sehr flacher Runde (22 hm) — 5. Tag exakt im Zielfenster 135–145. Prognose bleibt 89 %.",
   "feedback": "Kernwerte: 6,01 km in 32:52, Ø 5:28/km bei Ø HF 138 und nur 22 hm Anstieg. Weil die Runde mit ~3,7 hm/km ungewöhnlich flach war, liegt die steigungsangepasste Pace (GAP ~5:27) praktisch auf der Uhr-Pace. Der Puls sitzt mittig im Zielfenster des 5. Tages (135–145) und damit klar in Zone 2.\n\nAusführung vs. Plan: Vorgabe war GA 6 km sehr locker — 6,01 km bei HF 138 ist eine Punktlandung. Anders als am 06.09., wo die Schlusskilometer in Zone 3 gerutscht sind, blieb der Lauf diesmal durchgehend locker. Genau das war die Aufgabe: Erholung zwischen dem 9,12er vom Mittwoch und der MP-Einheit morgen.\n\nVergleich: Am 02.09. lief der Wiedereinstieg mit 6,02 km @ 5:23 bei HF 139 (46 hm), am 05.09. 6,62 km @ 5:20 bei HF 141 (52 hm). Heute also etwas langsamer bei minimal niedrigerem Puls — auf der flacheren Strecke bedeutet das bewusst zurückgenommenes Tempo statt schlechterer Effizienz. Für einen Regenerationstag ist das die richtige Richtung.\n\nFürs 3:39-Ziel: Prognose bleibt bei 89 % — der Lauf liefert keine neue Formaussage, aber er ist der fünfte beschwerdefreie in Folge und hält die Plantreue in Woche 10 vollständig. Morgen (Fr 11.09.) folgt die Qualität: 3× 10 min MP bei 5:00–5:11 — flache Strecke wählen, Puls ≤ ~150. Am Sonntag der letzte lange Lauf über 24 km mit 8 km MP; der Samstag dazwischen bleibt strikt REKOM-nah unter HF 140."
  },
- "prognose": 89,
+ "prognose": 85,
  "runs": [
   {
    "d": "2026-07-01",
@@ -468,6 +468,10 @@
   {
    "d": "2026-09-10",
    "p": 89
+  },
+  {
+   "d": "2026-09-12",
+   "p": 85
   }
  ]
 }
