@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-16T16:52:30Z",
+ "updated": "2026-09-17T16:09:51Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -38,18 +38,19 @@
   "2026-09-06",
   "2026-09-09",
   "2026-09-10",
-  "2026-09-12"
+  "2026-09-12",
+  "2026-09-17"
  ],
  "lastRun": {
-  "d": "2026-09-12",
-  "dist": 4.45,
-  "pace": 6.75,
-  "hf": 119,
-  "hm": 0,
-  "note": "4,45 km Laufband @ 6:45 bei HF 119 — sauber in Zone 1, rund 19 Schläge unter dem letzten GA-Lauf. Prognose bleibt 85 %.",
-  "feedback": "Kernwerte: 4,45 km in 30:02, Ø 6:45/km bei Ø HF 119 auf dem Laufband. Höhenmeter und Wind entfallen, eine Grade-Adjusted Pace gibt es hier nicht — der Puls ist die einzige aussagekräftige Grösse. HF 119 liegt klar unter der Zone-1-Grenze von 134, also genau dort, wo eine Einheit mit Infekt hingehört.\n\nAusführung: Geplant war ein zweiter Ruhetag. Gelaufen wurde stattdessen — aber mit der richtigen Intensität, und das ist der Punkt, auf den es ankommt. 30 Minuten bei HF 119 sind keine Trainingsbelastung, sondern Bewegung: Kreislauf und Laufgefühl bleiben wach, das Immunsystem wird nicht angefasst. Das Laufband war dabei die bessere Wahl als die Hausrunde, weil warme Luft den gereizten Rachen weniger belastet als kühle Aussenluft und das Tempo sich nicht heimlich nach oben schleicht.\n\nVergleich: Der letzte GA-Lauf am 10.09. lief 6,01 km @ 5:28 bei HF 138 (22 hm), der 9,12er am 09.09. 5:15 bei HF 148. Heute also rund 77 s/km langsamer bei 19 Schlägen weniger als am 10.09. — ein deutlicher, bewusst gesetzter Abstand nach unten statt des üblichen Z2-Bands.\n\nFürs 3:39-Ziel: unverändert 85 %. Eine halbe Stunde Zone 1 verändert keine Form, weder nach oben noch nach unten. Ein mildes positives Signal steckt trotzdem drin: Bei einem systemischen Infekt liegt die Herzfrequenz bei so geringer Last typischerweise spürbar erhöht, HF 119 bei entspanntem Traben spricht eher für einen milden Verlauf. Belastbarer sind Ruhepuls und HRV am Morgen — die sind der eigentliche Marker in den nächsten Tagen.\n\nAusblick: So 13.09. bleibt ohne langen Lauf. Wenn es weiter in diese Richtung geht, sind weitere kurze Z1-Einheiten wie heute unbedenklich. Der eigentliche Wiedereinstieg steht am Di 15.09. (5–8 km unter HF 145), die einzige verbleibende Qualität am Do 17.09. (3–4 km bei 5:05–5:11, flach) — beides nur nach 24 h Symptomfreiheit."
+  "d": "2026-09-17",
+  "dist": 5.7,
+  "pace": 6.25,
+  "hf": 129,
+  "hm": 52,
+  "note": "5,70 km @ 6:15 bei HF 129 — Wiedereinstieg in Zone 1 statt MP-Auffrischung. Prognose 85 → 82 %.",
+  "feedback": "Kernwerte: 5,70 km in 35:37, Ø 6:15/km bei Ø HF 129 und 52 hm auf der Hausrunde — Grade-Adjusted Pace etwa 6:10/km. Der Puls liegt in Zone 1, klar unter der Z2-Untergrenze von 134. Nach fünf Tagen ohne Laufbelastung ist das genau die Intensität, mit der man nach einem Infekt wieder einsteigt.\n\nAusführung vs. Plan: Vorgesehen war die MP-Auffrischung (3–4 km bei 5:05–5:11, ersatzweise GA 8 km). Gelaufen wurde weder das eine noch das andere, sondern ein kurzer, sehr ruhiger Wiedereinstieg. Das ist die richtige Entscheidung, wenn der Hals noch nicht ganz frei war oder der Körper sich zäh angefühlt hat — erste Läufe nach Infekt fühlen sich wegen des reduzierten Plasmavolumens fast immer schlecht an und sind kein Formtest.\n\nVergleich: Der Wiedereinstieg am 02.09. nach der Fusspause lief 6,02 km @ 5:23 bei HF 139, der GA-Lauf am 10.09. 6,01 km @ 5:28 bei HF 138, das Laufband am 12.09. 4,45 km @ 6:45 bei HF 119. Heute liegt mit HF 129 sauber zwischen Laufband und GA — rund 47 s/km langsamer als am 10.09. bei 9 Schlägen weniger. Ob der Motor darunter unverändert ist, lässt sich aus einem Z1-Lauf nicht ablesen; die Effizienzwerte vom 06.09. (20 km @ 5:14, HF 147, ohne Drift) bleiben die letzte belastbare Messung.\n\nFürs 3:39-Ziel: Prognose von 85 auf 82 % gesenkt. Nicht, weil Form verloren gegangen wäre — zehn Tage Taper kosten keine aerobe Substanz —, sondern weil zwei Variablen offen bleiben: der Infektverlauf und die Tatsache, dass seit dem 06.09. kein Marathon-Tempo mehr kontrolliert abgerufen wurde. Der Plan B (3:50, ~5:27/km) steht davon unberührt sehr sicher.\n\nAusblick: Fr 18.09. Ruhetag. Sa 19.09. GA 6 km Z2 (HF 134–151) nur bei voller Symptomfreiheit und ruhigem Morgenpuls. So 20.09. letzter LL 16–18 km rein nach Puls mit Verpflegungs-Generalprobe — wenn alles still ist, dort in der zweiten Hälfte 2–3 km im MP-Gefühl (5:05–5:11) einstreuen, damit das Tempo vor Berlin einmal im Körper war. Race Week dann wie geplant: Di GA 8 + 3× 90 s MP, Do und Sa REKOM."
  },
- "prognose": 85,
+ "prognose": 82,
  "runs": [
   {
    "d": "2026-07-01",
@@ -330,6 +331,13 @@
    "pace": 6.75,
    "hf": 119,
    "hm": 0
+  },
+  {
+   "d": "2026-09-17",
+   "dist": 5.7,
+   "pace": 6.25,
+   "hf": 129,
+   "hm": 52
   }
  ],
  "progHist": [
@@ -480,6 +488,10 @@
   {
    "d": "2026-09-12",
    "p": 85
+  },
+  {
+   "d": "2026-09-17",
+   "p": 82
   }
  ],
  "plan": [
