@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19T16:43:17Z",
+  "updated": "2026-09-20T11:18:09Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -40,17 +40,18 @@
     "2026-09-10",
     "2026-09-12",
     "2026-09-17",
-    "2026-09-19"
+    "2026-09-19",
+    "2026-09-20"
   ],
   "lastRun": {
-    "d": "2026-09-19",
-    "dist": 10.33,
-    "pace": 5.53,
-    "hf": 147,
-    "note": "10,33 km @ 5:32 bei HF 147 — erster voller Lauf nach dem Infekt, sauber Z2. Prognose 82 → 83 %.",
-    "feedback": "Kernwerte: 10,33 km in 57:14, Ø 5:32/km bei 117 hm — Grade-Adjusted Pace ca. 5:20/km. Ø HF 147 liegt im oberen Zone-2-Bereich (134–151), also im Ziel, aber nicht am unteren Rand, den ein reiner Regenerationslauf hätte.\n\nAusführung vs. Plan: Geplant waren 10 km locker Z2 ohne MP-Anteil — genau so gelaufen, kein Tempo-Ausreißer, Distanz getroffen. Einzig die Intensität war einen Tick höher als ideal vor dem morgigen MP-Block.\n\nVergleich: Am 09.09. lief der 9,1-km-GA bei HF 148 mit 5:15/km (102 hm), am 05.09. 6,6 km bei HF 141 mit 5:20. Heute bei praktisch gleichem Puls ~15 s/km langsamer — die erwartbare Nachwirkung von Infekt (11.09.) und fünf lauffreien Tagen, kein struktureller Formverlust. Der 30er vom 15.08. (5:27 @ HF 141) und der 24,7er vom 23.08. (5:10 @ HF 146) bleiben die relevante Basis.\n\nBedeutung fürs 3:39-Ziel: Der Körper verträgt wieder 10 km im normalen Trainingsbereich ohne Symptome — das war die offene Frage. Prognose von 82 auf 83 %. Ausblick: So 20.09. 15 km, erste 10 km unter HF 145, dann 4–5 km MP (GAP 5:05–5:15, HF ≤ 152) als letzter Test; danach Race Week mit Di GA 8 + 3× 90 s MP, Do REKOM 6, Fr REKOM 4, Sa Anreise Berlin."
+    "d": "2026-09-20",
+    "dist": 16.42,
+    "pace": 5.28,
+    "hf": 153,
+    "note": "16,42 km @ 5:17 bei HF 153 — MP-Finish km 11–16 progressiv bis 4:52, HF 157–162. Prognose 83 → 84 %.",
+    "feedback": "Kernwerte: 16,42 km in 1:26:39, Ø 5:17/km, GAP ebenfalls 5:17 (94 hm, Staffelsee-Runde weitgehend flach). Ø HF 153, max 165, RPE 2/10, Stamina am Ende 53 %. Km 1–10 lagen bei 5:16–5:33 und HF 150–155 — oberes Z2 bis unteres I3, deutlich über den geplanten ≤145 (Laufpartner, Sonne).\n\nAusführung vs. Plan: Geplant waren 15 km mit 4–5 km MP ab km 10 bei GAP 5:05–5:15 und HF ≤ 152. Gelaufen: 6 km progressiv 5:13 → 5:08 → 5:02 → 4:55 → 4:52 → 4:54 (Ø ~5:01) bei HF 157–162. Pace-seitig klar übererfüllt, HF-seitig über dem Deckel — wobei ~10 s/km schneller als MP etwa 8–10 Schläge erklärt. Schrittfrequenz 165–168 spm im MP-Teil (gestern 160) ist genau die gewünschte Anpassung.\n\nVergleich: Am 23.08. liefen 24,7 km @ 5:10 bei HF 146, am 06.09. 20 km @ 5:14 bei HF 147. Heute entspräche 5:11 rechnerisch etwa HF 152–155 — also 5–8 Schläge Aufschlag, wie von Martin selbst gespürt. Ursachen anteilig: Sonne/Wärme am späten Vormittag, Rest-Erkältung (Infekt 11.09.), hohes Grundtempo in den ersten 10 km. Positiv: kein Drift-Einbruch, die letzten 3 km sub 4:55 bei stabiler HF.\n\nBedeutung fürs 3:39-Ziel: Der Motor ist intakt, die Pace-Frage ist beantwortet. Offen bleibt allein, ob die HF-Erhöhung bis Sonntag verschwindet. Prognose 83 → 84 %. Rennstrategie: erste 10 km 5:12–5:15 bei HF ≤ 150; liegt die HF dort bei 155+, 5:15 halten und erst ab km 30 entscheiden; bei ≤ 150 ab km 10 auf 5:08–5:10. Ausblick Race Week: Di 22.09. GA 8 + 3× 90 s MP, Do 24.09. REKOM 6 + 3 Steigerungen, Fr 25.09. REKOM 4 + 2 Steigerungen, Sa Anreise Berlin, So 27.09. Marathon."
   },
-  "prognose": 83,
+  "prognose": 84,
   "runs": [
     {
       "d": "2026-07-01",
@@ -345,6 +346,13 @@
       "pace": 5.53,
       "hf": 147,
       "hm": 117
+    },
+    {
+      "d": "2026-09-20",
+      "dist": 16.42,
+      "pace": 5.28,
+      "hf": 153,
+      "hm": 94
     }
   ],
   "progHist": [
@@ -503,6 +511,10 @@
     {
       "d": "2026-09-19",
       "p": 83
+    },
+    {
+      "d": "2026-09-20",
+      "p": 84
     }
   ],
   "plan": [
