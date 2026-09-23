@@ -655,22 +655,43 @@ function fmtT(min){
   return hh + ":" + String(mm).padStart(2,"0") + ":" + String(ss).padStart(2,"0");
 }
 function renderRennen(){
-  const pace = 5 + 11/60; // 5:11 min/km
+  // Splits: km 0–5 konservativ (5:15), danach 5:10 → 3:38:25
+  const p1 = 5 + 15/60, p2 = 5 + 10/60;
   const marks = [[5,"5 km"],[10,"10 km"],[15,"15 km"],[20,"20 km"],[21.0975,"Halbmarathon"],[25,"25 km"],[30,"30 km"],[35,"35 km"],[40,"40 km"],[42.195,"ZIEL"]];
   let rows = "";
   for (const m of marks){
-    rows += '<tr' + (m[0] === 21.0975 ? ' class="hm"' : '') + '><td>' + m[1] + '</td><td>' + fmtT(m[0]*pace) + '</td></tr>';
+    const t = m[0] <= 5 ? m[0]*p1 : 5*p1 + (m[0]-5)*p2;
+    rows += '<tr' + (m[0] === 21.0975 ? ' class="hm"' : '') + '><td>' + m[1] + '</td><td>' + fmtT(t) + '</td></tr>';
   }
-  const gels = ["Gel 1 — direkt vor dem Start","Gel 2 — km ~6 (0:30)","Gel 3 — km ~12 (1:00)","Gel 4 — km ~17 (1:30)","Gel 5 — km ~23 (2:00)","Gel 6 — km ~29 (2:30)","Gel 7 — km ~35 (3:00)"];
-  const check = ["Startnummer + Chip","Endorphin Speed 5 an","7× Mnstry Gel 40 eingepackt","Frühstück ~3 h vor Start","Anti-Chafing (Vaseline/Tape)","Erste 5 km konservativ (5:20–5:25)"];
-  let html = '<div class="card"><div class="label">Zwischenzeiten · Ziel 3:39</div>'+
-    '<div class="date">Ø 5:11/km → Zielzeit 3:38:43 (17 s Puffer)</div>'+
+  const phases = [
+    ["km 0–5",   "5:15–5:20", "HF ≤ 148",  "Enges Feld, GPS unzuverlässig — nach Puls & Gefühl. Km 5 bei ~26:15."],
+    ["km 5–21",  "5:10–5:13", "HF 150–154","Unterhaltungstempo. HM 1:49:30–1:50:00. HF vor km 15 &gt; 158 → 5:18 (ergibt 3:42–3:44)."],
+    ["km 21–32", "5:10–5:13", "HF ≤ 158",  "Pace halten, Gele nehmen. Halbzeit ist km 30."],
+    ["km 32–35", "5:11 halten","HF ≤ 165", "Beine entscheiden. Wenn nicht: kontrolliert 5:20, nicht ungewollt 5:45."],
+    ["km 35–42", "nach Gefühl","HF egal",  "Nur noch Gefühl. Wer hier bei 5:11 ist, läuft 3:38."]
+  ];
+  let ph = "";
+  for (const x of phases){
+    ph += '<div class="chkline" style="cursor:default"><div><b>' + x[0] + '</b> · ' + x[1] + ' · <span style="color:var(--accent)">' + x[2] + '</span><div class="date">' + x[3] + '</div></div></div>';
+  }
+  const gels = ["Gel 1 — 10 min vor dem Start","Gel 2 — km 7","Gel 3 — km 14","Gel 4 — km 21","Gel 5 — km 28","Gel 6 — km 34","Gel 7 — km 38 (optional)"];
+  const check = ["Startnummer + Chip","Endorphin Speed 5 — Paar OHNE Druckstelle","7× Mnstry Gel 40 + Salztabletten","Frühstück ~6:30 Uhr, 100–150 g KH, Gewohntes","Anti-Chafing (Vaseline/Tape)","Uhr: Auto-Lap AUS, an km-Schildern manuell runden","Erste 5 km konservativ (5:15–5:20, HF ≤ 148)"];
+  let html = '<div class="card race"><div class="label">Renn-Strategie · Ziel 3:39</div>'+
+    '<div class="date">Start 9:33 Uhr · ~13 °C, bis ~18–19 °C im Ziel · Prognose 85 %+</div>'+
+    '<div class="detail" style="margin-top:6px">Pace-Frage geklärt (30 km @ 5:27 / HF 141; MP nach 18 km bei HF &lt; 150). Das Rennen wird hinten gewonnen: bis km 30 ist dein Job, <b>langsam genug</b> zu sein.</div>'+
+    ph +
+    '<div class="hint">Stretch nur mit Bedingung: km 30 bei 2:35–2:36, HF &lt; 158 und leichte Beine → 5:05 erlaubt (≈ 3:37). Vorher nicht.</div>'+
+    '</div>';
+  html += '<div class="card"><div class="label">Zwischenzeiten · Ziel 3:39</div>'+
+    '<div class="date">km 0–5 @ 5:15, danach 5:10 → 3:38:25 (35 s Puffer)</div>'+
     '<table class="race-table">'+rows+'</table></div>';
   html += '<div class="card"><div class="label">Gel-Plan · Mnstry Gel 40</div>'+
-    '<div class="date">7 Gels ≈ 75 g KH/h (Ziel 60–80) · an den Ständen Wasser dazu · beim 32er-LL und HM-Test üben</div>'+
+    '<div class="date">6–7 Gels ≈ 65–70 g KH/h · Wasser ab km 5 an jeder Station · Gel enthält kein Natrium → an 2–3 Ständen Iso statt Wasser oder Salztabletten</div>'+
     gels.map(function(g,i){ return chkLine("g"+i, g); }).join("")+'</div>';
   html += '<div class="card"><div class="label">Race-Day-Checkliste</div>'+
     check.map(function(c,i){ return chkLine("c"+i, c); }).join("")+'</div>';
+  html += '<div class="card"><div class="label">Carb Loading Do–Sa</div>'+
+    '<div class="date">7–8 g KH/kg → ~600–650 g/Tag, fettarm (Reis, Nudeln, Weißbrot, Bananen, Saft, Honig/Marmelade). Nutella nur dünn als Beigabe. Nichts Neues testen.</div></div>';
   document.getElementById("tab-rennen").innerHTML = html;
 }
 
