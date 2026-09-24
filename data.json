@@ -1,1089 +1,1100 @@
 {
-  "updated": "2026-09-22T16:11:45Z",
-  "done": [
-    "2026-07-07",
-    "2026-07-09",
-    "2026-07-10",
-    "2026-07-14",
-    "2026-07-18",
-    "2026-07-19",
-    "2026-07-21",
-    "2026-07-23",
-    "2026-07-25",
-    "2026-07-26",
-    "2026-07-28",
-    "2026-07-30",
-    "2026-08-01",
-    "2026-08-02",
-    "2026-08-03",
-    "2026-08-04",
-    "2026-08-06",
-    "2026-08-08",
-    "2026-08-09",
-    "2026-08-11",
-    "2026-08-12",
-    "2026-08-13",
-    "2026-08-14",
-    "2026-08-15",
-    "2026-08-16",
-    "2026-08-19",
-    "2026-08-21",
-    "2026-08-22",
-    "2026-08-23",
-    "2026-08-29",
-    "2026-08-30",
-    "2026-09-02",
-    "2026-09-04",
-    "2026-09-05",
-    "2026-09-06",
-    "2026-09-09",
-    "2026-09-10",
-    "2026-09-12",
-    "2026-09-17",
-    "2026-09-19",
-    "2026-09-20",
-    "2026-09-22"
-  ],
-  "lastRun": {
-    "d": "2026-09-22",
-    "dist": 8.38,
-    "pace": 5.23,
-    "hf": 147,
-    "note": "8,38 km @ 5:14 (GAP 5:15) bei HF 147 — oberes Z2, 3× 90 s MP gesetzt; Pace-HF-Relation wieder auf Vor-Infekt-Niveau. Prognose 84 → 85 %.",
-    "feedback": "Kernwerte: 8,38 km in 43:52, Ø 5:14/km, GAP 5:15 (63 hm, München flach). Ø HF 147, max 160 — oberes Z2, sauber im Korridor 134–151. RPE 1/10, Stamina am Ende 74 %, Schrittfrequenz 164 spm, Training Effect 3.8 aerob.\n\nAusführung vs. Plan: Geplant war GA 8 km locker + 3× 90 s MP. Distanz getroffen, die MP-Stöße wurden gesetzt (beste Pace 4:44). Das Grundtempo lag mit ~5:15 allerdings eher an der Obergrenze eines lockeren Laufs — in der Race Week darf es ruhig 5:30–5:45 sein, der Puls war aber unauffällig.\n\nVergleich: Vor dem Infekt am 09.09. liefst du 9,1 km @ 5:15 bei HF 148 (102 hm) — heute exakt dieselbe Pace-HF-Relation auf flacherem Kurs. Gegenüber dem 19.09. (10,3 km @ 5:32 / HF 147) bist du bei gleichem Puls 18 s/km schneller. Die Erkältungsdelle ist damit ausgebügelt.\n\nFürs 3:39-Ziel: Effizienz zurück auf Vor-Infekt-Niveau, Prognose 84 → 85 %. Ausblick: Mi Ruhetag, Do REKOM 6 km sehr locker (HF <134) + 3 Steigerungen, Fr 4 km Ausschütteln, Sa Anreise Berlin. Ab jetzt nur noch Frische sammeln — Schlaf, Kohlenhydrate, keine Tempo-Experimente."
+ "updated": "2026-09-24T16:10:54Z",
+ "done": [
+  "2026-07-07",
+  "2026-07-09",
+  "2026-07-10",
+  "2026-07-14",
+  "2026-07-18",
+  "2026-07-19",
+  "2026-07-21",
+  "2026-07-23",
+  "2026-07-25",
+  "2026-07-26",
+  "2026-07-28",
+  "2026-07-30",
+  "2026-08-01",
+  "2026-08-02",
+  "2026-08-03",
+  "2026-08-04",
+  "2026-08-06",
+  "2026-08-08",
+  "2026-08-09",
+  "2026-08-11",
+  "2026-08-12",
+  "2026-08-13",
+  "2026-08-14",
+  "2026-08-15",
+  "2026-08-16",
+  "2026-08-19",
+  "2026-08-21",
+  "2026-08-22",
+  "2026-08-23",
+  "2026-08-29",
+  "2026-08-30",
+  "2026-09-02",
+  "2026-09-04",
+  "2026-09-05",
+  "2026-09-06",
+  "2026-09-09",
+  "2026-09-10",
+  "2026-09-12",
+  "2026-09-17",
+  "2026-09-19",
+  "2026-09-20",
+  "2026-09-22"
+ ],
+ "lastRun": {
+  "d": "2026-09-24",
+  "dist": 2.54,
+  "pace": 7.38,
+  "hf": 121,
+  "note": "Kurzes Band-Traben in tiefer Z1 statt 6 km – in der Race Week völlig ausreichend.",
+  "feedback": "Laufband statt der geplanten 6 km REKOM: 2,54 km in 18:44, Ø 7:23/km bei Ø HF 121 (Kadenz 159, Ø 228 W). Auf dem Band entfallen Höhenmeter und Wind, eine GAP-Betrachtung ist daher gegenstandslos – der Puls zählt, und 121 liegt klar in Zone 1 unter der REKOM-Grenze von 134.\n\nGegen den Plan fehlen gut 3,5 km und die 3 Steigerungen sind im Pace-Verlauf nicht erkennbar. Das ist drei Tage vor dem Rennen kein Problem: Eine Ausschüttel-Einheit soll Kreislauf und Beine wachhalten, nicht trainieren – dafür reicht auch eine Viertelstunde.\n\nVergleich: Beim Band-Traben am 12.09. (4,45 km @ 6:45 / HF 119) lag der Puls ähnlich tief, beim GA-Lauf am 22.09. (8,38 km @ 5:14 / HF 147) 26 Schläge höher. Die Intensitätsdisziplin in der Race Week stimmt also.\n\nHeute war auch der Nomio-Test – notiere dir kurz, wie Magen und Geschmack waren, und nimm den Shot am Sonntag mit demselben Timing. Prognose bleibt bei 85 %. Morgen REKOM 4 km ausschütteln + 2 Steigerungen, Samstag Anreise, Sonntag Berlin: km 1–10 bei HF ≤ 150."
+ },
+ "prognose": 85,
+ "runs": [
+  {
+   "d": "2026-07-01",
+   "dist": 9.15,
+   "pace": 5.53,
+   "hf": 138,
+   "hm": 105
   },
-  "prognose": 85,
-  "runs": [
-    {
-      "d": "2026-07-01",
-      "dist": 9.15,
-      "pace": 5.53,
-      "hf": 138,
-      "hm": 105
-    },
-    {
-      "d": "2026-07-04",
-      "dist": 6.84,
-      "pace": 6.15,
-      "hf": 145,
-      "hm": 72
-    },
-    {
-      "d": "2026-07-05",
-      "dist": 17.44,
-      "pace": 6.15,
-      "hf": 139,
-      "hm": 254
-    },
-    {
-      "d": "2026-07-07",
-      "dist": 8.06,
-      "pace": 5.62,
-      "hf": 140,
-      "hm": 69
-    },
-    {
-      "d": "2026-07-09",
-      "dist": 10.01,
-      "pace": 5.53,
-      "hf": 144,
-      "hm": 29
-    },
-    {
-      "d": "2026-07-11",
-      "dist": 18.73,
-      "pace": 5.88,
-      "hf": 134,
-      "hm": 248
-    },
-    {
-      "d": "2026-07-15",
-      "dist": 7.02,
-      "pace": 6.53,
-      "hf": 126,
-      "hm": 200
-    },
-    {
-      "d": "2026-07-18",
-      "dist": 8.02,
-      "pace": 5.47,
-      "hf": 140,
-      "hm": 91
-    },
-    {
-      "d": "2026-07-19",
-      "dist": 20.5,
-      "pace": 6.02,
-      "hf": 140,
-      "hm": 262
-    },
-    {
-      "d": "2026-07-21",
-      "dist": 10.3,
-      "pace": 5.4,
-      "hf": 140,
-      "hm": 61
-    },
-    {
-      "d": "2026-07-23",
-      "dist": 11.01,
-      "pace": 5.33,
-      "hf": 146,
-      "hm": 32
-    },
-    {
-      "d": "2026-07-25",
-      "dist": 8.02,
-      "pace": 6.27,
-      "hf": 126,
-      "hm": 94
-    },
-    {
-      "d": "2026-07-26",
-      "dist": 25.01,
-      "pace": 5.92,
-      "hf": 137,
-      "hm": 290
-    },
-    {
-      "d": "2026-07-28",
-      "dist": 7.12,
-      "pace": 5.56,
-      "hf": 137,
-      "hm": 50
-    },
-    {
-      "d": "2026-07-30",
-      "dist": 8.04,
-      "pace": 5.27,
-      "hf": 143,
-      "hm": 19
-    },
-    {
-      "d": "2026-08-01",
-      "dist": 6.02,
-      "pace": 5.57,
-      "hf": 142,
-      "hm": 56
-    },
-    {
-      "d": "2026-08-02",
-      "dist": 16.52,
-      "pace": 5.62,
-      "hf": 140,
-      "hm": 172
-    },
-    {
-      "d": "2026-08-03",
-      "dist": 9.02,
-      "pace": 5.5,
-      "hf": 143,
-      "hm": 100
-    },
-    {
-      "d": "2026-08-05",
-      "dist": 2.03,
-      "pace": 6.82,
-      "hf": 123,
-      "hm": 0
-    },
-    {
-      "d": "2026-08-06",
-      "dist": 11.71,
-      "pace": 5.22,
-      "hf": 145,
-      "hm": 37
-    },
-    {
-      "d": "2026-08-08",
-      "dist": 8.02,
-      "pace": 5.55,
-      "hf": 141,
-      "hm": 92
-    },
-    {
-      "d": "2026-08-09",
-      "dist": 24.59,
-      "pace": 5.47,
-      "hf": 143,
-      "hm": 206
-    },
-    {
-      "d": "2026-08-11",
-      "dist": 10.01,
-      "pace": 4.97,
-      "hf": 143,
-      "hm": 26
-    },
-    {
-      "d": "2026-08-12",
-      "dist": 7.19,
-      "pace": 5.83,
-      "hf": 128,
-      "hm": 12
-    },
-    {
-      "d": "2026-08-14",
-      "dist": 11.29,
-      "pace": 5.2,
-      "hf": 139,
-      "hm": 18
-    },
-    {
-      "d": "2026-08-15",
-      "dist": 30.03,
-      "pace": 5.45,
-      "hf": 141,
-      "hm": 82
-    },
-    {
-      "d": "2026-08-16",
-      "dist": 5.52,
-      "pace": 5.98,
-      "hf": 141,
-      "hm": 100
-    },
-    {
-      "d": "2026-08-19",
-      "dist": 6.84,
-      "pace": 5.62,
-      "hf": 141,
-      "hm": 55
-    },
-    {
-      "d": "2026-08-21",
-      "dist": 11.53,
-      "pace": 4.82,
-      "hf": 155,
-      "hm": 32
-    },
-    {
-      "d": "2026-08-22",
-      "dist": 9.13,
-      "pace": 5.2,
-      "hf": 145,
-      "hm": 113
-    },
-    {
-      "d": "2026-08-23",
-      "dist": 24.72,
-      "pace": 5.17,
-      "hf": 146,
-      "hm": 184
-    },
-    {
-      "d": "2026-08-29",
-      "dist": 4.39,
-      "pace": 5.78,
-      "hf": 137,
-      "hm": 43
-    },
-    {
-      "d": "2026-08-30",
-      "dist": 7.83,
-      "pace": 5.48,
-      "hf": 143,
-      "hm": 86
-    },
-    {
-      "d": "2026-09-02",
-      "dist": 6.02,
-      "pace": 5.38,
-      "hf": 139,
-      "hm": 46
-    },
-    {
-      "d": "2026-09-04",
-      "dist": 6.87,
-      "pace": 5.15,
-      "hf": 146,
-      "hm": 61
-    },
-    {
-      "d": "2026-09-05",
-      "dist": 6.62,
-      "pace": 5.33,
-      "hf": 141,
-      "hm": 52
-    },
-    {
-      "d": "2026-09-06",
-      "dist": 20.02,
-      "pace": 5.23,
-      "hf": 147,
-      "hm": 99
-    },
-    {
-      "d": "2026-09-09",
-      "dist": 9.12,
-      "pace": 5.25,
-      "hf": 148,
-      "hm": 102
-    },
-    {
-      "d": "2026-09-10",
-      "dist": 6.01,
-      "pace": 5.47,
-      "hf": 138,
-      "hm": 22
-    },
-    {
-      "d": "2026-09-12",
-      "dist": 4.45,
-      "pace": 6.75,
-      "hf": 119,
-      "hm": 0
-    },
-    {
-      "d": "2026-09-17",
-      "dist": 5.7,
-      "pace": 6.25,
-      "hf": 129,
-      "hm": 52
-    },
-    {
-      "d": "2026-09-19",
-      "dist": 10.33,
-      "pace": 5.53,
-      "hf": 147,
-      "hm": 117
-    },
-    {
-      "d": "2026-09-20",
-      "dist": 16.42,
-      "pace": 5.28,
-      "hf": 153,
-      "hm": 94
-    },
-    {
-      "d": "2026-09-22",
-      "dist": 8.38,
-      "pace": 5.23,
-      "hf": 147,
-      "hm": 63
-    }
-  ],
-  "progHist": [
-    {
-      "d": "2026-07-05",
-      "p": 60
-    },
-    {
-      "d": "2026-07-07",
-      "p": 62
-    },
-    {
-      "d": "2026-07-09",
-      "p": 66
-    },
-    {
-      "d": "2026-07-11",
-      "p": 70
-    },
-    {
-      "d": "2026-07-15",
-      "p": 68
-    },
-    {
-      "d": "2026-07-18",
-      "p": 70
-    },
-    {
-      "d": "2026-07-19",
-      "p": 71
-    },
-    {
-      "d": "2026-07-21",
-      "p": 72
-    },
-    {
-      "d": "2026-07-23",
-      "p": 73
-    },
-    {
-      "d": "2026-07-25",
-      "p": 73
-    },
-    {
-      "d": "2026-07-26",
-      "p": 75
-    },
-    {
-      "d": "2026-07-28",
-      "p": 75
-    },
-    {
-      "d": "2026-07-30",
-      "p": 77
-    },
-    {
-      "d": "2026-08-01",
-      "p": 77
-    },
-    {
-      "d": "2026-08-02",
-      "p": 78
-    },
-    {
-      "d": "2026-08-03",
-      "p": 78
-    },
-    {
-      "d": "2026-08-05",
-      "p": 78
-    },
-    {
-      "d": "2026-08-06",
-      "p": 79
-    },
-    {
-      "d": "2026-08-08",
-      "p": 79
-    },
-    {
-      "d": "2026-08-09",
-      "p": 80
-    },
-    {
-      "d": "2026-08-11",
-      "p": 81
-    },
-    {
-      "d": "2026-08-12",
-      "p": 81
-    },
-    {
-      "d": "2026-08-14",
-      "p": 82
-    },
-    {
-      "d": "2026-08-15",
-      "p": 83
-    },
-    {
-      "d": "2026-08-16",
-      "p": 83
-    },
-    {
-      "d": "2026-08-19",
-      "p": 83
-    },
-    {
-      "d": "2026-08-21",
-      "p": 86
-    },
-    {
-      "d": "2026-08-22",
-      "p": 86
-    },
-    {
-      "d": "2026-08-23",
-      "p": 87
-    },
-    {
-      "d": "2026-08-30",
-      "p": 87
-    },
-    {
-      "d": "2026-09-02",
-      "p": 82
-    },
-    {
-      "d": "2026-09-04",
-      "p": 84
-    },
-    {
-      "d": "2026-09-05",
-      "p": 85
-    },
-    {
-      "d": "2026-09-06",
-      "p": 89
-    },
-    {
-      "d": "2026-09-09",
-      "p": 89
-    },
-    {
-      "d": "2026-09-10",
-      "p": 89
-    },
-    {
-      "d": "2026-09-12",
-      "p": 85
-    },
-    {
-      "d": "2026-09-17",
-      "p": 82
-    },
-    {
-      "d": "2026-09-19",
-      "p": 83
-    },
-    {
-      "d": "2026-09-20",
-      "p": 84
-    },
-    {
-      "d": "2026-09-22",
-      "p": 85
-    }
-  ],
-  "plan": [
-    {
-      "w": 1,
-      "d": "2026-07-07",
-      "typ": "GA",
-      "km": 8,
-      "t": "GA 8 km locker + 2× 8 min MP",
-      "det": "Z2, Einlagen: MP 5:11, 3 min Trab dazwischen"
-    },
-    {
-      "w": 1,
-      "d": "2026-07-09",
-      "typ": "MP",
-      "km": 9,
-      "t": "MP 9 km — 3× 8 min MP",
-      "det": "3 min Trab, Rest locker"
-    },
-    {
-      "w": 1,
-      "d": "2026-07-10",
-      "typ": "LL",
-      "km": 18,
-      "t": "Langer Lauf 18 km ruhig",
-      "det": "Z2, 6:10–6:20, früh starten (von Sa vorgezogen)"
-    },
-    {
-      "w": 2,
-      "d": "2026-07-14",
-      "typ": "GA",
-      "km": 9,
-      "t": "GA 9 km locker",
-      "det": "Neapel: früh, nach Puls"
-    },
-    {
-      "w": 2,
-      "d": "2026-07-16",
-      "typ": "MP",
-      "km": 10,
-      "t": "MP 10 km — 3× 8 min MP",
-      "det": "flache Strecke, früh; bei Hitze Puls deckeln"
-    },
-    {
-      "w": 2,
-      "d": "2026-07-18",
-      "typ": "GA",
-      "km": 8,
-      "t": "GA 8 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 2,
-      "d": "2026-07-19",
-      "typ": "LL",
-      "km": 21,
-      "t": "Langer Lauf 21 km ruhig",
-      "det": "erster LL nach Urlaub, bewusst ruhig"
-    },
-    {
-      "w": 3,
-      "d": "2026-07-21",
-      "typ": "GA",
-      "km": 10,
-      "t": "GA 10 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 3,
-      "d": "2026-07-23",
-      "typ": "MP",
-      "km": 11,
-      "t": "LT 11 km — 3× 10 min MP",
-      "det": "3 min Trab · MP 5:11, kein Schwellentempo"
-    },
-    {
-      "w": 3,
-      "d": "2026-07-25",
-      "typ": "GA",
-      "km": 8,
-      "t": "GA 8 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 3,
-      "d": "2026-07-26",
-      "typ": "LL",
-      "km": 24,
-      "t": "Langer Lauf 24 km",
-      "det": "letzte 6 km ~5:40"
-    },
-    {
-      "w": 4,
-      "d": "2026-07-28",
-      "typ": "GA",
-      "km": 7,
-      "t": "GA 7 km locker",
-      "det": "Entlastungswoche"
-    },
-    {
-      "w": 4,
-      "d": "2026-07-30",
-      "typ": "MP",
-      "km": 8,
-      "t": "MP 8 km — 4 km MP am Stück",
-      "det": "Rest locker"
-    },
-    {
-      "w": 4,
-      "d": "2026-08-01",
-      "typ": "GA",
-      "km": 6,
-      "t": "GA 6 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 4,
-      "d": "2026-08-02",
-      "typ": "LL",
-      "km": 16,
-      "t": "Langer Lauf 16 km locker",
-      "det": "Entlastung — wirklich locker"
-    },
-    {
-      "w": 5,
-      "d": "2026-08-03",
-      "typ": "GA",
-      "km": 9,
-      "t": "GA 9 km locker",
-      "det": "Z2 nach Puls — vorgezogen von Di (Dienstreise)"
-    },
-    {
-      "w": 5,
-      "d": "2026-08-05",
-      "typ": "GA5",
-      "km": 6,
-      "t": "GA 6 km — 5. Tag",
-      "det": "sehr locker, HF 135–145"
-    },
-    {
-      "w": 5,
-      "d": "2026-08-06",
-      "typ": "LT",
-      "km": 12,
-      "t": "LT 12 km — Schwelle 4× 8 min",
-      "det": "4:50–5:05, 3 min Trab"
-    },
-    {
-      "w": 5,
-      "d": "2026-08-08",
-      "typ": "GA",
-      "km": 8,
-      "t": "GA 8 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 5,
-      "d": "2026-08-09",
-      "typ": "LL",
-      "km": 24,
-      "t": "Langer Lauf 24 km",
-      "det": "8 km MP im zweiten Teil"
-    },
-    {
-      "w": 6,
-      "d": "2026-08-11",
-      "typ": "GA",
-      "km": 10,
-      "t": "GA 10 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 6,
-      "d": "2026-08-12",
-      "typ": "GA5",
-      "km": 7,
-      "t": "GA 7 km — 5. Tag",
-      "det": "sehr locker, HF 135–145"
-    },
-    {
-      "w": 6,
-      "d": "2026-08-14",
-      "typ": "MP",
-      "km": 11,
-      "t": "MP 11 km — 3× 12 min MP",
-      "det": "3 min Trab · verschoben von Do"
-    },
-    {
-      "w": 6,
-      "d": "2026-08-15",
-      "typ": "LL",
-      "km": 28,
-      "t": "Langer Lauf 28 km ruhig",
-      "det": "HF unter 150 halten · vorgezogen von So"
-    },
-    {
-      "w": 6,
-      "d": "2026-08-16",
-      "typ": "REKOM",
-      "km": 5,
-      "t": "REKOM 5 km sehr locker",
-      "det": "HF 110–134 · getauscht mit LL"
-    },
-    {
-      "w": 7,
-      "d": "2026-08-19",
-      "typ": "GA5",
-      "km": 7,
-      "t": "GA 7 km — 5. Tag",
-      "det": "sehr locker, HF 135–145"
-    },
-    {
-      "w": 7,
-      "d": "2026-08-21",
-      "typ": "LT",
-      "km": 12,
-      "t": "LT 12 km — Schwelle 5× 6 min",
-      "det": "2 min Trab · von Do verschoben"
-    },
-    {
-      "w": 7,
-      "d": "2026-08-22",
-      "typ": "GA",
-      "km": 8,
-      "t": "GA 8 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 7,
-      "d": "2026-08-23",
-      "typ": "LL",
-      "km": 25,
-      "t": "Langer Lauf 25 km",
-      "det": "letzte 6 km MP"
-    },
-    {
-      "w": 8,
-      "d": "2026-08-25",
-      "typ": "GA",
-      "km": 10,
-      "t": "GA 10 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 8,
-      "d": "2026-08-27",
-      "typ": "GA",
-      "km": 8,
-      "t": "GA 8 km locker + 4× 100 m Steigerungen",
-      "det": ""
-    },
-    {
-      "w": 8,
-      "d": "2026-08-29",
-      "typ": "REKOM",
-      "km": 4,
-      "t": "REKOM 4 km sehr locker + 3 Steigerungen",
-      "det": "Vortag HM-Test"
-    },
-    {
-      "w": 8,
-      "d": "2026-08-30",
-      "typ": "TEST",
-      "km": 23,
-      "t": "HALBMARATHON-TEST",
-      "det": "Ziel 1:44 oder schneller · 2 km einlaufen · flache Strecke · Generalprobe Schuhe/Gels"
-    },
-    {
-      "w": 9,
-      "d": "2026-09-01",
-      "typ": "GA",
-      "km": 10,
-      "t": "GA 10 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 9,
-      "d": "2026-09-02",
-      "typ": "GA5",
-      "km": 6,
-      "t": "GA 6 km — Wiedereinstieg",
-      "det": "WIEDERAUFBAU nach ärztlicher Freigabe · sehr locker HF 135–145 · flach · Fenster-Schnürung"
-    },
-    {
-      "w": 9,
-      "d": "2026-09-04",
-      "typ": "GA",
-      "km": 7,
-      "t": "GA 7 km locker",
-      "det": "MP am Do 03.09. gestrichen · nur bei sauberer 24-h-Reaktion"
-    },
-    {
-      "w": 9,
-      "d": "2026-09-05",
-      "typ": "GA",
-      "km": 6,
-      "t": "GA 6 km locker",
-      "det": "oder Ruhetag — nach 24-h-Reaktion entscheiden"
-    },
-    {
-      "w": 9,
-      "d": "2026-09-06",
-      "typ": "LL",
-      "km": 16,
-      "t": "Langer Lauf 16 km ruhig",
-      "det": "WIEDERAUFBAU statt 32 km · rein Z2 · flach · kein MP-Anteil"
-    },
-    {
-      "w": 10,
-      "d": "2026-09-09",
-      "typ": "GA",
-      "km": 9,
-      "t": "GA 9 km locker",
-      "det": "verschoben von Di 08.09. · Taper-Start"
-    },
-    {
-      "w": 10,
-      "d": "2026-09-10",
-      "typ": "GA5",
-      "km": 6,
-      "t": "GA 6 km — 5. Tag",
-      "det": "getauscht mit Do · sehr locker, HF 135–145"
-    },
-    {
-      "w": 10,
-      "d": "2026-09-11",
-      "typ": "REST",
-      "km": 0,
-      "t": "Ruhetag — MP 11 km gestrichen",
-      "det": "Halskratzen · Infektschutz geht vor · Form ist gesichert"
-    },
-    {
-      "w": 10,
-      "d": "2026-09-12",
-      "typ": "REKOM",
-      "km": 4,
-      "t": "Laufband 4,45 km Zone 1 — statt Ruhetag",
-      "det": "HF 119 · bewusst unter 134 gehalten · Bewegung ohne Immunbelastung"
-    },
-    {
-      "w": 10,
-      "d": "2026-09-13",
-      "typ": "REST",
-      "km": 0,
-      "t": "Langer Lauf GESTRICHEN — Infekt",
-      "det": "LL 14 Tage vor dem Rennen adaptiert kaum noch · Erholung geht vor"
-    },
-    {
-      "w": 11,
-      "d": "2026-09-15",
-      "typ": "GA",
-      "km": 8,
-      "t": "Wiedereinstieg 5–8 km sehr locker",
-      "det": "HF unter 145 · nur nach 24 h Symptomfreiheit · erste Läufe fühlen sich schlecht an, nicht als Formtest werten"
-    },
-    {
-      "w": 11,
-      "d": "2026-09-17",
-      "typ": "MP",
-      "km": 8,
-      "t": "MP-Auffrischung — 3–4 km bei 5:05–5:11",
-      "det": "FLACHE Strecke · nur bei voller Beschwerdefreiheit, sonst GA 8 km locker"
-    },
-    {
-      "w": 11,
-      "d": "2026-09-19",
-      "typ": "GA",
-      "km": 6,
-      "t": "GA 6 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 11,
-      "d": "2026-09-20",
-      "typ": "LL",
-      "km": 17,
-      "t": "Langer Lauf 16–18 km ruhig Z2",
-      "det": "letzter LL · rein nach Puls (134–148), kein MP-Anteil · Generalprobe Verpflegung 3 Gele"
-    },
-    {
-      "w": 12,
-      "d": "2026-09-22",
-      "typ": "GA",
-      "km": 8,
-      "t": "GA 8 km locker + 3× 90 s MP",
-      "det": "Race Week"
-    },
-    {
-      "w": 12,
-      "d": "2026-09-24",
-      "typ": "REKOM",
-      "km": 6,
-      "t": "REKOM 6 km sehr locker + 3 Steigerungen",
-      "det": ""
-    },
-    {
-      "w": 12,
-      "d": "2026-09-26",
-      "typ": "REKOM",
-      "km": 4,
-      "t": "REKOM 4 km ausschütteln + 2 Steigerungen",
-      "det": ""
-    },
-    {
-      "w": 12,
-      "d": "2026-09-27",
-      "typ": "RACE",
-      "km": 42.2,
-      "t": "🏁 MARATHON BERLIN",
-      "det": "Ziel 3:39 · MP 5:11/km · erste 5 km konservativ · Gel alle 30–35 min"
-    },
-    {
-      "w": 13,
-      "d": "2026-10-01",
-      "typ": "REKOM",
-      "km": 4,
-      "t": "REKOM 4 km sehr locker",
-      "det": "Regeneration I nach Berlin — nur wenn die Beine wollen"
-    },
-    {
-      "w": 13,
-      "d": "2026-10-03",
-      "typ": "REKOM",
-      "km": 5,
-      "t": "REKOM 5 km sehr locker",
-      "det": "alles unter HF 134 — Bewegung, kein Training"
-    },
-    {
-      "w": 14,
-      "d": "2026-10-06",
-      "typ": "GA",
-      "km": 6,
-      "t": "GA 6 km locker",
-      "det": "Regeneration II — Z2 nach Puls"
-    },
-    {
-      "w": 14,
-      "d": "2026-10-08",
-      "typ": "GA",
-      "km": 8,
-      "t": "GA 8 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 14,
-      "d": "2026-10-11",
-      "typ": "LL",
-      "km": 12,
-      "t": "Ruhiger Lauf 12 km",
-      "det": "Z2, bewusst kurz"
-    },
-    {
-      "w": 15,
-      "d": "2026-10-13",
-      "typ": "GA",
-      "km": 8,
-      "t": "GA 8 km locker",
-      "det": "Wiederaufbau — Z2 nach Puls"
-    },
-    {
-      "w": 15,
-      "d": "2026-10-15",
-      "typ": "MP",
-      "km": 9,
-      "t": "MP 9 km — 2× 10 min MP",
-      "det": "3 min Trab; Rest locker"
-    },
-    {
-      "w": 15,
-      "d": "2026-10-17",
-      "typ": "GA",
-      "km": 6,
-      "t": "GA 6 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 15,
-      "d": "2026-10-18",
-      "typ": "LL",
-      "km": 14,
-      "t": "Langer Lauf 14 km",
-      "det": "letzte 4 km ~5:30"
-    },
-    {
-      "w": 16,
-      "d": "2026-10-20",
-      "typ": "GA",
-      "km": 8,
-      "t": "GA 8 km locker + 4× 100 m Steigerungen",
-      "det": "Mini-Taper"
-    },
-    {
-      "w": 16,
-      "d": "2026-10-22",
-      "typ": "MP",
-      "km": 8,
-      "t": "MP 8 km — 3 km MP am Stück",
-      "det": "Rest locker"
-    },
-    {
-      "w": 16,
-      "d": "2026-10-25",
-      "typ": "LL",
-      "km": 12,
-      "t": "Langer Lauf 12 km locker",
-      "det": "Z2 nach Puls"
-    },
-    {
-      "w": 17,
-      "d": "2026-10-27",
-      "typ": "GA",
-      "km": 6,
-      "t": "GA 6 km locker + 3× 90 s MP",
-      "det": "Race Week NYC"
-    },
-    {
-      "w": 17,
-      "d": "2026-10-29",
-      "typ": "REKOM",
-      "km": 5,
-      "t": "REKOM 5 km sehr locker",
-      "det": "nach Ankunft NYC — Jetlag: morgens laufen, früh schlafen"
-    },
-    {
-      "w": 17,
-      "d": "2026-10-31",
-      "typ": "REKOM",
-      "km": 4,
-      "t": "REKOM 4 km ausschütteln + 2 Steigerungen",
-      "det": "Central Park"
-    },
-    {
-      "w": 17,
-      "d": "2026-11-01",
-      "typ": "RACE2",
-      "km": 42.2,
-      "t": "🏁 MARATHON NYC",
-      "det": "B-Rennen nach Gefühl · Brücken konservativ · HF-gesteuert (≤ ~155) · zweite Hälfte frei"
-    }
-  ],
-  "weeknames": {
-    "1": "Aufbau",
-    "2": "Urlaub Neapel",
-    "3": "Aufbau",
-    "4": "Entlastung",
-    "5": "5. Tag startet",
-    "6": "Peak-Basis",
-    "7": "Aufbau",
-    "8": "Formtest",
-    "9": "Längster Lauf",
-    "10": "Taper-Start",
-    "11": "Taper",
-    "12": "Race Week",
-    "13": "Regeneration I",
-    "14": "Regeneration II",
-    "15": "Wiederaufbau",
-    "16": "Mini-Taper",
-    "17": "Race Week NYC"
+  {
+   "d": "2026-07-04",
+   "dist": 6.84,
+   "pace": 6.15,
+   "hf": 145,
+   "hm": 72
+  },
+  {
+   "d": "2026-07-05",
+   "dist": 17.44,
+   "pace": 6.15,
+   "hf": 139,
+   "hm": 254
+  },
+  {
+   "d": "2026-07-07",
+   "dist": 8.06,
+   "pace": 5.62,
+   "hf": 140,
+   "hm": 69
+  },
+  {
+   "d": "2026-07-09",
+   "dist": 10.01,
+   "pace": 5.53,
+   "hf": 144,
+   "hm": 29
+  },
+  {
+   "d": "2026-07-11",
+   "dist": 18.73,
+   "pace": 5.88,
+   "hf": 134,
+   "hm": 248
+  },
+  {
+   "d": "2026-07-15",
+   "dist": 7.02,
+   "pace": 6.53,
+   "hf": 126,
+   "hm": 200
+  },
+  {
+   "d": "2026-07-18",
+   "dist": 8.02,
+   "pace": 5.47,
+   "hf": 140,
+   "hm": 91
+  },
+  {
+   "d": "2026-07-19",
+   "dist": 20.5,
+   "pace": 6.02,
+   "hf": 140,
+   "hm": 262
+  },
+  {
+   "d": "2026-07-21",
+   "dist": 10.3,
+   "pace": 5.4,
+   "hf": 140,
+   "hm": 61
+  },
+  {
+   "d": "2026-07-23",
+   "dist": 11.01,
+   "pace": 5.33,
+   "hf": 146,
+   "hm": 32
+  },
+  {
+   "d": "2026-07-25",
+   "dist": 8.02,
+   "pace": 6.27,
+   "hf": 126,
+   "hm": 94
+  },
+  {
+   "d": "2026-07-26",
+   "dist": 25.01,
+   "pace": 5.92,
+   "hf": 137,
+   "hm": 290
+  },
+  {
+   "d": "2026-07-28",
+   "dist": 7.12,
+   "pace": 5.56,
+   "hf": 137,
+   "hm": 50
+  },
+  {
+   "d": "2026-07-30",
+   "dist": 8.04,
+   "pace": 5.27,
+   "hf": 143,
+   "hm": 19
+  },
+  {
+   "d": "2026-08-01",
+   "dist": 6.02,
+   "pace": 5.57,
+   "hf": 142,
+   "hm": 56
+  },
+  {
+   "d": "2026-08-02",
+   "dist": 16.52,
+   "pace": 5.62,
+   "hf": 140,
+   "hm": 172
+  },
+  {
+   "d": "2026-08-03",
+   "dist": 9.02,
+   "pace": 5.5,
+   "hf": 143,
+   "hm": 100
+  },
+  {
+   "d": "2026-08-05",
+   "dist": 2.03,
+   "pace": 6.82,
+   "hf": 123,
+   "hm": 0
+  },
+  {
+   "d": "2026-08-06",
+   "dist": 11.71,
+   "pace": 5.22,
+   "hf": 145,
+   "hm": 37
+  },
+  {
+   "d": "2026-08-08",
+   "dist": 8.02,
+   "pace": 5.55,
+   "hf": 141,
+   "hm": 92
+  },
+  {
+   "d": "2026-08-09",
+   "dist": 24.59,
+   "pace": 5.47,
+   "hf": 143,
+   "hm": 206
+  },
+  {
+   "d": "2026-08-11",
+   "dist": 10.01,
+   "pace": 4.97,
+   "hf": 143,
+   "hm": 26
+  },
+  {
+   "d": "2026-08-12",
+   "dist": 7.19,
+   "pace": 5.83,
+   "hf": 128,
+   "hm": 12
+  },
+  {
+   "d": "2026-08-14",
+   "dist": 11.29,
+   "pace": 5.2,
+   "hf": 139,
+   "hm": 18
+  },
+  {
+   "d": "2026-08-15",
+   "dist": 30.03,
+   "pace": 5.45,
+   "hf": 141,
+   "hm": 82
+  },
+  {
+   "d": "2026-08-16",
+   "dist": 5.52,
+   "pace": 5.98,
+   "hf": 141,
+   "hm": 100
+  },
+  {
+   "d": "2026-08-19",
+   "dist": 6.84,
+   "pace": 5.62,
+   "hf": 141,
+   "hm": 55
+  },
+  {
+   "d": "2026-08-21",
+   "dist": 11.53,
+   "pace": 4.82,
+   "hf": 155,
+   "hm": 32
+  },
+  {
+   "d": "2026-08-22",
+   "dist": 9.13,
+   "pace": 5.2,
+   "hf": 145,
+   "hm": 113
+  },
+  {
+   "d": "2026-08-23",
+   "dist": 24.72,
+   "pace": 5.17,
+   "hf": 146,
+   "hm": 184
+  },
+  {
+   "d": "2026-08-29",
+   "dist": 4.39,
+   "pace": 5.78,
+   "hf": 137,
+   "hm": 43
+  },
+  {
+   "d": "2026-08-30",
+   "dist": 7.83,
+   "pace": 5.48,
+   "hf": 143,
+   "hm": 86
+  },
+  {
+   "d": "2026-09-02",
+   "dist": 6.02,
+   "pace": 5.38,
+   "hf": 139,
+   "hm": 46
+  },
+  {
+   "d": "2026-09-04",
+   "dist": 6.87,
+   "pace": 5.15,
+   "hf": 146,
+   "hm": 61
+  },
+  {
+   "d": "2026-09-05",
+   "dist": 6.62,
+   "pace": 5.33,
+   "hf": 141,
+   "hm": 52
+  },
+  {
+   "d": "2026-09-06",
+   "dist": 20.02,
+   "pace": 5.23,
+   "hf": 147,
+   "hm": 99
+  },
+  {
+   "d": "2026-09-09",
+   "dist": 9.12,
+   "pace": 5.25,
+   "hf": 148,
+   "hm": 102
+  },
+  {
+   "d": "2026-09-10",
+   "dist": 6.01,
+   "pace": 5.47,
+   "hf": 138,
+   "hm": 22
+  },
+  {
+   "d": "2026-09-12",
+   "dist": 4.45,
+   "pace": 6.75,
+   "hf": 119,
+   "hm": 0
+  },
+  {
+   "d": "2026-09-17",
+   "dist": 5.7,
+   "pace": 6.25,
+   "hf": 129,
+   "hm": 52
+  },
+  {
+   "d": "2026-09-19",
+   "dist": 10.33,
+   "pace": 5.53,
+   "hf": 147,
+   "hm": 117
+  },
+  {
+   "d": "2026-09-20",
+   "dist": 16.42,
+   "pace": 5.28,
+   "hf": 153,
+   "hm": 94
+  },
+  {
+   "d": "2026-09-22",
+   "dist": 8.38,
+   "pace": 5.23,
+   "hf": 147,
+   "hm": 63
+  },
+  {
+   "d": "2026-09-24",
+   "dist": 2.54,
+   "pace": 7.38,
+   "hf": 121,
+   "hm": 0
   }
+ ],
+ "progHist": [
+  {
+   "d": "2026-07-05",
+   "p": 60
+  },
+  {
+   "d": "2026-07-07",
+   "p": 62
+  },
+  {
+   "d": "2026-07-09",
+   "p": 66
+  },
+  {
+   "d": "2026-07-11",
+   "p": 70
+  },
+  {
+   "d": "2026-07-15",
+   "p": 68
+  },
+  {
+   "d": "2026-07-18",
+   "p": 70
+  },
+  {
+   "d": "2026-07-19",
+   "p": 71
+  },
+  {
+   "d": "2026-07-21",
+   "p": 72
+  },
+  {
+   "d": "2026-07-23",
+   "p": 73
+  },
+  {
+   "d": "2026-07-25",
+   "p": 73
+  },
+  {
+   "d": "2026-07-26",
+   "p": 75
+  },
+  {
+   "d": "2026-07-28",
+   "p": 75
+  },
+  {
+   "d": "2026-07-30",
+   "p": 77
+  },
+  {
+   "d": "2026-08-01",
+   "p": 77
+  },
+  {
+   "d": "2026-08-02",
+   "p": 78
+  },
+  {
+   "d": "2026-08-03",
+   "p": 78
+  },
+  {
+   "d": "2026-08-05",
+   "p": 78
+  },
+  {
+   "d": "2026-08-06",
+   "p": 79
+  },
+  {
+   "d": "2026-08-08",
+   "p": 79
+  },
+  {
+   "d": "2026-08-09",
+   "p": 80
+  },
+  {
+   "d": "2026-08-11",
+   "p": 81
+  },
+  {
+   "d": "2026-08-12",
+   "p": 81
+  },
+  {
+   "d": "2026-08-14",
+   "p": 82
+  },
+  {
+   "d": "2026-08-15",
+   "p": 83
+  },
+  {
+   "d": "2026-08-16",
+   "p": 83
+  },
+  {
+   "d": "2026-08-19",
+   "p": 83
+  },
+  {
+   "d": "2026-08-21",
+   "p": 86
+  },
+  {
+   "d": "2026-08-22",
+   "p": 86
+  },
+  {
+   "d": "2026-08-23",
+   "p": 87
+  },
+  {
+   "d": "2026-08-30",
+   "p": 87
+  },
+  {
+   "d": "2026-09-02",
+   "p": 82
+  },
+  {
+   "d": "2026-09-04",
+   "p": 84
+  },
+  {
+   "d": "2026-09-05",
+   "p": 85
+  },
+  {
+   "d": "2026-09-06",
+   "p": 89
+  },
+  {
+   "d": "2026-09-09",
+   "p": 89
+  },
+  {
+   "d": "2026-09-10",
+   "p": 89
+  },
+  {
+   "d": "2026-09-12",
+   "p": 85
+  },
+  {
+   "d": "2026-09-17",
+   "p": 82
+  },
+  {
+   "d": "2026-09-19",
+   "p": 83
+  },
+  {
+   "d": "2026-09-20",
+   "p": 84
+  },
+  {
+   "d": "2026-09-22",
+   "p": 85
+  },
+  {
+   "d": "2026-09-24",
+   "p": 85
+  }
+ ],
+ "plan": [
+  {
+   "w": 1,
+   "d": "2026-07-07",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker + 2× 8 min MP",
+   "det": "Z2, Einlagen: MP 5:11, 3 min Trab dazwischen"
+  },
+  {
+   "w": 1,
+   "d": "2026-07-09",
+   "typ": "MP",
+   "km": 9,
+   "t": "MP 9 km — 3× 8 min MP",
+   "det": "3 min Trab, Rest locker"
+  },
+  {
+   "w": 1,
+   "d": "2026-07-10",
+   "typ": "LL",
+   "km": 18,
+   "t": "Langer Lauf 18 km ruhig",
+   "det": "Z2, 6:10–6:20, früh starten (von Sa vorgezogen)"
+  },
+  {
+   "w": 2,
+   "d": "2026-07-14",
+   "typ": "GA",
+   "km": 9,
+   "t": "GA 9 km locker",
+   "det": "Neapel: früh, nach Puls"
+  },
+  {
+   "w": 2,
+   "d": "2026-07-16",
+   "typ": "MP",
+   "km": 10,
+   "t": "MP 10 km — 3× 8 min MP",
+   "det": "flache Strecke, früh; bei Hitze Puls deckeln"
+  },
+  {
+   "w": 2,
+   "d": "2026-07-18",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 2,
+   "d": "2026-07-19",
+   "typ": "LL",
+   "km": 21,
+   "t": "Langer Lauf 21 km ruhig",
+   "det": "erster LL nach Urlaub, bewusst ruhig"
+  },
+  {
+   "w": 3,
+   "d": "2026-07-21",
+   "typ": "GA",
+   "km": 10,
+   "t": "GA 10 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 3,
+   "d": "2026-07-23",
+   "typ": "MP",
+   "km": 11,
+   "t": "LT 11 km — 3× 10 min MP",
+   "det": "3 min Trab · MP 5:11, kein Schwellentempo"
+  },
+  {
+   "w": 3,
+   "d": "2026-07-25",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 3,
+   "d": "2026-07-26",
+   "typ": "LL",
+   "km": 24,
+   "t": "Langer Lauf 24 km",
+   "det": "letzte 6 km ~5:40"
+  },
+  {
+   "w": 4,
+   "d": "2026-07-28",
+   "typ": "GA",
+   "km": 7,
+   "t": "GA 7 km locker",
+   "det": "Entlastungswoche"
+  },
+  {
+   "w": 4,
+   "d": "2026-07-30",
+   "typ": "MP",
+   "km": 8,
+   "t": "MP 8 km — 4 km MP am Stück",
+   "det": "Rest locker"
+  },
+  {
+   "w": 4,
+   "d": "2026-08-01",
+   "typ": "GA",
+   "km": 6,
+   "t": "GA 6 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 4,
+   "d": "2026-08-02",
+   "typ": "LL",
+   "km": 16,
+   "t": "Langer Lauf 16 km locker",
+   "det": "Entlastung — wirklich locker"
+  },
+  {
+   "w": 5,
+   "d": "2026-08-03",
+   "typ": "GA",
+   "km": 9,
+   "t": "GA 9 km locker",
+   "det": "Z2 nach Puls — vorgezogen von Di (Dienstreise)"
+  },
+  {
+   "w": 5,
+   "d": "2026-08-05",
+   "typ": "GA5",
+   "km": 6,
+   "t": "GA 6 km — 5. Tag",
+   "det": "sehr locker, HF 135–145"
+  },
+  {
+   "w": 5,
+   "d": "2026-08-06",
+   "typ": "LT",
+   "km": 12,
+   "t": "LT 12 km — Schwelle 4× 8 min",
+   "det": "4:50–5:05, 3 min Trab"
+  },
+  {
+   "w": 5,
+   "d": "2026-08-08",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 5,
+   "d": "2026-08-09",
+   "typ": "LL",
+   "km": 24,
+   "t": "Langer Lauf 24 km",
+   "det": "8 km MP im zweiten Teil"
+  },
+  {
+   "w": 6,
+   "d": "2026-08-11",
+   "typ": "GA",
+   "km": 10,
+   "t": "GA 10 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 6,
+   "d": "2026-08-12",
+   "typ": "GA5",
+   "km": 7,
+   "t": "GA 7 km — 5. Tag",
+   "det": "sehr locker, HF 135–145"
+  },
+  {
+   "w": 6,
+   "d": "2026-08-14",
+   "typ": "MP",
+   "km": 11,
+   "t": "MP 11 km — 3× 12 min MP",
+   "det": "3 min Trab · verschoben von Do"
+  },
+  {
+   "w": 6,
+   "d": "2026-08-15",
+   "typ": "LL",
+   "km": 28,
+   "t": "Langer Lauf 28 km ruhig",
+   "det": "HF unter 150 halten · vorgezogen von So"
+  },
+  {
+   "w": 6,
+   "d": "2026-08-16",
+   "typ": "REKOM",
+   "km": 5,
+   "t": "REKOM 5 km sehr locker",
+   "det": "HF 110–134 · getauscht mit LL"
+  },
+  {
+   "w": 7,
+   "d": "2026-08-19",
+   "typ": "GA5",
+   "km": 7,
+   "t": "GA 7 km — 5. Tag",
+   "det": "sehr locker, HF 135–145"
+  },
+  {
+   "w": 7,
+   "d": "2026-08-21",
+   "typ": "LT",
+   "km": 12,
+   "t": "LT 12 km — Schwelle 5× 6 min",
+   "det": "2 min Trab · von Do verschoben"
+  },
+  {
+   "w": 7,
+   "d": "2026-08-22",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 7,
+   "d": "2026-08-23",
+   "typ": "LL",
+   "km": 25,
+   "t": "Langer Lauf 25 km",
+   "det": "letzte 6 km MP"
+  },
+  {
+   "w": 8,
+   "d": "2026-08-25",
+   "typ": "GA",
+   "km": 10,
+   "t": "GA 10 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 8,
+   "d": "2026-08-27",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker + 4× 100 m Steigerungen",
+   "det": ""
+  },
+  {
+   "w": 8,
+   "d": "2026-08-29",
+   "typ": "REKOM",
+   "km": 4,
+   "t": "REKOM 4 km sehr locker + 3 Steigerungen",
+   "det": "Vortag HM-Test"
+  },
+  {
+   "w": 8,
+   "d": "2026-08-30",
+   "typ": "TEST",
+   "km": 23,
+   "t": "HALBMARATHON-TEST",
+   "det": "Ziel 1:44 oder schneller · 2 km einlaufen · flache Strecke · Generalprobe Schuhe/Gels"
+  },
+  {
+   "w": 9,
+   "d": "2026-09-01",
+   "typ": "GA",
+   "km": 10,
+   "t": "GA 10 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 9,
+   "d": "2026-09-02",
+   "typ": "GA5",
+   "km": 6,
+   "t": "GA 6 km — Wiedereinstieg",
+   "det": "WIEDERAUFBAU nach ärztlicher Freigabe · sehr locker HF 135–145 · flach · Fenster-Schnürung"
+  },
+  {
+   "w": 9,
+   "d": "2026-09-04",
+   "typ": "GA",
+   "km": 7,
+   "t": "GA 7 km locker",
+   "det": "MP am Do 03.09. gestrichen · nur bei sauberer 24-h-Reaktion"
+  },
+  {
+   "w": 9,
+   "d": "2026-09-05",
+   "typ": "GA",
+   "km": 6,
+   "t": "GA 6 km locker",
+   "det": "oder Ruhetag — nach 24-h-Reaktion entscheiden"
+  },
+  {
+   "w": 9,
+   "d": "2026-09-06",
+   "typ": "LL",
+   "km": 16,
+   "t": "Langer Lauf 16 km ruhig",
+   "det": "WIEDERAUFBAU statt 32 km · rein Z2 · flach · kein MP-Anteil"
+  },
+  {
+   "w": 10,
+   "d": "2026-09-09",
+   "typ": "GA",
+   "km": 9,
+   "t": "GA 9 km locker",
+   "det": "verschoben von Di 08.09. · Taper-Start"
+  },
+  {
+   "w": 10,
+   "d": "2026-09-10",
+   "typ": "GA5",
+   "km": 6,
+   "t": "GA 6 km — 5. Tag",
+   "det": "getauscht mit Do · sehr locker, HF 135–145"
+  },
+  {
+   "w": 10,
+   "d": "2026-09-11",
+   "typ": "REST",
+   "km": 0,
+   "t": "Ruhetag — MP 11 km gestrichen",
+   "det": "Halskratzen · Infektschutz geht vor · Form ist gesichert"
+  },
+  {
+   "w": 10,
+   "d": "2026-09-12",
+   "typ": "REKOM",
+   "km": 4,
+   "t": "Laufband 4,45 km Zone 1 — statt Ruhetag",
+   "det": "HF 119 · bewusst unter 134 gehalten · Bewegung ohne Immunbelastung"
+  },
+  {
+   "w": 10,
+   "d": "2026-09-13",
+   "typ": "REST",
+   "km": 0,
+   "t": "Langer Lauf GESTRICHEN — Infekt",
+   "det": "LL 14 Tage vor dem Rennen adaptiert kaum noch · Erholung geht vor"
+  },
+  {
+   "w": 11,
+   "d": "2026-09-15",
+   "typ": "GA",
+   "km": 8,
+   "t": "Wiedereinstieg 5–8 km sehr locker",
+   "det": "HF unter 145 · nur nach 24 h Symptomfreiheit · erste Läufe fühlen sich schlecht an, nicht als Formtest werten"
+  },
+  {
+   "w": 11,
+   "d": "2026-09-17",
+   "typ": "MP",
+   "km": 8,
+   "t": "MP-Auffrischung — 3–4 km bei 5:05–5:11",
+   "det": "FLACHE Strecke · nur bei voller Beschwerdefreiheit, sonst GA 8 km locker"
+  },
+  {
+   "w": 11,
+   "d": "2026-09-19",
+   "typ": "GA",
+   "km": 6,
+   "t": "GA 6 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 11,
+   "d": "2026-09-20",
+   "typ": "LL",
+   "km": 17,
+   "t": "Langer Lauf 16–18 km ruhig Z2",
+   "det": "letzter LL · rein nach Puls (134–148), kein MP-Anteil · Generalprobe Verpflegung 3 Gele"
+  },
+  {
+   "w": 12,
+   "d": "2026-09-22",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker + 3× 90 s MP",
+   "det": "Race Week"
+  },
+  {
+   "w": 12,
+   "d": "2026-09-24",
+   "typ": "REKOM",
+   "km": 6,
+   "t": "REKOM 6 km sehr locker + 3 Steigerungen",
+   "det": ""
+  },
+  {
+   "w": 12,
+   "d": "2026-09-26",
+   "typ": "REKOM",
+   "km": 4,
+   "t": "REKOM 4 km ausschütteln + 2 Steigerungen",
+   "det": ""
+  },
+  {
+   "w": 12,
+   "d": "2026-09-27",
+   "typ": "RACE",
+   "km": 42.2,
+   "t": "🏁 MARATHON BERLIN",
+   "det": "Ziel 3:39 · MP 5:11/km · erste 5 km konservativ · Gel alle 30–35 min"
+  },
+  {
+   "w": 13,
+   "d": "2026-10-01",
+   "typ": "REKOM",
+   "km": 4,
+   "t": "REKOM 4 km sehr locker",
+   "det": "Regeneration I nach Berlin — nur wenn die Beine wollen"
+  },
+  {
+   "w": 13,
+   "d": "2026-10-03",
+   "typ": "REKOM",
+   "km": 5,
+   "t": "REKOM 5 km sehr locker",
+   "det": "alles unter HF 134 — Bewegung, kein Training"
+  },
+  {
+   "w": 14,
+   "d": "2026-10-06",
+   "typ": "GA",
+   "km": 6,
+   "t": "GA 6 km locker",
+   "det": "Regeneration II — Z2 nach Puls"
+  },
+  {
+   "w": 14,
+   "d": "2026-10-08",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 14,
+   "d": "2026-10-11",
+   "typ": "LL",
+   "km": 12,
+   "t": "Ruhiger Lauf 12 km",
+   "det": "Z2, bewusst kurz"
+  },
+  {
+   "w": 15,
+   "d": "2026-10-13",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker",
+   "det": "Wiederaufbau — Z2 nach Puls"
+  },
+  {
+   "w": 15,
+   "d": "2026-10-15",
+   "typ": "MP",
+   "km": 9,
+   "t": "MP 9 km — 2× 10 min MP",
+   "det": "3 min Trab; Rest locker"
+  },
+  {
+   "w": 15,
+   "d": "2026-10-17",
+   "typ": "GA",
+   "km": 6,
+   "t": "GA 6 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 15,
+   "d": "2026-10-18",
+   "typ": "LL",
+   "km": 14,
+   "t": "Langer Lauf 14 km",
+   "det": "letzte 4 km ~5:30"
+  },
+  {
+   "w": 16,
+   "d": "2026-10-20",
+   "typ": "GA",
+   "km": 8,
+   "t": "GA 8 km locker + 4× 100 m Steigerungen",
+   "det": "Mini-Taper"
+  },
+  {
+   "w": 16,
+   "d": "2026-10-22",
+   "typ": "MP",
+   "km": 8,
+   "t": "MP 8 km — 3 km MP am Stück",
+   "det": "Rest locker"
+  },
+  {
+   "w": 16,
+   "d": "2026-10-25",
+   "typ": "LL",
+   "km": 12,
+   "t": "Langer Lauf 12 km locker",
+   "det": "Z2 nach Puls"
+  },
+  {
+   "w": 17,
+   "d": "2026-10-27",
+   "typ": "GA",
+   "km": 6,
+   "t": "GA 6 km locker + 3× 90 s MP",
+   "det": "Race Week NYC"
+  },
+  {
+   "w": 17,
+   "d": "2026-10-29",
+   "typ": "REKOM",
+   "km": 5,
+   "t": "REKOM 5 km sehr locker",
+   "det": "nach Ankunft NYC — Jetlag: morgens laufen, früh schlafen"
+  },
+  {
+   "w": 17,
+   "d": "2026-10-31",
+   "typ": "REKOM",
+   "km": 4,
+   "t": "REKOM 4 km ausschütteln + 2 Steigerungen",
+   "det": "Central Park"
+  },
+  {
+   "w": 17,
+   "d": "2026-11-01",
+   "typ": "RACE2",
+   "km": 42.2,
+   "t": "🏁 MARATHON NYC",
+   "det": "B-Rennen nach Gefühl · Brücken konservativ · HF-gesteuert (≤ ~155) · zweite Hälfte frei"
+  }
+ ],
+ "weeknames": {
+  "1": "Aufbau",
+  "2": "Urlaub Neapel",
+  "3": "Aufbau",
+  "4": "Entlastung",
+  "5": "5. Tag startet",
+  "6": "Peak-Basis",
+  "7": "Aufbau",
+  "8": "Formtest",
+  "9": "Längster Lauf",
+  "10": "Taper-Start",
+  "11": "Taper",
+  "12": "Race Week",
+  "13": "Regeneration I",
+  "14": "Regeneration II",
+  "15": "Wiederaufbau",
+  "16": "Mini-Taper",
+  "17": "Race Week NYC"
+ }
 }
