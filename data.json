@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-24T16:10:54Z",
+ "updated": "2026-09-25T16:11:40Z",
  "done": [
   "2026-07-07",
   "2026-07-09",
@@ -42,15 +42,16 @@
   "2026-09-17",
   "2026-09-19",
   "2026-09-20",
-  "2026-09-22"
+  "2026-09-22",
+  "2026-09-26"
  ],
  "lastRun": {
-  "d": "2026-09-24",
-  "dist": 2.54,
-  "pace": 7.38,
-  "hf": 121,
-  "note": "Kurzes Band-Traben in tiefer Z1 statt 6 km – in der Race Week völlig ausreichend.",
-  "feedback": "Laufband statt der geplanten 6 km REKOM: 2,54 km in 18:44, Ø 7:23/km bei Ø HF 121 (Kadenz 159, Ø 228 W). Auf dem Band entfallen Höhenmeter und Wind, eine GAP-Betrachtung ist daher gegenstandslos – der Puls zählt, und 121 liegt klar in Zone 1 unter der REKOM-Grenze von 134.\n\nGegen den Plan fehlen gut 3,5 km und die 3 Steigerungen sind im Pace-Verlauf nicht erkennbar. Das ist drei Tage vor dem Rennen kein Problem: Eine Ausschüttel-Einheit soll Kreislauf und Beine wachhalten, nicht trainieren – dafür reicht auch eine Viertelstunde.\n\nVergleich: Beim Band-Traben am 12.09. (4,45 km @ 6:45 / HF 119) lag der Puls ähnlich tief, beim GA-Lauf am 22.09. (8,38 km @ 5:14 / HF 147) 26 Schläge höher. Die Intensitätsdisziplin in der Race Week stimmt also.\n\nHeute war auch der Nomio-Test – notiere dir kurz, wie Magen und Geschmack waren, und nimm den Shot am Sonntag mit demselben Timing. Prognose bleibt bei 85 %. Morgen REKOM 4 km ausschütteln + 2 Steigerungen, Samstag Anreise, Sonntag Berlin: km 1–10 bei HF ≤ 150."
+  "d": "2026-09-25",
+  "dist": 4.39,
+  "pace": 6.1,
+  "hf": 140,
+  "note": "Lockeres Ausschütteln mit 2 Steigerungen, HF 140 leicht über REKOM wegen Infekt-Aufschlag — Race Week abgeschlossen, Beine fühlen sich stark an.",
+  "feedback": "Kernwerte: 4,39 km in 26:45 @ 6:06/km, GAP identisch 6:06 (nur 22 hm), Ø HF 140 / max 156, RPE 1/10, Gefühl „sehr stark“. Der Puls liegt etwas über dem REKOM-Korridor (<134) — erklärbar durch die Steigerungen und den seit dem Infekt bekannten Aufschlag von 5–7 Schlägen. Bei 6:06/km ist das kein Warnsignal, Training Effect 2,8 „Basis“.\n\nAusführung: Genau wie geplant — kurz, locker, zwei Steigerungen (beste Pace 4:17) zum Wecken der Beine. Das Ausschütteln wurde wegen der Anreise sauber von Sa auf heute vorgezogen, morgen ist damit ein echter Ruhetag.\n\nVergleich: Gegenüber dem Wiedereinstieg am 17.09. (5,70 km @ 6:15 / HF 129) 9 s/km schneller bei 11 Schlägen mehr, gegenüber dem GA-Lauf vom 22.09. (8,38 km @ 5:14 / HF 147) klar entspannt. Nach dem kurzen Band-Traben am 24.09. (2,54 km / HF 121) ist die Race Week mit rund 15 km bewusst leicht gehalten — die Frische sollte am Sonntag da sein.\n\nFürs 3:39-Ziel: Prognose bleibt 85 %. Die Pace-Frage ist seit dem 20.09. geklärt, offen bleibt nur der HF-Aufschlag. Deshalb Berlin strikt nach Puls starten: km 1–10 bei 5:12–5:15 und HF ≤ 150, bei HF 155+ 5:15 halten bis km 30. Wetter: Start frisch (~11 °C), bis Mittag Richtung 20–25 °C und sonnig — ab km 25 an jeder Station trinken, Gele nach Plan, Nomio-Shot wie im Test."
  },
  "prognose": 85,
  "runs": [
@@ -368,6 +369,13 @@
    "pace": 7.38,
    "hf": 121,
    "hm": 0
+  },
+  {
+   "d": "2026-09-25",
+   "dist": 4.39,
+   "pace": 6.1,
+   "hf": 140,
+   "hm": 22
   }
  ],
  "progHist": [
@@ -537,6 +545,10 @@
   },
   {
    "d": "2026-09-24",
+   "p": 85
+  },
+  {
+   "d": "2026-09-25",
    "p": 85
   }
  ],
