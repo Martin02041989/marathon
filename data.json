@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26T16:11:04Z",
+  "updated": "2026-09-27T16:11:56Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -43,15 +43,16 @@
     "2026-09-19",
     "2026-09-20",
     "2026-09-22",
-    "2026-09-26"
+    "2026-09-26",
+    "2026-09-27"
   ],
   "lastRun": {
-    "d": "2026-09-25",
-    "dist": 4.39,
-    "pace": 6.1,
-    "hf": 140,
-    "note": "Lockeres Ausschütteln mit 2 Steigerungen, HF 140 leicht über REKOM wegen Infekt-Aufschlag — Race Week abgeschlossen, Beine fühlen sich stark an.",
-    "feedback": "Kernwerte: 4,39 km in 26:45 @ 6:06/km, GAP identisch 6:06 (nur 22 hm), Ø HF 140 / max 156, RPE 1/10, Gefühl „sehr stark“. Der Puls liegt etwas über dem REKOM-Korridor (<134) — erklärbar durch die Steigerungen und den seit dem Infekt bekannten Aufschlag von 5–7 Schlägen. Bei 6:06/km ist das kein Warnsignal, Training Effect 2,8 „Basis“.\n\nAusführung: Genau wie geplant — kurz, locker, zwei Steigerungen (beste Pace 4:17) zum Wecken der Beine. Das Ausschütteln wurde wegen der Anreise sauber von Sa auf heute vorgezogen, morgen ist damit ein echter Ruhetag.\n\nVergleich: Gegenüber dem Wiedereinstieg am 17.09. (5,70 km @ 6:15 / HF 129) 9 s/km schneller bei 11 Schlägen mehr, gegenüber dem GA-Lauf vom 22.09. (8,38 km @ 5:14 / HF 147) klar entspannt. Nach dem kurzen Band-Traben am 24.09. (2,54 km / HF 121) ist die Race Week mit rund 15 km bewusst leicht gehalten — die Frische sollte am Sonntag da sein.\n\nFürs 3:39-Ziel: Prognose bleibt 85 %. Die Pace-Frage ist seit dem 20.09. geklärt, offen bleibt nur der HF-Aufschlag. Deshalb Berlin strikt nach Puls starten: km 1–10 bei 5:12–5:15 und HF ≤ 150, bei HF 155+ 5:15 halten bis km 30. Wetter: Start frisch (~11 °C), bis Mittag Richtung 20–25 °C und sonnig — ab km 25 an jeder Station trinken, Gele nach Plan, Nomio-Shot wie im Test."
+    "d": "2026-09-27",
+    "dist": 42.66,
+    "pace": 5.55,
+    "hf": 157,
+    "note": "Berlin gefinisht in 3:57:06 – erster Marathon, 3:39 verfehlt, Wand ab ~3:20 h.",
+    "feedback": "Berlin-Marathon gefinisht: 42,66 km (GPS) in 3:57:06, Ø 5:33/km, Ø HF 157, 81 hm, ~15 °C und Sonne. Erster Marathon, persönliche Bestleistung – das 3:39-Ziel (5:11/km) wurde um gut 18 Minuten verfehlt. Bei nur 81 hm auf 42 km ist die Grade-Adjusted Pace praktisch identisch mit der realen Pace.\n\nAusführung: Der Puls lag mit Ø 157 von Anfang an über dem geplanten Deckel (≤150 bis km 10), der Garmin-Leistungszustand stand durchgehend bei −3 bis −5. Die Stamina lief ab ca. 3:20 h gegen null, HF- und Kadenzverlauf zeigen im letzten Abschnitt mehrere Einbrüche – die klassische Wand aus Glykogenmangel und muskulärer Ermüdung, kein Hinweis auf eine Verletzung.\n\nVergleich: Beim letzten langen Lauf am 20.09. (16,42 km @ 5:17, HF 153) lag der Puls bereits 5–8 Schläge über dem Niveau vom 23.08. – dieser Aufschlag nach Infekt und Sprunggelenkpause hat sich heute über die volle Distanz bestätigt. Der gestrichene 32er und der ausgefallene HM-Test haben die Wettkampfhärte für 42 km gefehlt.\n\nEinordnung und Ausblick: Die Prognose von 85 % war rückblickend zu optimistisch; die Grundlage für ein 3:39 ist vorhanden, aber nicht nach diesem Sommer. Jetzt zählt Erholung: Mo–Mi lauffrei, Do 01.10. REKOM 4 km nur wenn die Beine wollen, Sa 03.10. REKOM 5 km. NYC am 01.11. als B-Rennen nach Gefühl, HF-gesteuert (≤ ~155) und mit konsequenter Verpflegung ab km 5."
   },
   "prognose": 85,
   "runs": [
@@ -376,6 +377,13 @@
       "pace": 6.1,
       "hf": 140,
       "hm": 22
+    },
+    {
+      "d": "2026-09-27",
+      "dist": 42.66,
+      "pace": 5.55,
+      "hf": 157,
+      "hm": 81
     }
   ],
   "progHist": [
