@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27T16:11:56Z",
+  "updated": "2026-10-02T04:04:23Z",
   "done": [
     "2026-07-07",
     "2026-07-09",
@@ -44,15 +44,16 @@
     "2026-09-20",
     "2026-09-22",
     "2026-09-26",
-    "2026-09-27"
+    "2026-09-27",
+    "2026-10-01"
   ],
   "lastRun": {
-    "d": "2026-09-27",
-    "dist": 42.66,
-    "pace": 5.55,
-    "hf": 157,
-    "note": "Berlin gefinisht in 3:57:06 – erster Marathon, 3:39 verfehlt, Wand ab ~3:20 h.",
-    "feedback": "Berlin-Marathon gefinisht: 42,66 km (GPS) in 3:57:06, Ø 5:33/km, Ø HF 157, 81 hm, ~15 °C und Sonne. Erster Marathon, persönliche Bestleistung – das 3:39-Ziel (5:11/km) wurde um gut 18 Minuten verfehlt. Bei nur 81 hm auf 42 km ist die Grade-Adjusted Pace praktisch identisch mit der realen Pace.\n\nAusführung: Der Puls lag mit Ø 157 von Anfang an über dem geplanten Deckel (≤150 bis km 10), der Garmin-Leistungszustand stand durchgehend bei −3 bis −5. Die Stamina lief ab ca. 3:20 h gegen null, HF- und Kadenzverlauf zeigen im letzten Abschnitt mehrere Einbrüche – die klassische Wand aus Glykogenmangel und muskulärer Ermüdung, kein Hinweis auf eine Verletzung.\n\nVergleich: Beim letzten langen Lauf am 20.09. (16,42 km @ 5:17, HF 153) lag der Puls bereits 5–8 Schläge über dem Niveau vom 23.08. – dieser Aufschlag nach Infekt und Sprunggelenkpause hat sich heute über die volle Distanz bestätigt. Der gestrichene 32er und der ausgefallene HM-Test haben die Wettkampfhärte für 42 km gefehlt.\n\nEinordnung und Ausblick: Die Prognose von 85 % war rückblickend zu optimistisch; die Grundlage für ein 3:39 ist vorhanden, aber nicht nach diesem Sommer. Jetzt zählt Erholung: Mo–Mi lauffrei, Do 01.10. REKOM 4 km nur wenn die Beine wollen, Sa 03.10. REKOM 5 km. NYC am 01.11. als B-Rennen nach Gefühl, HF-gesteuert (≤ ~155) und mit konsequenter Verpflegung ab km 5."
+    "d": "2026-10-01",
+    "dist": 4.42,
+    "pace": 5.27,
+    "hf": 145,
+    "note": "Erster Lauf nach Berlin: Distanz passt, aber mit HF 145 eher GA als REKOM — Samstag bewusst langsamer.",
+    "feedback": "Kernwerte: 4,42 km in 23:17 @ 5:16/km, bei 48 hm entspricht das einer Grade-Adjusted Pace von ~5:08/km. Ø HF 145 liegt im Z2-Korridor (134–151), aber deutlich über dem REKOM-Ziel (<134) — das war ein lockerer GA-Lauf, keine Regeneration.\n\nAusführung vs. Plan: Geplant war REKOM 4 km sehr locker, nur wenn die Beine wollen. Die Distanz passt, das Tempo war rund 1 min/km zu schnell. Vier Tage nach dem Marathon fühlen sich die Beine oft schon gut an, Muskelfasern und Bindegewebe sind aber noch im Reparaturmodus — der Puls reagiert dabei weniger empfindlich als die Struktur.\n\nVergleich: Ausschütteln am 25.09. 4,39 km @ 6:06 / HF 140, Band-REKOM am 24.09. 2,54 km @ 7:23 / HF 121, GA am 22.09. 8,38 km @ 5:14 / HF 147. Heute also fast GA-Niveau vom 22.09. — die aerobe Fitness ist da, der Leistungsabfall aus dem Rennen zeigt sich (noch) nicht im Puls.\n\nAusblick: Berlin (3:57:06) ist abgehakt, jetzt zählt eine saubere Erholung für NYC am 01.11. als B-Rennen. Sa 03.10. REKOM 5 km bewusst langsam (≥6:30/km, HF <134), danach Woche 14 mit GA 6/8 km und einem ruhigen 12er. Lieber jetzt zu langsam als in drei Wochen mit Restmüdigkeit an der Startlinie."
   },
   "prognose": 85,
   "runs": [
@@ -384,6 +385,13 @@
       "pace": 5.55,
       "hf": 157,
       "hm": 81
+    },
+    {
+      "d": "2026-10-01",
+      "dist": 4.42,
+      "pace": 5.27,
+      "hf": 145,
+      "hm": 48
     }
   ],
   "progHist": [
