@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-title" content="Berlin 3:39">
 <meta name="theme-color" content="#0e1116">
 <link rel="apple-touch-icon" href="icon.png">
-<title>Berlin 3:39</title>
+<title>Marathon 2026</title>
 <style>
   :root {
     --bg: #0e1116; --card: #1a1f27; --card2: #222834; --text: #e8ecf1;
@@ -153,7 +153,7 @@
 <body>
 <header>
   <div class="prognose" id="prognose"></div>
-  <h1>Berlin-Marathon 2026</h1>
+  <h1 id="htitle">Berlin-Marathon 2026</h1>
   <div class="sub" id="countdown"></div>
 </header>
 <div id="progpanel" onclick="this.style.display='none'"></div>
@@ -162,6 +162,7 @@
 <div class="tab" id="tab-plan"></div>
 <div class="tab" id="tab-rennen"></div>
 <div class="tab" id="tab-ref">
+  <div id="ref-nyc"></div>
   <div class="ref-grid">
     <div class="ref"><div class="t">Ziel</div><div class="v">3:39 h</div><div class="s">27.09.2026 · Stretch: 3:35</div></div>
     <div class="ref"><div class="t">Marathon-Pace</div><div class="v">5:11 /km</div><div class="s">erste 5 km konservativ</div></div>
@@ -256,19 +257,21 @@ const PLAN_FALLBACK = [
   {w:14, d:"2026-10-06", typ:"GA",  km:6,  t:"GA 6 km locker", det:"Regeneration II — Z2 nach Puls"},
   {w:14, d:"2026-10-08", typ:"GA",  km:8,  t:"GA 8 km locker", det:"Z2 nach Puls"},
   {w:14, d:"2026-10-11", typ:"LL",  km:12, t:"Ruhiger Lauf 12 km", det:"Z2, bewusst kurz"},
-  {w:15, d:"2026-10-13", typ:"GA",  km:8,  t:"GA 8 km locker", det:"Wiederaufbau — Z2 nach Puls"},
-  {w:15, d:"2026-10-15", typ:"MP",  km:9,  t:"MP 9 km — 2× 10 min MP", det:"3 min Trab; Rest locker"},
-  {w:15, d:"2026-10-17", typ:"GA",  km:6,  t:"GA 6 km locker", det:"Z2 nach Puls"},
-  {w:15, d:"2026-10-18", typ:"LL",  km:14, t:"Langer Lauf 14 km", det:"letzte 4 km ~5:30"},
-  {w:16, d:"2026-10-20", typ:"GA",  km:8,  t:"GA 8 km locker + 4× 100 m Steigerungen", det:"Mini-Taper"},
-  {w:16, d:"2026-10-22", typ:"MP",  km:8,  t:"MP 8 km — 3 km MP am Stück", det:"Rest locker"},
-  {w:16, d:"2026-10-25", typ:"LL",  km:12, t:"Langer Lauf 12 km locker", det:"Z2 nach Puls"},
-  {w:17, d:"2026-10-27", typ:"GA",  km:6,  t:"GA 6 km locker + 3× 90 s MP", det:"Race Week NYC"},
-  {w:17, d:"2026-10-29", typ:"REKOM", km:5, t:"REKOM 5 km sehr locker", det:"nach Ankunft NYC — Jetlag: morgens laufen, früh schlafen"},
-  {w:17, d:"2026-10-31", typ:"REKOM", km:4, t:"REKOM 4 km ausschütteln + 2 Steigerungen", det:"Central Park"},
-  {w:17, d:"2026-11-01", typ:"RACE2", km:42.2, t:"🏁 MARATHON NYC", det:"B-Rennen nach Gefühl · Brücken konservativ · HF-gesteuert (≤ ~155) · zweite Hälfte frei"}
+  {w:15, d:"2026-10-13", typ:"GA", km:8, t:"GA 8 km locker", det:"Wiederaufbau — Z2 nach Puls"},
+  {w:15, d:"2026-10-15", typ:"RT", km:9, t:"RT 9 km — 2× 10 min NYC-Renntempo", det:"5:30–5:35/km, 3 min Trab; Rest locker · flache Strecke · HF-Deckel ~155"},
+  {w:15, d:"2026-10-17", typ:"GA", km:6, t:"GA 6 km locker", det:"Z2 nach Puls"},
+  {w:15, d:"2026-10-18", typ:"LL", km:15, t:"Langer Lauf 15 km, letzte 4 km Renntempo", det:"km 1–11 Z2, dann 4 km @ 5:35 · letzter längerer Lauf vor NYC · 2 Gele üben"},
+  {w:16, d:"2026-10-19", typ:"GA", km:6, t:"GA 6 km locker + 4× 100 m Steigerungen", det:"vorgezogen von Di (Flug Orlando) · Mini-Taper"},
+  {w:16, d:"2026-10-20", typ:"REST", km:0, t:"Reisetag — Flug nach Orlando", det:"viel trinken, im Flieger aufstehen/gehen · Mi 21.10. ebenfalls Ruhetag (Ankunft/Zeitumstellung −6 h)"},
+  {w:16, d:"2026-10-22", typ:"GA", km:6, t:"GA 6 km locker — erster Lauf Orlando", det:"vor Sonnenaufgang · Hitze/Schwüle: rein nach Puls, Pace egal · Wasser mit"},
+  {w:16, d:"2026-10-23", typ:"RT", km:8, t:"RT 8 km — 3 km NYC-Renntempo am Stück", det:"vor Sonnenaufgang · 5:35 nur, wenn HF ≤ 155 — sonst nach Puls (Schwüle kostet 10–20 s/km)"},
+  {w:16, d:"2026-10-25", typ:"LL", km:12, t:"Langer Lauf 12 km locker", det:"Orlando, früh · Z2 nach Puls · Generalprobe Frühstück/Schuhe fürs Rennen"},
+  {w:17, d:"2026-10-27", typ:"GA", km:6, t:"GA 6 km locker + 3× 90 s Renntempo", det:"Race Week NYC · Orlando, früh"},
+  {w:17, d:"2026-10-29", typ:"REKOM", km:5, t:"REKOM 5 km sehr locker", det:"nach Ankunft NYC · kein Jetlag mehr (Orlando = NYC-Zeitzone)"},
+  {w:17, d:"2026-10-31", typ:"REKOM", km:4, t:"REKOM 4 km ausschütteln + 2 Steigerungen", det:"Central Park · Uhr-Umstellung heute Nacht (−1 h, Sommerzeitende USA)"},
+  {w:17, d:"2026-11-01", typ:"RACE2", km:42.2, t:"🏁 MARATHON NYC — Ziel Sub 4", det:"Renntempo 5:33–5:40 (Marker) · km 0–10 HF ≤ 150 · Brücken nach Gefühl · ab km 35 frei"}
 ];
-const WEEKNAMES_FALLBACK = {1:"Aufbau",2:"Urlaub Neapel",3:"Aufbau",4:"Entlastung",5:"5. Tag startet",6:"Peak-Basis",7:"Aufbau",8:"Formtest",9:"Längster Lauf",10:"Taper-Start",11:"Taper",12:"Race Week",13:"Regeneration I",14:"Regeneration II",15:"Wiederaufbau",16:"Mini-Taper",17:"Race Week NYC"};
+const WEEKNAMES_FALLBACK = {1:"Aufbau",2:"Urlaub Neapel",3:"Aufbau",4:"Entlastung",5:"5. Tag startet",6:"Peak-Basis",7:"Aufbau",8:"Formtest",9:"Längster Lauf",10:"Taper-Start",11:"Taper",12:"Race Week",13:"Regeneration I",14:"Regeneration II",15:"Wiederaufbau",16:"Mini-Taper · Orlando",17:"Race Week · Orlando → NYC"};
 let PLAN = PLAN_FALLBACK;
 let WEEKNAMES = WEEKNAMES_FALLBACK;
 try {
@@ -280,7 +283,8 @@ try {
 
 const RACE = new Date(2026,8,27);
 const RACE2 = new Date(2026,10,1); // NYC 01.11.
-const QUALITY = ["MP","LT","TEST","RACE","RACE2"];
+const QUALITY = ["MP","LT","RT","TEST","RACE","RACE2"];
+function afterBerlin(){ const n=new Date(); return new Date(n.getFullYear(),n.getMonth(),n.getDate()) > RACE; }
 
 function iso(d){ return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
 function fmt(d){ return d.toLocaleDateString("de-DE",{weekday:"short",day:"2-digit",month:"2-digit"}); }
@@ -297,10 +301,11 @@ const ZONES = {
   GA5:   { z: "I2 · Zone 2 (5. Tag)",  hf: "HF 135–145" },
   LL:    { z: "I2 · Zone 2",           hf: "HF 134–150" },
   MP:    { z: "I3 · Marathon-Pace",    hf: "HF 151–163", pace: "5:11/km" },
+  RT:    { z: "NYC-Renntempo",         hf: "HF ≤ 155", pace: "5:30–5:38" },
   LT:    { z: "I4 · Schwelle",         hf: "HF 163–171", pace: "4:50–5:05" },
   TEST:  { z: "HM-Test",               hf: "frei nach Renngefühl", pace: "~4:56/km (Ziel 1:44)" },
   RACE:  { z: "I3 · Marathon-Pace",    hf: "HF 151–163", pace: "5:11/km" },
-  RACE2: { z: "NYC · B-Rennen",        hf: "HF ≤ ~155", pace: "nach Gefühl" }
+  RACE2: { z: "NYC · Ziel Sub 4",       hf: "km 0–10 HF ≤ 150, bis km 30 ≤ 158", pace: "5:33–5:40 (Marker)" }
 };
 function zoneOf(typ){ return ZONES[typ] || ZONES.GA; }
 function badges(s){
@@ -316,6 +321,8 @@ function hints(s){
   let h = [];
   if (QUALITY.includes(s.typ) && s.typ !== "RACE" && s.typ !== "RACE2")
     h.push("Höhenmeter: möglichst flache Strecke wählen (Hausrunde ≈ 10 hm/km) — sonst Grade-Adjusted Pace bzw. Puls kontrollieren.");
+  if (s.d >= "2026-10-20" && s.d <= "2026-10-28" && s.typ !== "REST")
+    h.push("Orlando: vor Sonnenaufgang laufen, schwül-warm → nach Puls, 10–30 s/km langsamer ist normal, Wasser + Salz mit.");
   if ((s.typ === "LL" || s.typ === "GA" || s.typ === "GA5"))
     h.push("Wellig? Dann darf die Pace langsamer sein — der Puls zählt.");
   if (s.typ === "LL" && s.km >= 24) h.push("Verpflegung mitnehmen und Gel-Timing wie im Rennen üben.");
@@ -371,10 +378,12 @@ function renderHeute(){
   let cd;
   if (days > 0) cd = 'Noch <b>' + days + ' Tage</b> · Ziel <b>3:39</b> · MP <b>5:11/km</b>';
   else if (days === 0) cd = '<b>Heute ist Renntag! 🏁</b>';
-  else if (days2 > 0) cd = 'Noch <b>' + days2 + ' Tage bis NYC</b> · B-Rennen nach Gefühl';
+  else if (days2 > 0) cd = 'Noch <b>' + days2 + ' Tage bis NYC</b> · Ziel <b>Sub 4</b> · RT <b>5:35/km</b>';
   else if (days2 === 0) cd = '<b>Heute ist Renntag in NYC! 🏁</b>';
   else cd = 'Saison beendet — stark gemacht!';
   document.getElementById("countdown").innerHTML = cd;
+  document.getElementById("htitle").textContent = days < 0 ? "NYC-Marathon 2026" : "Berlin-Marathon 2026";
+  renderRefPhase();
 }
 
 // ===== Apple-Health-Import (via Kurzbefehl) =====
@@ -423,7 +432,7 @@ function fmtPace(p){
 function renderPrognose(p){
   const el = document.getElementById("prognose");
   if (!el || p == null || p === "") return;
-  el.innerHTML = '<span class="pv">' + p + '\u2009%</span><span class="pl">Ziel 3:39</span>';
+  el.innerHTML = '<span class="pv">' + p + '\u2009%</span><span class="pl">' + (afterBerlin() ? 'Sub 4 NYC' : 'Ziel 3:39') + '</span>';
   el.style.cursor = "pointer";
   el.onclick = toggleProgPanel;
 }
@@ -478,7 +487,7 @@ function lastRunHtml(r){
   if (r.note) eva.push("📝 " + r.note);
   if (r.hf) {
     const lo = s && s.typ === "GA5" ? 135 : 134, hi = s && s.typ === "GA5" ? 145 : 151;
-    if (s && QUALITY.includes(s.typ)) eva.push(r.pace ? (r.pace <= 5.19 ? "✅ MP-Pace getroffen (Ziel 5:11)" : "ℹ️ Pace über MP — auf welliger Strecke ok (GAP zählt)") : "");
+    if (s && QUALITY.includes(s.typ)) eva.push(r.pace ? (s.typ === "RT" || s.typ === "RACE2" ? (r.pace <= 5.65 ? "✅ NYC-Renntempo getroffen (Ziel 5:35)" : "ℹ️ Pace über Renntempo — bei Wellen/Hitze ok (Puls zählt)") : (r.pace <= 5.19 ? "✅ MP-Pace getroffen (Ziel 5:11)" : "ℹ️ Pace über MP — auf welliger Strecke ok (GAP zählt)")) : "");
     else eva.push(r.hf >= lo && r.hf <= hi ? "✅ Puls in Zone (HF " + lo + "–" + hi + ")" : (r.hf < lo ? "✅ Schön locker (HF unter Zone — völlig ok)" : "⚠️ Puls über Zone (" + lo + "–" + hi + ") — nächstes Mal ruhiger"));
   }
   if (s && r.dist) {
@@ -506,8 +515,9 @@ function renderPlan(){
   const todayIso = iso(new Date());
   const openWeek = weekOf(new Date()) || 1;
   let html = "";
-  for (let w = 1; w <= 12; w++) {
+  for (let w = 1; w <= 17; w++) {
     const sessions = PLAN.filter(s => s.w === w);
+    if (!sessions.length) continue;
     const km = sessions.reduce((a,s)=>a+s.km,0);
     const doneN = sessions.filter(s=>done[s.d]).length;
     const open = openWeeks[w] !== undefined ? openWeeks[w] : (w === openWeek);
@@ -609,12 +619,19 @@ function trendCard(){
 function fmtD(d){ return d.slice(8,10)+"."+d.slice(5,7)+"."; }
 
 // ===== Wetter morgen (Open-Meteo, Eglfing) =====
+function wxLoc(){
+  const t = new Date(); t.setDate(t.getDate()+1); const d = iso(t);
+  if (d >= "2026-10-29" && d <= "2026-11-01") return { n: "New York", lat: 40.78, lon: -73.97, tz: "America%2FNew_York" };
+  if (d >= "2026-10-20" && d <= "2026-10-28") return { n: "Orlando", lat: 28.54, lon: -81.38, tz: "America%2FNew_York" };
+  return { n: "Eglfing", lat: 47.73, lon: 11.19, tz: "Europe%2FBerlin" };
+}
 function loadWeather(){
-  const key = "wx_" + iso(new Date());
+  const L = wxLoc();
+  const key = "wx_" + L.n + "_" + iso(new Date());
   let cached = null;
   try { cached = JSON.parse(localStorage.getItem(key) || "null"); } catch(e) {}
   if (cached) { showWx(cached); return; }
-  fetch("https://api.open-meteo.com/v1/forecast?latitude=47.73&longitude=11.19&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,wind_speed_10m_max&timezone=Europe%2FBerlin&forecast_days=2")
+  fetch("https://api.open-meteo.com/v1/forecast?latitude=" + L.lat + "&longitude=" + L.lon + "&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,wind_speed_10m_max&timezone=" + L.tz + "&forecast_days=2")
     .then(function(r){ return r.ok ? r.json() : null; })
     .then(function(j){
       if (!j || !j.daily || !j.daily.temperature_2m_max) return;
@@ -628,7 +645,7 @@ function loadWeather(){
 function showWx(d){
   const el = document.getElementById("wxcard");
   if (!el || d == null || d.max == null) return;
-  el.innerHTML = '<div class="label">Wetter morgen · Eglfing</div>'+
+  el.innerHTML = '<div class="label">Wetter morgen · ' + wxLoc().n + '</div>'+
     '<div class="detail" style="margin-top:8px;">'+Math.round(d.min)+'&ndash;'+Math.round(d.max)+' &deg;C'+
     (d.pop != null ? ' · Regen ' + d.pop + ' %' : '') +
     (d.rain ? ' (' + d.rain.toFixed(1).replace(".",",") + ' mm)' : '') +
@@ -654,7 +671,8 @@ function fmtT(min){
   const hh = Math.floor(t/3600), mm = Math.floor((t%3600)/60), ss = t%60;
   return hh + ":" + String(mm).padStart(2,"0") + ":" + String(ss).padStart(2,"0");
 }
-function renderRennen(){
+function renderRennen(){ if (afterBerlin()) renderRennenNYC(); else renderRennenBerlin(); }
+function renderRennenBerlin(){
   // Splits: km 0–5 konservativ (5:15), danach 5:10 → 3:38:25
   const p1 = 5 + 15/60, p2 = 5 + 10/60;
   const marks = [[5,"5 km"],[10,"10 km"],[15,"15 km"],[20,"20 km"],[21.0975,"Halbmarathon"],[25,"25 km"],[30,"30 km"],[35,"35 km"],[40,"40 km"],[42.195,"ZIEL"]];
@@ -695,12 +713,74 @@ function renderRennen(){
   document.getElementById("tab-rennen").innerHTML = html;
 }
 
+
+// ===== NYC-Renntag (Ziel Sub 4) =====
+function renderRennenNYC(){
+  // Segment-Paces nach Streckenprofil (Pace je offiziellem km, NICHT Uhr-Pace)
+  const seg = [[2, 6+5/60],[5, 5+35/60],[24, 5+33/60],[26, 6],[32, 5+32/60],[35, 5+45/60],[39, 5+50/60],[42.195, 5+40/60]];
+  function tAt(km){ let t=0, prev=0; for (const s of seg){ const e=Math.min(km,s[0]); if (e>prev) t += (e-prev)*s[1]; prev=s[0]; if (km<=s[0]) break; } return t; }
+  const marks = [[5,"5 km"],[10,"10 km"],[15,"15 km"],[20,"20 km"],[21.0975,"Halbmarathon"],[25,"25 km · Queensboro"],[30,"30 km · First Ave"],[35,"35 km · Bronx zurück"],[40,"40 km · Central Park"],[42.195,"ZIEL"]];
+  let rows = "";
+  for (const m of marks) rows += '<tr' + (m[0] === 21.0975 ? ' class="hm"' : '') + '><td>' + m[1] + '</td><td>' + fmtT(tAt(m[0])) + '</td></tr>';
+  const phases = [
+    ["km 0–3 · Verrazzano","~6:00–6:10","HF ≤ 145","Gleich zu Beginn die längste Steigung. Nach Gefühl hoch, bergab nicht laufen lassen. Zeitverlust ist eingeplant."],
+    ["km 3–21 · Brooklyn","5:33–5:36","HF ≤ 150","Lange, flache Fourth Ave, viel Stimmung. Berlin-Lehre: km 1–10 lief schon HF 146→156. Diesmal bewusst darunter bleiben."],
+    ["km 21–26 · Queens + Queensboro","nach Puls","HF ≤ 158","Pulaski Bridge zur Halbzeit, dann Queensboro Bridge: lang, still, bergauf. 6:00+ ist ok. Keine Zeit „zurückholen“."],
+    ["km 26–32 · First Ave","5:32–5:35","HF ≤ 158","Wand aus Lärm, größte Gefahr zu überpacen. Puls checken, Gel nehmen."],
+    ["km 32–35 · Bronx","5:40–5:45","HF ≤ 163","Willis Ave + Madison Ave Bridge. Kurze Rampen, Rhythmus halten."],
+    ["km 35–42 · Fifth Ave + Park","alles, was geht","HF egal","Fifth Ave steigt km 36–39 leicht an, dann wellig im Central Park. Bei ~3:17 an km 35 bleiben 43 min für die letzten 7,2 km (≈ 6:00/km)."]
+  ];
+  let ph = "";
+  for (const x of phases) ph += '<div class="chkline" style="cursor:default"><div><b>' + x[0] + '</b> · ' + x[1] + ' · <span style="color:var(--accent)">' + x[2] + '</span><div class="date">' + x[3] + '</div></div></div>';
+  const gels = ["Snack 60–90 min vor dem Start (Bagel/Banane im Startbereich)","Gel 1 — 10 min vor dem Start","Gel 2 — km 7","Gel 3 — km 14","Gel 4 — km 21 (Pulaski Bridge)","Gel 5 — km 27 (nach Queensboro)","Gel 6 — km 33 (Bronx)","Gel 7 — km 38 (optional)"];
+  const check = ["Startnummer an der Expo abholen (Ausweis + Registrierungsbestätigung)","Transport nach Staten Island (Fähre/Bus): Uhrzeit laut Startunterlagen, 2–3 h Puffer","Wegwerfkleidung + Poncho für Wartezeit in Fort Wadsworth","Sommerzeitende USA in der Nacht auf 01.11. (Uhren 1 h zurück), Wecker/Uhr prüfen","Endorphin Speed 5 (Paar ohne Druckstelle)","7× Mnstry Gel 40 + Salztabletten","Frühstück 3–4 h vor dem Start, gewohnt, 100–150 g KH","Anti-Chafing (Vaseline/Tape)","Uhr: Auto-Lap AUS. GPS zwischen Hochhäusern und auf Brücken ungenau, deshalb an Meilen-/5-km-Markern runden","Erste 10 km HF ≤ 150, auch wenn es sich zu langsam anfühlt"];
+  let html = '<div class="card race"><div class="label">Renn-Strategie NYC · Ziel Sub 4</div>'+
+    '<div class="date">So, 01.11. · Startzeit laut Welle · Anfang November meist 8–14 °C · Berlin: 3:57:06 bei ~22 °C</div>'+
+    '<div class="detail" style="margin-top:6px">NYC ist mit 5 Brücken und ~250 hm 3–5 min langsamer als Berlin, dafür meist deutlich kühler. Sub 4 braucht ~5:41/km im Schnitt. Der Plan läuft <b>gleichmäßig nach Aufwand</b>: Brücken kosten Zeit, die flachen Stücke holen sie ohne Hetze zurück.</div>'+
+    ph +
+    '<div class="hint">Uhr-Pace zeigt ca. 5 s/km schneller als die echte Pace (Berlin: 42,66 statt 42,2 km). Deshalb an den 5-km-Zwischenzeiten unten steuern, nicht am Pace-Feld der Uhr.</div>'+
+    '</div>';
+  html += '<div class="card"><div class="label">Zwischenzeiten · Ziel Sub 4</div>'+
+    '<div class="date">Profil-angepasst (Verrazzano 6:05, Queensboro 6:00, Fifth Ave 5:50) → ~3:58 (≈ 2 min Puffer)</div>'+
+    '<table class="race-table">'+rows+'</table></div>';
+  html += '<div class="card"><div class="label">Gel-Plan · Mnstry Gel 40</div>'+
+    '<div class="date">≈ 65–70 g KH/h. Wasser und Iso an den Stationen im Wechsel. Berlin-Einbruch ab km 35: Gele 5–7 nicht auslassen.</div>'+
+    gels.map(function(g,i){ return chkLine("ng"+i, g); }).join("")+'</div>';
+  html += '<div class="card"><div class="label">Race-Day-Checkliste NYC</div>'+
+    check.map(function(c,i){ return chkLine("nc"+i, c); }).join("")+'</div>';
+  html += '<div class="card"><div class="label">Carb Loading Do–Sa (NYC)</div>'+
+    '<div class="date">7–8 g KH/kg → ~600–650 g/Tag, fettarm: Bagels, Reis, Pasta, Bananen, Saft. Wenig Restaurant-Experimente, kein Neuland am Samstagabend. Viel trinken (Flug + Heizungsluft).</div></div>';
+  html += '<div class="card"><div class="label">Berlin-Lehren</div>'+
+    '<div class="date">km 1–34 Ø 5:26 bei HF 157 war zu hoch für die Umfänge → Einbruch ab km 35 (~5 min). NYC: Puls früh deckeln, Gele konsequent, Hitze war in Berlin ein Faktor (~22 °C). Ziel ist ein gleichmäßiges Rennen ohne Einbruch.</div></div>';
+  document.getElementById("tab-rennen").innerHTML = html;
+}
+function renderRefPhase(){
+  const el = document.getElementById("ref-nyc");
+  if (!el) return;
+  if (!afterBerlin()) { el.innerHTML = ""; return; }
+  el.innerHTML = '<div class="ref-grid" style="margin-bottom:10px">'+
+    '<div class="ref"><div class="t">Ziel NYC</div><div class="v">Sub 4</div><div class="s">01.11.2026 · Plan ~3:58</div></div>'+
+    '<div class="ref"><div class="t">NYC-Renntempo</div><div class="v">5:33–5:40</div><div class="s">/km nach Markern · Uhr ~5 s schneller</div></div>'+
+    '<div class="ref"><div class="t">Puls-Deckel</div><div class="v">≤ 150</div><div class="s">km 0–10 · bis km 30 ≤ 158</div></div>'+
+    '<div class="ref"><div class="t">Berlin</div><div class="v">3:57:06</div><div class="s">PB · 27.09.2026</div></div>'+
+    '<div class="ref wide"><div class="t">Orlando 20.–28.10.</div><div class="s" style="font-size:13.5px; margin-top:6px; color:var(--text);">'+
+    'Schwül-warm (meist 25–30 °C): nur vor Sonnenaufgang laufen, rein nach Puls. Renntempo-Einheiten bei HF-Deckel 155, langsamer ist ok. Pro Stunde Laufen 0,5–0,75 l trinken, plus Salz. Orlando und NYC haben dieselbe Zeitzone, du kommst also ohne Jetlag nach New York.</div></div>'+
+    '</div><div class="label" style="font-size:11px;font-weight:700;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin:6px 0 8px">Basiswerte (Saison Berlin)</div>';
+}
+
 // ===== Prognose-Verlauf =====
 function toggleProgPanel(){
   const el = document.getElementById("progpanel");
   if (!el) return;
   if (el.style.display === "block") { el.style.display = "none"; return; }
-  if (!progHist || progHist.length < 2) return;
+  const ph = (progHist || []).filter(function(p){ return afterBerlin() ? p.d > "2026-09-27" : p.d <= "2026-09-27"; });
+  if (ph.length < 2) {
+    if (!ph.length) return;
+    el.innerHTML = '<div style="font-size:11px;font-weight:700;letter-spacing:1px;color:var(--muted);text-transform:uppercase;">Prognose · Sub 4 NYC</div>'+
+      '<div style="font-size:13px;margin-top:8px;line-height:1.45;">' + fmtD(ph[0].d) + ' · <b style="color:var(--green)">' + ph[0].p + ' %</b><br><span style="color:var(--muted)">Verlauf erscheint ab dem zweiten Eintrag. Berlin: 3:57:06 (PB).</span></div>';
+    el.style.display = "block"; return;
+  }
+  const progHist_ = progHist; progHist = ph;
   const W=230, H=72, L=8, R=8, T=10, B=10;
   let vmin=Infinity, vmax=-Infinity;
   for (const p of progHist){ if (p.p<vmin) vmin=p.p; if (p.p>vmax) vmax=p.p; }
@@ -713,11 +793,12 @@ function toggleProgPanel(){
     dots += '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(p.p).toFixed(1)+'" r="2.5" fill="#66bb6a"/>';
   });
   const f = progHist[0], l = progHist[progHist.length-1];
-  el.innerHTML = '<div style="font-size:11px;font-weight:700;letter-spacing:1px;color:var(--muted);text-transform:uppercase;">Prognose-Verlauf · Ziel 3:39</div>'+
+  el.innerHTML = '<div style="font-size:11px;font-weight:700;letter-spacing:1px;color:var(--muted);text-transform:uppercase;">Prognose-Verlauf · ' + (afterBerlin() ? 'Sub 4 NYC' : 'Ziel 3:39') + '</div>'+
     '<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;margin-top:8px;" xmlns="http://www.w3.org/2000/svg">'+
     '<path d="'+line+'" fill="none" stroke="#66bb6a" stroke-width="2"/>'+dots+'</svg>'+
     '<div style="display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:4px;">'+
     '<span>'+fmtD(f.d)+' · '+f.p+' %</span><span style="color:var(--green);font-weight:700;">'+fmtD(l.d)+' · '+l.p+' %</span></div>';
+  progHist = progHist_;
   el.style.display = "block";
 }
 
