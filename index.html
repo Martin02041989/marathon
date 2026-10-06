@@ -259,19 +259,19 @@ const PLAN_FALLBACK = [
   {w:14, d:"2026-10-11", typ:"LL",  km:12, t:"Ruhiger Lauf 12 km", det:"Z2, bewusst kurz"},
   {w:15, d:"2026-10-13", typ:"GA", km:8, t:"GA 8 km locker", det:"Wiederaufbau — Z2 nach Puls"},
   {w:15, d:"2026-10-15", typ:"RT", km:9, t:"RT 9 km — 2× 10 min NYC-Renntempo", det:"5:30–5:35/km, 3 min Trab; Rest locker · flache Strecke · HF-Deckel ~155"},
-  {w:15, d:"2026-10-17", typ:"GA", km:6, t:"GA 6 km locker", det:"Z2 nach Puls"},
-  {w:15, d:"2026-10-18", typ:"LL", km:15, t:"Langer Lauf 15 km, letzte 4 km Renntempo", det:"km 1–11 Z2, dann 4 km @ 5:35 · letzter längerer Lauf vor NYC · 2 Gele üben"},
-  {w:16, d:"2026-10-19", typ:"GA", km:6, t:"GA 6 km locker + 4× 100 m Steigerungen", det:"vorgezogen von Di (Flug Orlando) · Mini-Taper"},
+  {w:15, d:"2026-10-17", typ:"REKOM", km:4, t:"REKOM 4 km sehr locker (oder Ruhetag)", det:"HF < 134 · Beine frisch halten für den 30er morgen (Angepasst 06.10.)"},
+  {w:15, d:"2026-10-18", typ:"LL", km:30, t:"Langer Lauf 28–30 km komplett Z2", det:"HF 134–151, ~5:50–6:05/km, kein Renntempo · Gel alle ~7 km (Rennsimulation) · Abbruch bei HF-Drift >151 im lockeren Tempo oder schweren Beinen ab km 20 — dann reichen 25 km (Angepasst 06.10.)"},
+  {w:16, d:"2026-10-19", typ:"REKOM", km:4, t:"REKOM 4 km sehr locker (oder Ruhetag)", det:"Erholung nach dem 30er · morgen Flug Orlando (Angepasst 06.10.)"},
   {w:16, d:"2026-10-20", typ:"REST", km:0, t:"Reisetag — Flug nach Orlando", det:"viel trinken, im Flieger aufstehen/gehen · Mi 21.10. ebenfalls Ruhetag (Ankunft/Zeitumstellung −6 h)"},
   {w:16, d:"2026-10-22", typ:"GA", km:6, t:"GA 6 km locker — erster Lauf Orlando", det:"vor Sonnenaufgang · Hitze/Schwüle: rein nach Puls, Pace egal · Wasser mit"},
-  {w:16, d:"2026-10-23", typ:"RT", km:8, t:"RT 8 km — 3 km NYC-Renntempo am Stück", det:"vor Sonnenaufgang · 5:35 nur, wenn HF ≤ 155 — sonst nach Puls (Schwüle kostet 10–20 s/km)"},
-  {w:16, d:"2026-10-25", typ:"LL", km:12, t:"Langer Lauf 12 km locker", det:"Orlando, früh · Z2 nach Puls · Generalprobe Frühstück/Schuhe fürs Rennen"},
+  {w:16, d:"2026-10-23", typ:"RT", km:6, t:"RT 6 km — 1,5 km NYC-Renntempo", det:"vor Sonnenaufgang · 5:35 nur, wenn HF ≤ 155 — sonst nach Puls · entlastet nach dem 30er (Angepasst 06.10.)"},
+  {w:16, d:"2026-10-25", typ:"LL", km:10, t:"Langer Lauf 10 km locker", det:"Orlando, früh · Z2 nach Puls · Generalprobe Frühstück/Schuhe fürs Rennen (Angepasst 06.10.)"},
   {w:17, d:"2026-10-27", typ:"GA", km:6, t:"GA 6 km locker + 3× 90 s Renntempo", det:"Race Week NYC · Orlando, früh"},
   {w:17, d:"2026-10-29", typ:"REKOM", km:5, t:"REKOM 5 km sehr locker", det:"nach Ankunft NYC · kein Jetlag mehr (Orlando = NYC-Zeitzone)"},
   {w:17, d:"2026-10-31", typ:"REKOM", km:4, t:"REKOM 4 km ausschütteln + 2 Steigerungen", det:"Central Park · Uhr-Umstellung heute Nacht (−1 h, Sommerzeitende USA)"},
   {w:17, d:"2026-11-01", typ:"RACE2", km:42.2, t:"🏁 MARATHON NYC — Ziel Sub 4", det:"Renntempo 5:33–5:40 (Marker) · km 0–10 HF ≤ 150 · Brücken nach Gefühl · ab km 35 frei"}
 ];
-const WEEKNAMES_FALLBACK = {1:"Aufbau",2:"Urlaub Neapel",3:"Aufbau",4:"Entlastung",5:"5. Tag startet",6:"Peak-Basis",7:"Aufbau",8:"Formtest",9:"Längster Lauf",10:"Taper-Start",11:"Taper",12:"Race Week",13:"Regeneration I",14:"Regeneration II",15:"Wiederaufbau",16:"Mini-Taper · Orlando",17:"Race Week · Orlando → NYC"};
+const WEEKNAMES_FALLBACK = {1:"Aufbau",2:"Urlaub Neapel",3:"Aufbau",4:"Entlastung",5:"5. Tag startet",6:"Peak-Basis",7:"Aufbau",8:"Formtest",9:"Längster Lauf",10:"Taper-Start",11:"Taper",12:"Race Week",13:"Regeneration I",14:"Regeneration II",15:"Wiederaufbau · 30er",16:"Mini-Taper · Orlando",17:"Race Week · Orlando → NYC"};
 let PLAN = PLAN_FALLBACK;
 let WEEKNAMES = WEEKNAMES_FALLBACK;
 try {

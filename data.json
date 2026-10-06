@@ -1060,26 +1060,26 @@
   {
    "w": 15,
    "d": "2026-10-17",
-   "typ": "GA",
-   "km": 6,
-   "t": "GA 6 km locker",
-   "det": "Z2 nach Puls"
+   "typ": "REKOM",
+   "km": 4,
+   "t": "REKOM 4 km sehr locker (oder Ruhetag)",
+   "det": "HF < 134 · Beine frisch halten für den 30er morgen (Angepasst 06.10.)"
   },
   {
    "w": 15,
    "d": "2026-10-18",
    "typ": "LL",
-   "km": 15,
-   "t": "Langer Lauf 15 km, letzte 4 km Renntempo",
-   "det": "km 1–11 Z2, dann 4 km @ 5:35 · letzter längerer Lauf vor NYC · 2 Gele üben"
+   "km": 30,
+   "t": "Langer Lauf 28–30 km komplett Z2",
+   "det": "HF 134–151, ~5:50–6:05/km, kein Renntempo · Gel alle ~7 km (Rennsimulation) · Abbruch bei HF-Drift >151 im lockeren Tempo oder schweren Beinen ab km 20 — dann reichen 25 km (Angepasst 06.10.)"
   },
   {
    "w": 16,
    "d": "2026-10-19",
-   "typ": "GA",
-   "km": 6,
-   "t": "GA 6 km locker + 4× 100 m Steigerungen",
-   "det": "vorgezogen von Di (Flug Orlando) · Mini-Taper"
+   "typ": "REKOM",
+   "km": 4,
+   "t": "REKOM 4 km sehr locker (oder Ruhetag)",
+   "det": "Erholung nach dem 30er · morgen Flug Orlando (Angepasst 06.10.)"
   },
   {
    "w": 16,
@@ -1101,17 +1101,17 @@
    "w": 16,
    "d": "2026-10-23",
    "typ": "RT",
-   "km": 8,
-   "t": "RT 8 km — 3 km NYC-Renntempo am Stück",
-   "det": "vor Sonnenaufgang · 5:35 nur, wenn HF ≤ 155 — sonst nach Puls (Schwüle kostet 10–20 s/km)"
+   "km": 6,
+   "t": "RT 6 km — 1,5 km NYC-Renntempo",
+   "det": "vor Sonnenaufgang · 5:35 nur, wenn HF ≤ 155 — sonst nach Puls · entlastet nach dem 30er (Angepasst 06.10.)"
   },
   {
    "w": 16,
    "d": "2026-10-25",
    "typ": "LL",
-   "km": 12,
-   "t": "Langer Lauf 12 km locker",
-   "det": "Orlando, früh · Z2 nach Puls · Generalprobe Frühstück/Schuhe fürs Rennen"
+   "km": 10,
+   "t": "Langer Lauf 10 km locker",
+   "det": "Orlando, früh · Z2 nach Puls · Generalprobe Frühstück/Schuhe fürs Rennen (Angepasst 06.10.)"
   },
   {
    "w": 17,
@@ -1161,7 +1161,7 @@
   "12": "Race Week",
   "13": "Regeneration I",
   "14": "Regeneration II",
-  "15": "Wiederaufbau",
+  "15": "Wiederaufbau · 30er",
   "16": "Mini-Taper · Orlando",
   "17": "Race Week · Orlando → NYC"
  },
