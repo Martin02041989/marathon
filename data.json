@@ -1027,19 +1027,19 @@
   },
   {
    "w": 14,
-   "d": "2026-10-08",
+   "d": "2026-10-10",
    "typ": "GA",
    "km": 8,
    "t": "GA 8 km locker",
-   "det": "Z2 nach Puls"
+   "det": "Z2 nach Puls (HF 134–151) · ersetzt den ausgefallenen GA 8 vom Do 08.10. (Angepasst 10.10.)"
   },
   {
    "w": 14,
    "d": "2026-10-11",
    "typ": "LL",
-   "km": 12,
-   "t": "Ruhiger Lauf 12 km",
-   "det": "Z2, bewusst kurz"
+   "km": 14,
+   "t": "Ruhiger Lauf 12–14 km",
+   "det": "Z2 nach Puls (HF 134–151), max. 14 km · bei HF > 151 im lockeren Tempo nach 12 km beenden · 30er folgt am 18.10. (Angepasst 10.10.)"
   },
   {
    "w": 15,
